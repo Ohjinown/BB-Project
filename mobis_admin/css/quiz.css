@@ -1,0 +1,245 @@
+@import url(reset.css);
+@font-face {
+    font-family: NotoSansCJKkr-Regular;
+    src: url(../font/NotoSansCJKkr-Regular.otf);
+}
+
+@font-face {
+    font-family: NotoSansCJKkr-Medium;
+    src: url(../font/NotoSansCJKkr-Medium.otf);
+}
+
+@font-face {
+    font-family: NotoSansCJKkr-Bold;
+    src: url(../font/NotoSansCJKkr-Bold.otf);
+}
+
+/* quiz.css */
+/* 퀴즈콘텐츠 */
+
+*{-webkit-text-size-adjust: none;}
+
+/* common */
+body{
+    font-family: NotoSansCJKkr-Bold, Arial, Helvetica, sans-serif;
+    background: #ECEFF5;
+    font-size: 20px;
+    color: #222;
+    line-height: 1;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* layout */
+div#wrap{
+    width: 100%;
+    max-width: 1920px;
+    overflow: hidden;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    overflow: hidden;
+}
+
+main{
+    padding: 0 147px 80px;
+    box-sizing: border-box;
+}
+
+/* gnb list 클릭 */
+ul.gnb>li.quiz>a{
+    color: #fff;
+}
+
+/* main */
+/* 퀴즈 정답률 분석 */
+div.quiz_answer{
+    width: 1626px;
+    margin-top: 40px;
+    padding: 40px;
+    box-sizing: border-box;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.quiz_answer::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.quiz_answer>h2{
+    display: inline-block;
+    font-size: 28px;
+}
+
+/* 필터 버튼 */
+.f_filter{
+    float: right;
+    width: 80px;
+    height: 40px;
+    font-family: NotoSansCJKkr-Medium;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    border: none;
+    /* cursor: pointer; */
+    background: rgba(0,0,0,0.7);
+}
+
+
+/* 전체 퀴즈 정답률/테이블 공통사항 */
+div.q_table1, div.q_table2{
+    clear: both;
+    float: left;
+    width: 100%;
+}
+
+.q_table1>h3, .q_table2>h3{
+    padding-bottom: 15px;
+    color: #606060;
+    font-size: 24px;
+    font-family: NotoSansCJKkr-Medium;
+    border-bottom: 1px solid #606060;
+    box-sizing: border-box;
+}
+
+div.table_all, div.table_filter{
+    margin-top: 20px;
+}
+
+/* 전체 퀴즈 정답률 */
+.q_table1{
+    margin: 28px 0 70px;
+}
+
+/* 테이블 카테고리/헤드 */
+div.t_header{
+    width: 100%;
+    height: 120px;
+    background: #eceff5;
+    font-size: 18px;
+    text-align: center;
+    border-bottom: 1px solid #aaa;
+    box-sizing: border-box;
+}
+
+.t_header::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+p.category{
+    float: left;
+    width: 232px;
+    height: 100%;
+    padding-top: 51px;
+    border-right: 1px solid #aaa;
+    box-sizing: border-box;
+}
+
+p.c_area{
+    float: right;
+    width: 1312px;
+    height: 60px;
+    padding-top: 21px;
+    border-bottom: 1px solid #aaa;
+    box-sizing: border-box;
+}
+
+ul.a_menu{
+    float: left;
+    width: 1310px;
+    height: 60px;
+}
+
+.a_menu::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+ul.a_menu>li{
+    float: left;
+    width: 262px;
+    height: 60px;
+    padding-top: 21px;
+    border-right: 1px solid #aaa;
+    box-sizing: border-box;
+    font-family: NotoSansCJKkr-Medium;
+}
+
+ul.a_menu>li.last{
+    border: none;
+}
+
+/* 테이블 내용 */
+/* 테이블 공통사항 */
+div.t_body{
+    width: 100%;
+}
+
+.t_body>ul{
+    width: 100%;
+}
+
+.t_body>ul>li{
+    float: left;
+    width: 262px;
+    height: 70px;
+    padding-top: 12px;
+    text-align: center;
+    color: #606060;
+    font-size: 18px;
+    font-family: NotoSansCJKkr-Regular;
+    border-right: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    box-sizing: border-box;
+}
+
+.t_body>ul>li>strong{
+    display: block;
+    padding-top: 5px;
+    font-size: 22px;
+    font-family: NotoSansCJKkr-Medium;
+    box-sizing: border-box;
+}
+
+/* 카테고리 메뉴 */
+ul>li.c_menu{
+    width: 232px;
+    padding: 26px 0 0 26px;
+    color: #222;
+    font-size: 18px;
+    font-family: NotoSansCJKkr-Medium;
+    text-align: left;
+    background: #eceff5;
+    box-sizing: border-box;
+}
+
+ul.menu_q2>li.c_menu{
+    padding-top: 17px;
+    box-sizing: border-box;
+}
+
+li.c_menu>span{
+    display: inline-block;
+    padding-left: 34px;
+    color: #606060;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+ul.menu_q6>li{
+    border-bottom: none;
+}
+
+.t_body>ul>li.last{
+    border-right: none;
+}

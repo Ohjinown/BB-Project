@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="./css/content_management.css?aa"/>
+	<link rel="stylesheet" type="text/css" href="./css/header.css"/>
+	<link rel="stylesheet" type="text/css" href="./css/sidebar.css"/>
+	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript"src="./js/popup.js?aa"></script>
+	<title>콘텐츠 관리</title>
+
+	<script type="text/javascript">
+	$(document).ready (function() {
+		$("#headers").load("./header/header.html")
+		$("#sidebar").load("./sidebar/sidebar.html")
+	})
+	</script>
+</head>
+<body>
+	<div class="all_moniter">
+		<div id="headers"></div>
+		<div id="sidebar"></div>
+		<div class="content_box">
+			<span class="cotent_list_text">콘텐츠 리스트</span>
+			<div class="cotent_box_list">
+				<form method="GET">
+					<span class="content_benefits">혜택 종류</span>
+					<select class="content_select1" name="benefits">
+						<option value="1">전체</option>
+						<option value="2">기본혜택</option>
+						<option value="3">추가혜택</option>
+					</select>
+					<span class="content_category">카테고리</span>
+					<select class="content_select2" name="category" id="">
+						<option value="1">전체</option>
+						<option value="2">알뜰한 우주생활</option>
+						<option value="3">건강한 우주생활</option>
+						<option value="4">즐거운 우주생활</option>
+					</select>
+					<span class="content_serch">검색</span>
+					<input class="content_input" type="search" name="search">
+					<button class="content_button" type="submit"><span>검색</span></button>
+				</form>
+			</div>
+			<div class="content_infor_box">
+				<div class="content_infor">
+					<span class="content_alignment_text">정렬</span>
+					<select class="content_alignment">
+						<option>최신순</option>
+						<option>과거순</option>
+					</select>
+					<button class="excel_down"><span>엑셀 다운로드</span></button>
+					<button class="content_button1"><span>콘텐츠 등록</span></button>
+				</div>
+
+				<div class="content_table">
+					<div class="content_number"><span class="number">No.</span></div>
+					<div class="content_title"><span class="number">콘텐츠명</span></div>
+					<div class="content_type"><span class="number">혜택 종류</span></div>
+					<div class="content_category1"><span class="number">카테고리</span></div>
+					<div class="content_code"><span class="number">콘텐츠 코드</span></div>
+					<div class="experience_box"><span class="number">체험 현황</span></div>
+					<div class="experience_num"><span class="number">체험 순위</span></div>
+					<div class="content_date"><span class="number">등록일</span></div>
+					<div class="view_details"><span class="number">상세</span></div>
+				</div>
+				<div class="content_table_td">
+					<div class="content_number"><span class="number">No.</span></div>
+					<div class="content_title"><span class="number">콘텐츠명</span></div>
+					<div class="content_type"><span class="number">혜택 종류</span></div>
+					<div class="content_category1"><span class="number">카테고리</span></div>
+					<div class="content_code"><span class="number">콘텐츠 코드</span></div>
+					<div class="experience_box"><span class="number">체험 현황</span></div>
+					<div class="experience_num"><span class="number">체험 순위</span></div>
+					<div class="content_date"><span class="number">등록일</span></div>
+					<div class="view_details "><span class="see">수정</span></div>
+					<div class="content_number"><span class="number">No.</span></div>
+					<div class="content_title"><span class="number">콘텐츠명</span></div>
+					<div class="content_type"><span class="number">혜택 종류</span></div>
+					<div class="content_category1"><span class="number">카테고리</span></div>
+					<div class="content_code"><span class="number">콘텐츠 코드</span></div>
+					<div class="experience_box"><span class="number">체험 현황</span></div>
+					<div class="experience_num"><span class="number">체험 순위</span></div>
+					<div class="content_date"><span class="number">등록일</span></div>
+					<div class="view_details "><span class="see">보기</span></div>
+					<div class="content_number"><span class="number">No.</span></div>
+					<div class="content_title"><span class="number">콘텐츠명</span></div>
+					<div class="content_type"><span class="number">혜택 종류</span></div>
+					<div class="content_category1"><span class="number">카테고리</span></div>
+					<div class="content_code"><span class="number">콘텐츠 코드</span></div>
+					<div class="experience_box"><span class="number">체험 현황</span></div>
+					<div class="experience_num"><span class="number">체험 순위</span></div>
+					<div class="content_date"><span class="number">등록일</span></div>
+					<div class="view_details "><span class="see">보기</span></div>
+					<div class="content_number"><span class="number">No.</span></div>
+					<div class="content_title"><span class="number">콘텐츠명</span></div>
+					<div class="content_type"><span class="number">혜택 종류</span></div>
+					<div class="content_category1"><span class="number">카테고리</span></div>
+					<div class="content_code"><span class="number">콘텐츠 코드</span></div>
+					<div class="experience_box"><span class="number">체험 현황</span></div>
+					<div class="experience_num"><span class="number">체험 순위</span></div>
+					<div class="content_date"><span class="number">등록일</span></div>
+					<div class="view_details "><span class="see">보기</span></div>
+					<div class="content_number"><span class="number">No.</span></div>
+					<div class="content_title"><span class="number">콘텐츠명</span></div>
+					<div class="content_type"><span class="number">혜택 종류</span></div>
+					<div class="content_category1"><span class="number">카테고리</span></div>
+					<div class="content_code"><span class="number">콘텐츠 코드</span></div>
+					<div class="experience_box"><span class="number">체험 현황</span></div>
+					<div class="experience_num"><span class="number">체험 순위</span></div>
+					<div class="content_date"><span class="number">등록일</span></div>
+					<div class="view_details "><span class="see">보기</span></div>
+					<div class="content_number"><span class="number">No.</span></div>
+					<div class="content_title"><span class="number">콘텐츠명</span></div>
+					<div class="content_type"><span class="number">혜택 종류</span></div>
+					<div class="content_category1"><span class="number">카테고리</span></div>
+					<div class="content_code"><span class="number">콘텐츠 코드</span></div>
+					<div class="experience_box"><span class="number">체험 현황</span></div>
+					<div class="experience_num"><span class="number">체험 순위</span></div>
+					<div class="content_date"><span class="number">등록일</span></div>
+					<div class="view_details "><span class="see">보기</span></div>
+					<div class="content_number"><span class="number">No.</span></div>
+					<div class="content_title"><span class="number">콘텐츠명</span></div>
+					<div class="content_type"><span class="number">혜택 종류</span></div>
+					<div class="content_category1"><span class="number">카테고리</span></div>
+					<div class="content_code"><span class="number">콘텐츠 코드</span></div>
+					<div class="experience_box"><span class="number">체험 현황</span></div>
+					<div class="experience_num"><span class="number">체험 순위</span></div>
+					<div class="content_date"><span class="number">등록일</span></div>
+					<div class="view_details "><span class="see">보기</span></div>
+					<div class="content_number"><span class="number">No.</span></div>
+					<div class="content_title"><span class="number">콘텐츠명</span></div>
+					<div class="content_type"><span class="number">혜택 종류</span></div>
+					<div class="content_category1"><span class="number">카테고리</span></div>
+					<div class="content_code"><span class="number">콘텐츠 코드</span></div>
+					<div class="experience_box"><span class="number">체험 현황</span></div>
+					<div class="experience_num"><span class="number">체험 순위</span></div>
+					<div class="content_date"><span class="number">등록일</span></div>
+					<div class="view_details "><span class="see">보기</span></div>
+					<div class="content_number"><span class="number">No.</span></div>
+					<div class="content_title"><span class="number">콘텐츠명</span></div>
+					<div class="content_type"><span class="number">혜택 종류</span></div>
+					<div class="content_category1"><span class="number">카테고리</span></div>
+					<div class="content_code"><span class="number">콘텐츠 코드</span></div>
+					<div class="experience_box"><span class="number">체험 현황</span></div>
+					<div class="experience_num"><span class="number">체험 순위</span></div>
+					<div class="content_date"><span class="number">등록일</span></div>
+					<div class="view_details "><span class="see">보기</span></div>
+					<div class="content_number"><span class="number">No.</span></div>
+					<div class="content_title"><span class="number">콘텐츠명</span></div>
+					<div class="content_type"><span class="number">혜택 종류</span></div>
+					<div class="content_category1"><span class="number">카테고리</span></div>
+					<div class="content_code"><span class="number">콘텐츠 코드</span></div>
+					<div class="experience_box"><span class="number">체험 현황</span></div>
+					<div class="experience_num"><span class="number">체험 순위</span></div>
+					<div class="content_date"><span class="number">등록일</span></div>
+					<div class="view_details "><span class="see">보기</span></div>
+					<div class="content_number"><span class="number">No.</span></div>
+					<div class="content_title"><span class="number">콘텐츠명</span></div>
+					<div class="content_type"><span class="number">혜택 종류</span></div>
+					<div class="content_category1"><span class="number">카테고리</span></div>
+					<div class="content_code"><span class="number">콘텐츠 코드</span></div>
+					<div class="experience_box"><span class="number">체험 현황</span></div>
+					<div class="experience_num"><span class="number">체험 순위</span></div>
+					<div class="content_date"><span class="number">등록일</span></div>
+					<div class="view_details "><span class="see">보기</span></div>
+					<div class="content_number"><span class="number">No.</span></div>
+					<div class="content_title"><span class="number">콘텐츠명</span></div>
+					<div class="content_type"><span class="number">혜택 종류</span></div>
+					<div class="content_category1"><span class="number">카테고리</span></div>
+					<div class="content_code"><span class="number">콘텐츠 코드</span></div>
+					<div class="experience_box"><span class="number">체험 현황</span></div>
+					<div class="experience_num"><span class="number">체험 순위</span></div>
+					<div class="content_date"><span class="number">등록일</span></div>
+					<div class="view_details "><span class="see">보기</span></div>
+					<div class="content_number"><span class="number">No.</span></div>
+					<div class="content_title"><span class="number">콘텐츠명</span></div>
+					<div class="content_type"><span class="number">혜택 종류</span></div>
+					<div class="content_category1"><span class="number">카테고리</span></div>
+					<div class="content_code"><span class="number">콘텐츠 코드</span></div>
+					<div class="experience_box"><span class="number">체험 현황</span></div>
+					<div class="experience_num"><span class="number">체험 순위</span></div>
+					<div class="content_date"><span class="number">등록일</span></div>
+					<div class="view_details "><span class="see">보기</span></div>
+					<div class="content_number"><span class="number">No.</span></div>
+					<div class="content_title"><span class="number">콘텐츠명</span></div>
+					<div class="content_type"><span class="number">혜택 종류</span></div>
+					<div class="content_category1"><span class="number">카테고리</span></div>
+					<div class="content_code"><span class="number">콘텐츠 코드</span></div>
+					<div class="experience_box"><span class="number">체험 현황</span></div>
+					<div class="experience_num"><span class="number">체험 순위</span></div>
+					<div class="content_date"><span class="number">등록일</span></div>
+					<div class="view_details "><span class="see">보기</span></div>
+					<div class="content_number"><span class="number">No.</span></div>
+					<div class="content_title"><span class="number">콘텐츠명</span></div>
+					<div class="content_type"><span class="number">혜택 종류</span></div>
+					<div class="content_category1"><span class="number">카테고리</span></div>
+					<div class="content_code"><span class="number">콘텐츠 코드</span></div>
+					<div class="experience_box"><span class="number">체험 현황</span></div>
+					<div class="experience_num"><span class="number">체험 순위</span></div>
+					<div class="content_date"><span class="number">등록일</span></div>
+					<div class="view_details "><span class="see">보기</span></div>
+					<div class="content_number"><span class="number">No.</span></div>
+					<div class="content_title"><span class="number">콘텐츠명</span></div>
+					<div class="content_type"><span class="number">혜택 종류</span></div>
+					<div class="content_category1"><span class="number">카테고리</span></div>
+					<div class="content_code"><span class="number">콘텐츠 코드</span></div>
+					<div class="experience_box"><span class="number">체험 현황</span></div>
+					<div class="experience_num"><span class="number">체험 순위</span></div>
+					<div class="content_date"><span class="number">등록일</span></div>
+					<div class="view_details "><span class="see">보기</span></div>
+					<div class="content_number"><span class="number">No.</span></div>
+					<div class="content_title"><span class="number">콘텐츠명</span></div>
+					<div class="content_type"><span class="number">혜택 종류</span></div>
+					<div class="content_category1"><span class="number">카테고리</span></div>
+					<div class="content_code"><span class="number">콘텐츠 코드</span></div>
+					<div class="experience_box"><span class="number">체험 현황</span></div>
+					<div class="experience_num"><span class="number">체험 순위</span></div>
+					<div class="content_date"><span class="number">등록일</span></div>
+					<div class="view_details "><span class="see">보기</span></div>
+					<div class="content_number"><span class="number">No.</span></div>
+					<div class="content_title"><span class="number">콘텐츠명</span></div>
+					<div class="content_type"><span class="number">혜택 종류</span></div>
+					<div class="content_category1"><span class="number">카테고리</span></div>
+					<div class="content_code"><span class="number">콘텐츠 코드</span></div>
+					<div class="experience_box"><span class="number">체험 현황</span></div>
+					<div class="experience_num"><span class="number">체험 순위</span></div>
+					<div class="content_date"><span class="number">등록일</span></div>
+					<div class="view_details "><span class="see">보기</span></div>
+					<div class="content_number"><span class="number">No.</span></div>
+					<div class="content_title"><span class="number">콘텐츠명</span></div>
+					<div class="content_type"><span class="number">혜택 종류</span></div>
+					<div class="content_category1"><span class="number">카테고리</span></div>
+					<div class="content_code"><span class="number">콘텐츠 코드</span></div>
+					<div class="experience_box"><span class="number">체험 현황</span></div>
+					<div class="experience_num"><span class="number">체험 순위</span></div>
+					<div class="content_date"><span class="number">등록일</span></div>
+					<div class="view_details "><span class="see">보기</span></div>
+				</div>
+			</div>
+		</div>
+		<div class="content_popup">
+			<form method="GET">
+				<div class="con_popup">
+						<span class="store_insert">콘텐츠 등록</span>
+						<img class="store_cancel" src="../skt_admin/img/btn_close@3x.png"/>
+					<div class="store_line"></div>
+					<div class="text_title_box">
+						<span class="text_title">콘텐츠명</span>
+						<input class="text1 con_del" type="text" name="text_title">
+					</div>
+
+					<div class="text_title_box">
+						<span class="text_title">혜택 종류</span>
+						<select class="con_kinds1 con_del" name="con_kinds1">
+							<option value="1">기본혜택</option>
+							<option value="2">추가혜택</option>
+						</select>
+					</div>
+
+					<div class="text_title_box">
+						<span class="text_title con_del">카테고리</span>
+						<select class="text2" name="category">
+							<option value="1">-</option>
+							<option value="2">건강한 우주생활</option>
+						</select>
+					</div>
+
+					<div class="text_title_box">
+						<span class="text_title">콘텐츠 코드</span>
+						<input class="con_kinds2 con_del" type="text" name="con_code">
+					</div>
+
+					<div class="store_insert_box">
+						<button class="insert_but"><span>등록</span></button>
+					</div>
+				</div>
+			</form>
+		</div>
+		
+		<div class="content_popup1">
+			<form method="GET">
+				<div class="con_popup1">
+					<span class="store_insert">콘텐츠 수정</span>
+					<img class="store_cancel1" src="../skt_admin/img/btn_close@3x.png"/>
+					<div class="store_line"></div>
+					<div class="text_title_box">
+						<span class="text_title">콘텐츠명</span>
+						<input class="text1" type="text" name="text_title">
+					</div>
+
+					<div class="text_title_box">
+						<span class="text_title">혜택 종류</span>
+						<select class="con_kinds1" name="con_kinds1">
+							<option value="1">기본혜택</option>
+							<option value="2" >추가혜택</option>
+						</select>
+					</div>
+
+					<div class="text_title_box">
+						<span class="text_title">카테고리</span>
+						<select class="text2" name="category">
+							<option value="1">-</option>
+							<option value="2">건강한 우주생활</option>
+						</select>
+					</div>
+
+					<div class="text_title_box">
+						<span class="text_title">콘텐츠 코드</span>
+						<input class="con_kinds2" type="text" name="con_code">
+					</div>
+
+					<div class="store_insert_box">
+						<button class="content_del"><span>삭제</span></button>
+						<button class="insert_but1"><span>수정완료</span></button>
+					</div>
+				</div>
+			</form>
+		</div>
+		<!-- 상세보기 팝업 수정버튼 팝업 -->
+	</div>
+</body>
+</html>

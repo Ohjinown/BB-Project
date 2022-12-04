@@ -1,0 +1,122 @@
+@import url(reset.css);
+.logo {
+	width: 240px;
+	height: 80px;
+	object-fit: contain;
+	background-color: black;
+}
+.logo_img {
+	width: 80px;
+	height: 40px;
+	margin: 20px 0 0 40px;
+}
+.siderbar {
+	width: 240px;
+	height: 60px;
+	margin: 0 40px 0 0;
+	background-color: #fff;
+	position: relative;
+}
+a:link {
+	text-decoration: none;
+}
+#asd {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: hotpink;
+    color: white;
+    width: 300px;
+    height: 100vh;
+    text-align: center;
+}
+.sidebar_text {
+	width: 80px;
+	height: 24px;
+	margin: 18px 0 0 40px;
+	font-family: NotoSansKR;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 1.5;
+	float: left;
+	color: #000;
+}
+.dashboard {
+	width: 240px;
+	height: 60px;
+
+}
+.store {
+	width: 240px;
+	height: 60px;
+
+}
+.content {
+	width: 240px;
+	height: 60px;
+
+}
+.equipment {
+	width: 240px;
+	height: 60px;
+
+}
+.system {
+	width: 240px;
+	height: 60px;
+
+}
+li {
+	color: #000;
+}
+.sidebar_line {
+	width: 240px;
+	height: 1px;
+	background-color:#e5e5e5;
+}
+/* .sidebar_text {
+	width: 80px;
+	height: 24px;
+	font-family: NotoSansCJKKR;
+	font-size: 16px;
+	font-weight: normal;
+	color: #000;
+	display: inline-block;
+	margin: 18px 0px 18px 10px;
+} */
+/* .system a{cursor:pointer;}
+.system .hide{display:none;} */
+.ul_div1 {
+	float: left;
+	width: 240px;
+	height: 50px;
+}
+.li_img1 {
+	float: left;
+	width: 8px;
+	height: 8px;
+	margin: 28px 10px 0px  40px;
+	object-fit: contain;
+}
+.side_li1 {
+	float: left;
+	margin: 20px 0 0;
+	text-align: center;
+}
+.ul_div2 {
+	width: 240px;
+	height: 50px;
+}
+.li_img2 {
+	float: left;
+	width: 8px;
+	height: 8px;
+	margin: 28px 10px 0px  40px;
+	object-fit: contain;
+}
+.side_li2 {
+	float: left;
+	margin: 20px 0 0 0;
+	text-align: center;
+}

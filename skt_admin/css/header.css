@@ -1,0 +1,24 @@
+.header_box {
+	width: 1920px;
+    height: 80px;
+}
+
+.header_admin {
+	width: 90px;
+	height: 24px;
+	margin: 8px 20px 8px 1625px;
+	font-family: NotoSansKR;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #fff;
+	float: right;
+	margin: 28px 20px 0 0;
+	/* position: absolute; */
+}
+.header_img {
+	width: 40px;
+	height: 40px;
+	margin: 20px 40px 0 0;
+	object-fit: contain;  
+	float: right;
+}

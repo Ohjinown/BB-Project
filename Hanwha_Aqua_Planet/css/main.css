@@ -1,0 +1,1769 @@
+@import url(reset.css);
+@font-face {
+    font-family: NotoSansKR-Regular;
+    src: url(../font/NotoSansKR-Regular.otf);
+}
+
+@font-face {
+    font-family: NotoSansKR-Bold;
+    src: url(../font/NotoSansKR-Bold.otf);
+}
+
+/* main.css */
+/* 한화 아쿠아플라넷 여수 웹페이지 */
+
+*{-webkit-text-size-adjust: none;}
+
+/* common */
+body{
+    background-color: #fff;
+    color: #444B66;
+    font-family:  NotoSansKR-Bold, Arial, sans-serif;
+    font-size: 1.4rem; /* 14px 기준 */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+a{
+  text-decoration: none;
+}
+
+/* 모바일 */
+@media screen and (max-width: 639px){
+
+a {
+	
+}
+
+html{
+    width: 100%;
+    height: 100%;
+    font-size: 2.667vw; /* 모바일(375) 10px 기준 */
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* layout */
+div#wrap{
+  margin: 0 auto;
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  max-width: 640px;
+}
+
+div#container{
+margin: 0 auto;
+position: relative;
+width: 100%;
+/* height: auto; */
+text-align: center;
+max-width: 640px;
+overflow: hidden;
+}
+
+div#container::after{
+content: "";
+display: block;
+clear: both;
+z-index: -1;
+position: absolute;
+width: 100%;
+height: 314.933vw; /* 1181px */
+left: 0;
+top: 0;
+background: url(../img/img_bg01.png) no-repeat 0 0;
+background-size: contain;
+}
+
+div#container::before{
+content: "";
+display: block;
+clear: both;
+z-index: -1;
+position: absolute;
+width: 100%;
+height: 204.533vw;
+left: 0;
+bottom: 0;
+background: url(../img/img_bg02.png) no-repeat 0 0;
+background-size: contain;
+}
+
+/* 메인 이미지 */
+article.main_title{
+  position: relative;
+  left: 0;
+  width: 100%;
+  /* overflow: hidden; */
+}
+
+div.main_copy{
+  width: 100%;
+  height: 100%;
+}
+
+div.banner_wrap{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+div>div.banner_frame{
+  width: 300%;
+  position: relative;
+}
+
+div>div.banner_frame::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+div>div.banner_frame>div{
+  float: left;
+  width: 33.333%;
+  height: 66.667vw;
+  background: url(../img/img_banner01.png) no-repeat 0 0;
+  background-size: contain;
+  background-position: center;
+  text-indent: -9999px;
+}
+
+/* 배너 버튼 */
+div.banner_roll{
+  position: absolute;
+  width: 100%;
+}
+
+div.banner_roll>ul{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 4.267vw;
+  width: 54px;
+  height: 10px;
+  text-indent: -9999px;
+}
+
+
+div.banner_roll>ul>li{
+  float: left;
+  padding: 0 6px; /* 간격은 12px / 6씩으로 계산 */
+  box-sizing: border-box;
+}
+
+div.banner_roll>ul>li:nth-of-type(1){
+  padding-left: 0;
+}
+
+div.banner_roll>ul>li:nth-of-type(3){
+  padding-right: 0;
+}
+
+/* 
+div.banner_roll>ul>li:nth-of-type(1){
+  transform: translate(-5.867vw);
+}
+
+div.banner_roll>ul>li:nth-of-type(3){
+  transform: translate(5.867vw);
+} */
+
+div.banner_roll>ul>li>a{
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+}
+div.banner_roll>ul>li>a.on{
+  background-color: #fff;
+}
+
+/* 홈페이지 이동 버튼 */
+div.btn_homepage{
+  z-index: 9999;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 21.333vw;
+  background: #0088CA;
+  box-shadow: 0px -8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn_homepage>a{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  padding: 2.667vw 4.267vw;
+  box-sizing: border-box;
+}
+
+.btn_homepage>a>div{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+a>div>p.img_logo{
+  width: 17.067vw;
+  height: 17.067vw;
+  background: url(../img/img_logo.svg) no-repeat 0 0;
+  background-size: contain;
+  text-indent: -9999px;
+  overflow: hidden;
+  max-width: 72px;
+  max-height: 72px;
+}
+
+a>div>p.homepage_txt{
+  padding-left: 3.2vw;
+  color: #fff;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  box-sizing: border-box;
+}
+
+a>div>p.homepage_txt>span{
+  display: block;
+  padding-top: 1.067vw;
+  box-sizing: border-box;
+  font-family: NotoSansKR-Regular;
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+}
+
+/* 컨텐츠 시작 / 컨텐츠 감싸기 */
+div.contents_wrap{
+  position: relative;
+  top: 3.733vw;
+  width: 100%;
+  /* padding: 0 5.333vw; */ /* 컨텐츠 여백 조정 */
+}
+
+/* 컨텐츠 타이틀 공통사항 */
+/* 각 아티클 공통 */
+div.contents_wrap>article{
+  position: relative;
+  padding: 0 5.333vw; /* 패딩 여백 조정 */
+  padding-bottom: 12.8vw;
+  /* border: 0.267vw solid green; */
+  box-sizing: border-box;
+}
+
+div.contents_wrap>article:nth-of-type(1){
+  /* padding-right: 0;
+  padding-left: 0; */
+  padding: 0 2.667vw 12.8vw;
+}
+
+div.contents_wrap>article:last-of-type{
+  padding-bottom: 44.8vw;
+}
+
+article>div.content_title{
+  position: relative;
+  width: 100%;
+}
+
+article>div.content_inner{
+  padding-top: 6.4vw;
+  box-sizing: border-box;
+}
+
+div>.content_copy1{
+  padding-bottom: 1.067vw;
+  font-family: NotoSansKR-Regular;
+  line-height: 2.2rem;
+  box-sizing: border-box;
+}
+
+div>.content_copy2{
+  margin: 0 auto;
+  width: 69.333vw;
+  height: 10.667vw;
+  text-align: center;
+  background: linear-gradient(180deg, #9FA8FB -25%, #6573EE 116.5%);
+  border-radius: 13.333vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+div>.content_copy2>span{
+  width: 8.533vw;
+  height: 8.533vw;
+  background: url(../img/icn_title1.svg) no-repeat 0 0;
+  background-size: contain;
+  text-indent: -9999px;
+  overflow: hidden;
+  /* max-width: 40px; */
+}
+
+/* 아이콘 이미지 변경 */
+.content_copy2>span.title_icn2{
+  background: url(../img/icn_title2.svg) no-repeat 0 0;
+  background-size: contain;
+}
+
+.content_copy2>span.title_icn3{
+  background: url(../img/icn_title3.svg) no-repeat 0 0;
+  background-size: contain;
+}
+
+.content_copy2>span.title_icn4{
+  background: url(../img/icn_title4.svg) no-repeat 0 0;
+  background-size: contain;
+}
+
+div>.content_copy2>p{
+  padding-left: 1.067vw;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
+/* 마지막 타이틀 패딩 없애기 */
+div.content_last>div>p{
+  padding-left: 0; 
+}
+
+/* 1.프로모션가 구매하기 */
+div.coupon_inner{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+article>div.coupon_inner>ul{
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.coupon_inner>ul>li{
+  /* padding: 0 2.667vw;  *//* 중간 간격 조정 */
+  margin: 0 auto;
+  position: relative;
+}
+
+.coupon_inner>ul>li:nth-of-type(n+3){
+  padding-top: 3.467vw;
+  box-sizing: border-box;
+}
+
+div.coupon_inner>ul>li>a{
+  display: inline-block;
+  width: 42.933vw;
+  height: 21.333vw;
+  background: url(../img/img_coupon1.svg) no-repeat 0 0;
+  background-size: contain;
+  text-indent: -9999px;
+  overflow: hidden;
+  box-shadow: 4px 4px 4px rgba(0,0,0,0.5);
+  box-sizing: border-box;
+  /* max-width: 161px; */
+}
+
+div>ul>li>a.img_coupon2{
+  background: url(../img/img_coupon2.svg) no-repeat 0 0;
+  background-size: contain;
+}
+
+div>ul>li>a.img_coupon3{
+  background: url(../img/img_coupon3.svg) no-repeat 0 0;
+  background-size: contain;
+}
+
+div>ul>li>a.img_coupon4{
+  background: url(../img/img_coupon4.svg) no-repeat 0 0;
+  background-size: contain;
+}
+
+
+/* 2.여수여행 코스 추천 */
+/* article.course_wrap{
+}
+ */
+div.course_inner{
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.course_inner>img{
+  text-align: center;
+  width: 89.333vw;
+  height: 90.667vw;
+  object-fit: contain;
+  max-width: 592px;
+}
+
+/* 3.아쿠아플라넷 여수 미리보기 */
+.img_wrap{
+  /* display: none; */
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.img_wrap>ul{
+  width: 100%;
+  position: relative;
+  display: table;
+}
+
+.img_wrap>ul>li{
+  display: inline-block;
+  width: 42.4vw;
+  height: 42.4vw;
+  max-width: 286px;
+}
+
+
+.img_wrap>ul>li:first-of-type{
+  float: left;
+}
+
+.img_wrap>ul>li:last-of-type{
+  float: right;
+}
+
+.img_wrap>img{
+  width: 100%;
+  object-fit: contain;
+  border: 0.1rem solid green;
+  box-sizing: border-box;
+}
+
+/* 상세더보기 버튼 */
+.btn_more{
+  width: 89.333vw;
+  height: 12.8vw;
+  color: #444B66;
+  font-family: NotoSansKR-Bold;
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  border: none;
+  background: transparent;
+}
+.btn_more::after{
+  content: "";
+  display: inline-block;
+  clear: both;
+  width: 4.267vw;
+  height: 4.267vw;
+  padding-left: 2.133vw;
+  vertical-align: middle;
+  background: url(../img/icn_dropdown.svg) no-repeat 100% 100%;
+}
+.show {
+  width: 89.333vw;
+  height: 12.8vw;
+  color: #444B66;
+  font-family: NotoSansKR-Bold;
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  border: none;
+  background: transparent;
+}
+
+.show::after{
+  content: "";
+  display: inline-block;
+  clear: both;
+  width: 4.267vw;
+  height: 4.267vw;
+  padding-left: 2.133vw;
+  vertical-align: middle;
+  background: url(../img/icn_dropdown.svg) no-repeat 100% 0;
+}
+.btn_more.on::after{
+  content: "";
+  display: inline-block;
+  clear: both;
+  width: 4.267vw;
+  height: 4.267vw;
+  padding-left: 2.133vw;
+  vertical-align: middle;
+  background: url(../img/icn_dropdown.svg) no-repeat 100% 100%;
+}
+
+/* 아쿠아리움 상세설명 */
+.preview_inner{
+  display: none;
+}
+
+div.aquarium{
+  width: 100%;
+}
+
+.aqua_title{
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.aqua_title>p.num,.museum_title>p.num{
+  position: relative;
+  color: #6573EE;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+}
+
+/* 번호 양쪽 라인 */
+p.num::after{
+  position: absolute;
+  left: 0;
+  top: 4.267vw;
+  content: "";
+  display: block;
+  clear: both;
+  width: 37.333vw;
+  border-top: 1px solid #6573EE;
+  box-sizing: border-box;
+}
+
+p.num::before{
+  position: absolute;
+  right: 0;
+  top: 4.267vw;
+  content: "";
+  display: block;
+  clear: both;
+  width: 37.333vw;
+  border-top: 1px solid #6573EE;
+  box-sizing: border-box;
+}
+
+p.aqua_copy{
+  margin: 2.667vw auto 0;
+  width: 42.4vw;
+  height: 7.467vw;
+  background: url(../img/img_sub_title1.svg) no-repeat 0 0;
+  background-position: center;
+  background-size: contain;
+  text-indent: -9999px;
+}
+
+/* 오션라이프 */
+.ocean_wrap, .marin_wrap{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 6.4vw 0;
+  box-sizing: border-box;
+}
+
+.ocean_wrap{
+  padding-bottom: 0;
+}
+
+.ocean_wrap>p, .marin_wrap>p, .forest_wrap{
+  line-height: 2.2rem;
+}
+.ocean_wrap>span, .marin_wrap>span, .forest_wrap>span{
+  display: block;
+  padding-top: 1.067vw;
+  font-family: NotoSansKR-Regular;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+/* .ocean_wrap>p>span, .marin_wrap>p>span, .forest_wrap>p>span{
+  display: block;
+  padding-top: 1.067vw;
+  font-family: NotoSansKR-Regular;
+  font-size: 1.2rem;
+  line-height: 2rem;
+} */
+
+/* 오션라이프 이미지 시작 / 공통사항(뮤지움 오브 컬러즈까지) */
+div.p_img_wrap{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-top: 3.467vw;
+  box-sizing: border-box;
+}
+
+div.img_start{
+  position: relative;
+  width: 100%;
+  height: 39.467vw;
+}
+
+div.img_interval{
+  position: relative;
+  width: 100%;
+  height: 39.467vw;
+  padding-top: 3.467vw;
+}
+
+div.right>div{
+  float: left;
+  width: 42.4vw;
+  height: 100%;
+}
+
+div.right>div:last-of-type{
+  float: right;
+}
+
+div.img_full{
+  width: 100%;
+  height: 100%;
+}
+
+div.ocean_bottom>div:first-of-type,
+div.marin_top>div:last-of-type,
+div.forest_bottom>div:first-of-type{
+  width: 30.4vw;
+  object-fit: contain;
+}
+
+div.ocean_bottom>div:last-of-type,
+div.marin_top>div:first-of-type,
+div.forest_bottom>div:last-of-type{
+  width: 54.4vw;
+}
+
+div.p_img_wrap>div>div>img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* 뮤지움 오브 컬러 */
+div.museum{
+  clear: both;
+  width: 100%;
+  position: relative;
+  padding-top: 6.4vw;
+  box-sizing: border-box;
+}
+
+p.museum_copy1{
+  margin: 2.667vw auto 0;
+  width: 50.133vw;
+  height: 13.867vw;
+  background: url(../img/img_sub_title2.svg) no-repeat 0 0;
+  background-position: center;
+  background-size: contain;
+  text-indent: -9999px;
+}
+
+p.museum_copy2{
+  padding-top: 2.667vw;
+  font-family: NotoSansKR-Regular;
+  line-height: 2.2rem;
+}
+
+p.museum_copy2>span{
+  display: block;
+  margin: 2px auto 0;
+  width: 48.267vw;
+  height: 6.933vw;
+  background: url(../img/img_color_txt.svg) no-repeat 0 0;
+  background-position: center;
+  background-size: contain;
+  text-indent: -9999px;
+}
+
+p.museum_copy3{
+  font-family: NotoSansKR-Regular;
+  padding-top: 2.667vw;
+  box-sizing: border-box;
+}
+
+p.museum_copy3>span{
+  display: block;
+  padding-top: 1.067vw;
+  font-size: 1rem;
+  line-height: 1.8rem;
+  box-sizing: border-box;
+}
+
+/* 전시정보, 오디오가이드 버튼 */
+.btn_preview{
+  width: 100%;
+  padding-top: 12.8vw;
+}
+
+.btn_preview>div{
+  width: 100%;
+}
+
+.btn_preview>div>a{
+  display: block;
+  width: 100%;
+  height: 13.867vw;
+  padding: 4vw 3.2vw;
+  color: #6573EE;
+  font-family: NotoSansKR-Regular;
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  border-radius: 5px;
+  border: 0.1rem solid #6573EE;
+  box-sizing: border-box;
+}
+
+.btn_preview>div>a:hover,.btn_preview>div>a:focus{
+  color: #fff;
+  font-family: NotoSansKR-Bold;
+  background: #6573EE;
+  border: none;
+}
+
+.btn_preview>div:last-of-type{
+  padding-top: 3.2vw;
+}
+
+/* 아쿠아플라넷 생생후기 / 스와이프 */
+div.review_inner{
+  width: 100%;
+}
+
+div.swiper{
+  width: 100%;
+}
+
+div.swiper-wrapper{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+div.swiper-slide{
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-wrapper>div:nth-of-type(2){
+  padding: 0 13px;
+}
+
+div.swiper-slide>p{
+  width: 58.4vw;
+  height: 84.8vw;
+  background: url(../img/img_review1.png) no-repeat 0 0;
+  text-indent: -9999px;
+  overflow: hidden;
+  background-size: contain;
+}
+
+div.review2>p{
+  background: url(../img/img_review2.png) no-repeat 0 0;
+  background-size: contain;
+}
+
+div.review3>p{
+  background: url(../img/img_review3.png) no-repeat 0 0;
+  background-size: contain;
+}
+
+/* 단독 특가 링크 공유하기 */
+.share_wrap{
+  width: 100%;
+}
+
+.share_wrap>div>.content_copy1{
+  font-family: NotoSansKR-Bold;
+}
+
+.share_wrap>div>.content_copy2{
+  background: linear-gradient(180deg, #D6A1FF -39.53%, #6573EE 92.5%);
+}
+
+ul.share_list{
+  width: 100%;
+  /* padding-bottom: 48px; */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+ul.share_list>li{
+  padding-right: 5.333vw;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
+ul.share_list>li:last-of-type{
+  padding-right: 0;
+}
+
+ul.share_list>li>a{
+  display: block;
+  width: 14.933vw;
+  height: 14.933vw;
+  background: url(../img/icn_url.svg) no-repeat 0 0;
+  background-size: contain;
+}
+
+ul.share_list>li:nth-of-type(2)>a{
+  background: url(../img/icn_facebook.svg) no-repeat 0 0;
+  background-size: contain;
+}
+
+ul.share_list>li:nth-of-type(3)>a{
+  background: url(../img/icn_kakao.svg) no-repeat 0 0;
+  background-size: contain;
+}
+
+ul.share_list>li:nth-of-type(4)>a{
+  background: url(../img/icn_twitter.svg) no-repeat 0 0;
+  background-size: contain;
+}
+
+.navigation_bar {
+  cursor: pointer;
+  height: 2px;
+  width: 30.3%;
+  background-color: rgba(68, 75, 102, 0.2);
+  display: inline-block;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+/*슬라이드 css*/
+/*custom*/
+.flex {
+  display: flex;
+}
+
+
+.box {}
+
+/* slide css */
+.slide-wrap {
+  overflow:hidden;
+}
+.slide-draggable {
+	width:100%;
+  height: 100%;
+}
+.slide-draggable > .item{
+  flex-shrink: 0;
+  width: 80%;
+  height: 100%;
+}
+.slide-draggable > .item > div {}
+.slide-draggable > .item > div > img {width:100%;}
+.paddingright {padding-right:2.0rem;}
+.paddingleft {padding-left:2.0rem;}
+.marginleft {margin-left:-5%;}
+						
+
+}
+
+
+/* 데스크탑 */
+@media screen and (min-width: 640px) {
+  * {box-sizing: border-box}
+/* body {font-family: Verdana, sans-serif; margin:0}
+img {vertical-align: middle;} */
+
+/* Slideshow container */
+#slide {
+  width: 100%;
+  position: relative;
+}
+/* The dots/bullets/indicators */
+.navigation_bar {
+  cursor: pointer;
+  height: 2px;
+  width: 30.3%;
+  background-color: rgba(68, 75, 102, 0.2);
+  display: inline-block;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+  html{
+    width: 100%;
+    height: 100%;
+    font-size: 0.54vw; /*PC(1920) 10기준*/
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* layout */
+div#wrap{
+  margin: 0 auto;
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  max-width: 640px;
+}
+
+div#container{
+margin: 0 auto;
+position: relative;
+width: 100%;
+/* height: auto; */
+text-align: center;
+max-width: 640px;
+overflow: hidden;
+}
+
+div#container::after{
+content: "";
+display: block;
+clear: both;
+z-index: -1;
+position: absolute;
+width: 100%;
+height: 314.933vw; /* 1181px */
+left: 0;
+top: 0;
+background: url(../img/img_bg01.png) no-repeat 0 0;
+background-size: contain;
+}
+
+div#container::before{
+content: "";
+display: block;
+clear: both;
+z-index: -1;
+position: absolute;
+width: 100%;
+height: 1314px;
+left: 0;
+bottom: 0;
+background: url(../img/img_bg02.png) no-repeat 0 0;
+background-size: contain;
+}
+
+/* 메인 이미지 */
+article.main_title{
+  position: relative;
+  left: 0;
+  width: 100%;
+  /* overflow: hidden; */
+}
+
+div.main_copy{
+  width: 100%;
+  height: 100%;
+}
+
+div.banner_wrap{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+div>div.banner_frame{
+  width: 300%;
+  position: relative;
+}
+
+div>div.banner_frame::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+div>div.banner_frame>div{
+  float: left;
+  width: 33.333%;
+  height: 66.667vw;
+  background: url(../img/img_banner01.png) no-repeat 0 0;
+  background-size: contain;
+  background-position: center;
+  text-indent: -9999px;
+}
+
+/* 배너 버튼 */
+div.banner_roll{
+  position: absolute;
+  width: 100%;
+}
+
+div.banner_roll>ul{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 4.267vw;
+  width: 54px;
+  height: 10px;
+  text-indent: -9999px;
+}
+
+
+div.banner_roll>ul>li{
+  float: left;
+  padding: 0 6px; /* 간격은 12px / 6씩으로 계산 */
+  box-sizing: border-box;
+}
+
+div.banner_roll>ul>li:nth-of-type(1){
+  padding-left: 0;
+}
+
+div.banner_roll>ul>li:nth-of-type(3){
+  padding-right: 0;
+}
+
+/* 
+div.banner_roll>ul>li:nth-of-type(1){
+  transform: translate(-5.867vw);
+}
+
+div.banner_roll>ul>li:nth-of-type(3){
+  transform: translate(5.867vw);
+} */
+
+div.banner_roll>ul>li>a{
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+}
+
+div.banner_roll>ul>li>a.on{
+  background-color: #fff;
+}
+
+/* 홈페이지 이동 버튼 */
+div.btn_homepage{
+  z-index: 9999;
+  position: fixed;
+  bottom: 0;
+  max-width: 640px;
+  width: 100%;
+  /* height: 21.333vw; */
+  height: 96px;
+  background: #0088CA;
+  box-shadow: 0px -8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn_homepage>a{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  padding: 12px 0;
+  box-sizing: border-box;
+}
+
+.btn_homepage>a>div{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+a>div>p.img_logo{
+  width: 72px;
+  height: 72px;
+  background: url(../img/img_logo.svg) no-repeat 0 0;
+  background-size: contain;
+  text-indent: -9999px;
+  overflow: hidden;
+  /* max-width: 72px;
+  max-height: 72px; */
+}
+
+a>div>p.homepage_txt{
+  padding-left: 12px;
+  color: #fff;
+  font-size: 24px;
+  line-height: 1.33;
+  box-sizing: border-box;
+  font-family: NotoSansKR-Bold;
+}
+
+a>div>p.homepage_txt>span{
+  display: block;
+  padding-top: 4px;
+  box-sizing: border-box;
+  font-family: NotoSansKR-Regular;
+  font-size: 18px;
+  line-height: 1;
+}
+
+/* 컨텐츠 시작 / 컨텐츠 감싸기 */
+div.contents_wrap{
+  position: relative;
+  top: 14px;
+  width: 100%;
+  /* padding: 0 5.333vw; */ /* 컨텐츠 여백 조정 */
+}
+
+/* 컨텐츠 타이틀 공통사항 */
+/* 각 아티클 공통 */
+div.contents_wrap>article{
+  position: relative;
+  padding: 0 24px 60px; /* 패딩 여백 조정 */
+  /* border: 0.267vw solid green; */
+  box-sizing: border-box;
+}
+
+div.contents_wrap>article:nth-of-type(1){
+  /* padding-right: 0;
+  padding-left: 0; */
+  padding: 0 14px 60px;
+}
+
+div.contents_wrap>article:last-of-type{
+  padding-bottom: 362px;
+}
+
+article>div.content_title{
+  position: relative;
+  width: 100%;
+}
+
+article>div.content_inner{
+  padding-top: 32px;
+  box-sizing: border-box;
+}
+
+div>.content_copy1{
+  padding-bottom: 4px;
+  font-family: NotoSansKR-Regular;
+  font-size: 18px;
+  line-height: 1.44;
+  box-sizing: border-box;
+}
+
+div>.content_copy2{
+  margin: 0 auto;
+  width: 360px;
+  height: 52px;
+  text-align: center;
+  background: linear-gradient(180deg, #9FA8FB -25%, #6573EE 116.5%);
+  border-radius: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+div>.content_copy2>span{
+  width: 41px;
+  height: 40px;
+  background: url(../img/icn_title1.svg) no-repeat 0 0;
+  background-size: contain;
+  text-indent: -9999px;
+  overflow: hidden;
+  /* max-width: 40px; */
+}
+
+/* 아이콘 이미지 변경 */
+.content_copy2>span.title_icn2{
+  background: url(../img/icn_title2.svg) no-repeat 0 0;
+  background-size: contain;
+}
+
+.content_copy2>span.title_icn3{
+  background: url(../img/icn_title3.svg) no-repeat 0 0;
+  background-size: contain;
+}
+
+.content_copy2>span.title_icn4{
+  background: url(../img/icn_title4.svg) no-repeat 0 0;
+  background-size: contain;
+}
+
+div>.content_copy2>p{
+  padding-left: 4px;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 20px;
+  line-height: 1.4;
+  font-family: NotoSansKR-Bold;
+}
+
+/* 마지막 타이틀 패딩 없애기 */
+div.content_last>div>p{
+  padding-left: 0; 
+}
+
+/* 1.프로모션가 구매하기 */
+div.coupon_inner{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+article>div.coupon_inner>ul{
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.coupon_inner>ul>li{
+  /* padding: 0 2.667vw;  *//* 중간 간격 조정 */
+  margin: 0 auto;
+  position: relative;
+}
+
+.coupon_inner>ul>li:nth-of-type(n+3){
+  padding-top: 20px;
+  box-sizing: border-box;
+}
+
+div.coupon_inner>ul>li>a{
+  display: inline-block;
+  width: 286px;
+  height: 142px;
+  background: url(../img/img_coupon1.svg) no-repeat 0 0;
+  background-size: contain;
+  text-indent: -9999px;
+  overflow: hidden;
+  box-shadow: 4px 4px 4px rgba(0,0,0,0.5);
+  box-sizing: border-box;
+  /* max-width: 161px; */
+}
+
+div>ul>li>a.img_coupon2{
+  background: url(../img/img_coupon2.svg) no-repeat 0 0;
+  background-size: contain;
+}
+
+div>ul>li>a.img_coupon3{
+  background: url(../img/img_coupon3.svg) no-repeat 0 0;
+  background-size: contain;
+}
+
+div>ul>li>a.img_coupon4{
+  background: url(../img/img_coupon4.svg) no-repeat 0 0;
+  background-size: contain;
+}
+
+
+/* 2.여수여행 코스 추천 */
+/* article.course_wrap{
+}
+ */
+div.course_inner{
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.course_inner>img{
+  text-align: center;
+  height: 601px;
+  object-fit: contain;
+  max-width: 592px;
+}
+
+/* 3.아쿠아플라넷 여수 미리보기 */
+.img_wrap{
+  /* display: none; */
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.img_wrap>ul{
+  width: 100%;
+  position: relative;
+  display: table;
+}
+
+.img_wrap>ul>li{
+  display: inline-block;
+  width: 286px;
+  height: 286px;
+  max-width: 286px;
+}
+
+
+.img_wrap>ul>li:first-of-type{
+  float: left;
+}
+
+.img_wrap>ul>li:last-of-type{
+  float: right;
+}
+
+.img_wrap>img{
+  width: 100%;
+  object-fit: contain;
+  border: 0.1rem solid green;
+  box-sizing: border-box;
+}
+
+/* 상세더보기 버튼 */
+.btn_more{
+  width: 100%;
+  height: 100%;
+  color: #444B66;
+  font-family: NotoSansKR-Bold;
+  /* font-size: 1.4rem;
+  line-height: 2.2rem; */
+  border: none;
+  background: transparent;
+}
+.show{
+  width: 100%;
+  height: 100%;
+  color: #444B66;
+  font-family: NotoSansKR-Bold;
+  /* font-size: 1.4rem;
+  line-height: 2.2rem; */
+  border: none;
+  background: transparent;
+}
+.btn_more > span {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  font-size: 18px;
+  line-height: 1.44;
+  padding: 16px 0 ;
+  cursor: pointer;
+}
+.show > span {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  font-size: 18px;
+  line-height: 1.44;
+  padding: 16px 0 ;
+  cursor: pointer;
+}
+.btn_more::after{
+  content: "";
+  display: inline-block;
+  clear: both;
+  width: 17px;
+  height: 16px;
+  padding-left: 8px;
+  background: url(../img/icn_dropdown.svg) no-repeat 100% 100%;
+}
+.show::after{
+  content: "";
+  display: inline-block;
+  clear: both;
+  width: 17px;
+  height: 16px;
+  padding-left: 8px;
+  background: url(../img/icn_dropdown.svg) no-repeat 100% 0;
+}
+
+/* 아쿠아리움 상세설명 */
+.preview_inner{
+  display: none;
+}
+
+div.aquarium{
+  width: 100%;
+}
+
+.aqua_title{
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.aqua_title>p.num,.museum_title>p.num{
+  position: relative;
+  color: #6573EE;
+  font-size: 32px;
+  line-height: 40px;
+}
+
+/* 번호 양쪽 라인 */
+p.num::after{
+  position: absolute;
+  left: 0;
+  top: 19px;
+  content: "";
+  display: block;
+  clear: both;
+  width: 257px;
+  border-top: 1px solid #6573EE;
+  box-sizing: border-box;
+}
+
+p.num::before{
+  position: absolute;
+  right: 0;
+  top: 19px;
+  content: "";
+  display: block;
+  clear: both;
+  width: 257px;
+  border-top: 1px solid #6573EE;
+  box-sizing: border-box;
+}
+
+p.aqua_copy{
+  margin: 13px auto 0;
+  width: 198px;
+  height: 35px;
+  background: url(../img/img_sub_title1.svg) no-repeat 0 0;
+  background-position: center;
+  background-size: contain;
+  text-indent: -9999px;
+}
+
+/* 오션라이프 */
+.ocean_wrap{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 28px 0;
+  box-sizing: border-box;
+}
+/* marin_wrap */
+.marin_wrap{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 32px 0;
+  box-sizing: border-box;
+}
+.ocean_wrap{
+  padding-bottom: 0;
+}
+
+.ocean_wrap>p, .marin_wrap>p, .forest_wrap>p{
+  line-height: 1.44;
+  font-family: NotoSansKR-Bold;
+  font-size: 18px;
+}
+.ocean_wrap>span, .marin_wrap>span, .forest_wrap>span{
+  display: block;
+  padding-top: 4px;
+  font-family: NotoSansKR-Regular;
+  font-size: 16px;
+  line-height: 1.5;
+}
+/* .ocean_wrap>p>span, .marin_wrap>p>span, .forest_wrap>p>span{
+  display: block;
+  padding-top: 4px;
+  font-family: NotoSansKR-Bold;
+  font-size: 1.2rem;
+  line-height: 2rem;
+} */
+
+/* 오션라이프 이미지 시작 / 공통사항(뮤지움 오브 컬러즈까지) */
+div.p_img_wrap{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-top: 20px;
+  box-sizing: border-box;
+}
+
+div.img_start{
+  position: relative;
+  width: 100%;
+  height: 263px;
+}
+
+div.img_interval{
+  position: relative;
+  width: 100%;
+  height: 263px;
+  padding-top: 17px;
+}
+.marin_wrap > div > .img_interval, .forest_wrap > div > .img_interval, .museum > div > .img_interval {
+  padding-top: 20px;
+}
+div.right>div{
+  float: left;
+  width: 286px;
+  height: 100%;
+}
+
+div.right>div:last-of-type{
+  float: right;
+}
+
+div.img_full{
+  width: 100%;
+  height: 100%;
+}
+
+div.ocean_bottom>div:first-of-type,
+div.marin_top>div:last-of-type,
+div.forest_bottom>div:first-of-type{
+  width: 206px;
+  object-fit: contain;
+}
+
+div.ocean_bottom>div:last-of-type,
+div.marin_top>div:first-of-type,
+div.forest_bottom>div:last-of-type{
+  width: 366px;
+}
+
+div.p_img_wrap>div>div>img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 뮤지움 오브 컬러 */
+div.museum{
+  clear: both;
+  width: 100%;
+  position: relative;
+  padding-top: 32px;
+  box-sizing: border-box;
+}
+
+p.museum_copy1{
+  margin: 13px auto 0;
+  width: 234px;
+  height: 65px;
+  background: url(../img/img_sub_title2.svg) no-repeat 0 0;
+  background-position: center;
+  background-size: contain;
+  text-indent: -9999px;
+}
+
+p.museum_copy2{
+  padding-top: 10px;
+  font-family: NotoSansKR-Regular;
+  line-height: 1.44;
+  font-size: 18px;
+}
+
+p.museum_copy2>span{
+  display: block;
+  margin: 1px auto 0;
+  width: 231px;
+  height: 34px;
+  background: url(../img/img_color_txt.svg) no-repeat 0 0;
+  background-position: center;
+  background-size: contain;
+  text-indent: -9999px;
+}
+
+p.museum_copy3{
+  font-family: NotoSansKR-Regular;
+  padding-top: 11px;
+  box-sizing: border-box;
+  font-size: 18px;
+  line-height: 1.44;
+}
+
+p.museum_copy3>span{
+  display: block;
+  padding-top: 4px;
+  font-size: 14px;
+  line-height: 1.57;
+  box-sizing: border-box;
+}
+
+/* 전시정보, 오디오가이드 버튼 */
+.btn_preview{
+  width: 100%;
+  padding-top: 60px;
+}
+
+.btn_preview>div{
+  width: 100%;
+}
+
+.btn_preview>div>a{
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 17px 12px;
+  color: #6573EE;
+  font-family: NotoSansKR-Regular;
+  font-size: 18px;
+  line-height: 1.44;
+  border-radius: 5px;
+  border: 1px solid #6573EE;
+  box-sizing: border-box;
+}
+
+.btn_preview>div>a:hover,.btn_preview>div>a:focus{
+  color: #fff;
+  font-family: NotoSansKR-Bold;
+  background: #6573EE;
+  /* border: none; */
+  border: 1px solid #fff;
+}
+
+.btn_preview>div:last-of-type{
+  padding-top: 16px;
+}
+
+/* 아쿠아플라넷 생생후기 / 스와이프 */
+div.review_inner{
+  width: 100%;
+}
+
+div.swiper{
+  width: 100%;
+  height: 532px;
+}
+
+.swiper-wrapper>div:nth-of-type(2){
+  padding: 0 20px;
+}
+
+/* div.swiper-slide>p{
+  width: 58.4vw;
+  height: 84.8vw;
+  background: url(../img/img_review1.png) no-repeat 0 0;
+  text-indent: -9999px;
+  overflow: hidden;
+  background-size: contain;
+}
+
+div.review2>p{
+  background: url(../img/img_review2.png) no-repeat 0 0;
+  background-size: contain;
+}
+
+div.review3>p{
+  background: url(../img/img_review3.png) no-repeat 0 0;
+  background-size: contain;
+} */
+
+/* 단독 특가 링크 공유하기 */
+.share_wrap{
+  width: 100%;
+}
+
+.share_wrap>div>.content_copy1{
+  font-family: NotoSansKR-Bold;
+}
+
+.share_wrap>div>.content_copy2{
+  background: linear-gradient(180deg, #D6A1FF -39.53%, #6573EE 92.5%);
+}
+
+ul.share_list{
+  width: 100%;
+  /* padding-bottom: 48px; */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+ul.share_list>li{
+  padding-right: 40px;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
+ul.share_list>li:last-of-type{
+  padding-right: 0;
+}
+
+ul.share_list>li>a{
+  display: block;
+  width: 72px;
+  height: 72px;
+  background: url(../img/icn_url.svg) no-repeat 0 0;
+  background-size: contain;
+}
+
+ul.share_list>li:nth-of-type(2)>a{
+  background: url(../img/icn_facebook.svg) no-repeat 0 0;
+  background-size: contain;
+}
+
+ul.share_list>li:nth-of-type(3)>a{
+  background: url(../img/icn_kakao.svg) no-repeat 0 0;
+  background-size: contain;
+}
+
+ul.share_list>li:nth-of-type(4)>a{
+  background: url(../img/icn_twitter.svg) no-repeat 0 0;
+  background-size: contain;
+}
+
+/*custom*/
+.flex {
+  display: flex;
+}
+
+
+.box {}
+
+/* slide css */
+.slide-wrap {
+  overflow:hidden;
+}
+.slide-draggable {
+	width:100%;
+  height: 100%;
+}
+.slide-draggable > .item{
+  flex-shrink: 0;
+  width: 80%;
+  height: 100%;
+}
+.slide-draggable > .item > div {}
+.slide-draggable > .item > div > img {width:100%;}
+.paddingright {padding-right:2.0rem;}
+.paddingleft {padding-left:24px;}
+.marginleft {margin-left:-5%;}
+						
+
+}
+
+						
+
+
+
+
+
+

@@ -1,0 +1,251 @@
+@import url(reset.css);
+@font-face {
+    font-family: NotoSansKR-Regular;
+    src: url(../font/NotoSansKR-Regular.otf);
+}
+
+@font-face {
+    font-family: NotoSansKR-Medium;
+    src: url(../font/NotoSansKR-Medium.otf);
+}
+
+@font-face {
+    font-family: NotoSansKR-Bold;
+    src: url(../font/NotoSansKR-Bold.otf);
+}
+
+
+/* fin.css */
+/* unionpay_fin */
+*{-webkit-text-size-adjust: none;}
+
+/* common */
+body{
+    background: #f6f6f6;
+    font-family: NotoSansKR-Regular, Arial, sans-serif;
+    font-size: 1.4rem; /* 14px 기준 */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* 모바일 */
+@media screen and (max-width: 520px){
+
+html{
+    font-size: 2.667vw; /* 모바일(375) 10px 기준 */
+}
+
+/* layout */
+div#wrap{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 520px;
+}
+
+main{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    text-indent: -9999px;
+}
+
+div.fin_cover{
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 81.2rem;
+}
+
+.fin_cover::after{
+    z-index: -1;
+    content: "";
+    display: block;
+    clear: both;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30.7rem;
+    background: #004888;
+}
+
+
+/* main */
+h1{
+    display: none;
+}
+
+div.fin{
+    z-index: 1;
+    position: relative;
+    width: 100%;
+    height: 81.2rem;
+    max-width: 520px;
+}
+
+.fin>p.txt1{
+    position: absolute;
+    left: 50%;
+    bottom: 63.1rem;
+    transform: translateX(-50%);
+    width: 34rem;
+    height: 9rem;
+    background: url(../img/img_fin_title.png) no-repeat 0 0;
+    background-size: cover;
+    max-width: 520px;
+}
+
+.fin>span{
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 19.2rem;
+    width: 37.5rem;
+    height: 42.4rem;
+    background: url(../img/img_ready_dog.png) no-repeat 0 0;
+    background-size: cover;
+    max-width: 520px;
+}
+
+.fin>p.txt2{
+    position: absolute;
+    left: 50%;
+    bottom: 10.3rem;
+    transform: translateX(-50%);
+    width: 34rem;
+    height: 7rem;
+    background: url(../img/img_fin_title_02.png) no-repeat 0 0;
+    background-size: cover;
+    max-width: 720px
+}
+
+a.btn_next{
+    position: absolute;
+    left: 50%;
+    bottom: 2.5rem;
+    transform: translateX(-50%);
+    width: 6rem;
+    height: 6rem;
+    background: url(../img/img_btn_next.png) no-repeat 0 0;
+    background-size: contain;
+    text-indent: -9999px;
+    overflow: hidden;
+    max-width: 60px;
+}
+}
+
+
+/* 데스크탑 */
+@media screen and (min-width: 521px){
+
+html{
+    font-size: 0.521vw; /* 데스크탑(1920) 10px 기준 */
+}
+
+/* layout */
+div#wrap{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+main{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    text-indent: -9999px;
+    /* overflow: hidden; */
+}
+
+div.fin_cover{
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.fin_cover::after{
+    z-index: -1;
+    content: "";
+    display: block;
+    clear: both;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 441px;
+    background: #004888;
+}
+
+/* main */
+div.fin{
+    z-index: 1;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 520px;
+}
+
+.fin>p.txt1{
+    position: absolute;
+    left: 50%;
+    bottom: 765px;
+    transform: translateX(-50%);
+    width: 340px;
+    height: 90px;
+    background: url(../img/img_fin_title.png) no-repeat 0 0;
+    background-size: cover;
+    max-width: 520px;
+}
+
+.fin>span{
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 332px;
+    transform: translateX(-50%);
+    width: 375px;
+    height: 424px;
+    background: url(../img/img_ready_dog.png) no-repeat 0 0;
+    background-size: cover;
+    max-width: 520px;
+}
+
+.fin>p.txt2{
+    position: absolute;
+    left: 50%;
+    bottom: 238px;
+    transform: translateX(-50%);
+    width: 340px;
+    height: 70px;
+    background: url(../img/img_fin_title_02.png) no-repeat 0 0;
+    background-size: cover;
+    max-width: 720px
+}
+
+a.btn_next{
+    position: absolute;
+    left: 50%;
+    bottom: 159px;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 60px;
+    background: url(../img/img_btn_next.png) no-repeat 0 0;
+    background-size: contain;
+    text-indent: -9999px;
+    overflow: hidden;
+    max-width: 60px;
+}
+}

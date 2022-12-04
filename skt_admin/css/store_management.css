@@ -1,0 +1,674 @@
+@import url(reset.css);
+.all_moniter {
+	width: 1920px;
+	height: 969px;
+	position: relative;
+	background-color: #f2f2f2;
+}
+#headers {
+	width: 1920px;
+	height: 80px;
+	/* float: right; */
+	position: absolute;
+	background-color: #000;
+}
+.store_management_box {
+	width: 1540px;
+	height: 600px;
+	margin: 120px 40px 0 280px;
+	position: absolute;
+}
+.store_list {
+    width: 108px;
+    height: 24px;
+    font-family: NotoSansKR;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #000;
+    position: absolute;
+}
+.store_management_box .select_list_box {
+	width: 1600px;
+	height: 130px;
+	background-color: #fff;
+	margin: 40px 0 0 0;
+	position: absolute;
+}
+.select_list_box .div_box1 {
+	float: left;
+	width: 1158px;
+	height: 65px;
+}
+/* select {
+	text-align: center;
+} */
+.store_management_box .store_management_area {
+	width: 350px;
+	height: 20px;
+	margin: 20px;
+	position: absolute;
+}
+.area_select {
+	float: left;
+	width: 120px;
+	height: 32px;
+	margin: 20px 0 0 15px;
+	border: solid 1px rgba(0, 0, 0, 0.1);
+	background-color: #fff;
+}
+.local_select {
+	float: left;
+	width: 240px;
+	height: 32px;
+	margin: 20px 0 0 10px;
+	border: solid 1px rgba(0, 0, 0, 0.1);
+	background-color: #fff;
+}
+.store_management_box .store_type_title {
+	float: left;
+	width: 61px;
+	height: 22px;
+	margin: 23px 0 0 40px;
+	opacity: 0.4;
+	font-family: NotoSansKR;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 1.57;
+	color: #000;
+}
+.store_type {
+	float: left;
+	width: 120px;
+	height: 32px;
+	margin: 20px 0 0 20px;
+	border: solid 1px rgba(0, 0, 0, 0.1);
+	background-color: #fff;
+}
+.store_management_box .store_status_title {
+	float: left;
+	width: 61px;
+	height: 22px;
+	margin: 23px 0 0 40px;
+	opacity: 0.4;
+	font-family: NotoSansKR;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 1.57;
+	color: #000;
+}
+.store_status {
+	float: left;
+	width: 120px;
+	height: 32px;
+	margin: 20px 0 0 20px;
+	padding: 5px 10px;
+	border: solid 1px rgba(0, 0, 0, 0.1);
+	background-color: #fff;
+}
+.store_management_box .store_install_title {
+	float: left;
+	width: 61px;
+	height: 22px;
+	margin: 23px 0 0 40px;
+	opacity: 0.4;
+	font-family: NotoSansKR;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 1.57;
+	color: #000;
+}
+.store_install {
+	float: left;
+	width: 120px;
+	height: 32px;
+	margin: 20px 0 0 20px;
+	border: solid 1px rgba(0, 0, 0, 0.1);
+	background-color: #fff;
+}
+.div_box2 {
+	float: left;
+	width: 1158px;
+	height: 65px;
+}
+.store_management_box .store_serch_title {
+	float: left;
+	width: 30px;
+	height: 22px;
+	margin: 5px 0 0 40px;
+	opacity: 0.4;
+	font-family: NotoSansKR;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 1.57;
+	color: #000;
+}
+.store_serch {
+	float: left;
+	width: 120px;
+	height: 32px;
+	margin: 0 10px 0 20px;
+	border: solid 1px rgba(0, 0, 0, 0.1);
+	background-color: #fff;
+}
+.store_input {
+	float: left;
+	width: 502px;
+	height: 32px;
+	border: solid 1px rgba(0, 0, 0, 0.1);
+	background-color: #fff;
+	padding: 0 0 0 7px;
+}
+.sotre_button {
+	width: 120px;
+    height: 90px;
+    position: absolute;
+    margin: 20px 20px 20px 1460px;
+}
+.store_management_box .store_update_tilte {
+	float: left;
+	width: 42px;
+	height: 22px;
+	margin: 5px 0 0 20px;
+	opacity: 0.4;
+	font-family: NotoSansKR;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 1.57;
+	color: #000;
+}
+.update_date1 {
+	float: left;
+	width: 159px;
+	height: 32px;
+	border: solid 1px rgba(0, 0, 0, 0.1);
+	background-color: #fff;
+	margin: 0 10px 0 20px;
+}
+.center {
+	float: left;
+	margin: 5px 0 0;
+}
+.update_date2 {
+	float: left;
+	width: 159px;
+	height: 32px;
+	border: solid 1px rgba(0, 0, 0, 0.1);
+	background-color: #fff;
+	margin: 0 0 0 10px;
+}
+.store_button {
+    /* float: right; */
+    width: 120px;
+    height: 90px;
+    /* margin: 0 20px 0 0; */
+    border: solid 1px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    background-color: #000;
+    position: absolute;
+	cursor: pointer;
+}
+
+/* .store_management_box .store_management_button {
+	margin: 60px 0 0 20px;
+	position: ;
+} */
+.store_infor_box {
+    width: 1600px;
+    height: 620px;
+    margin: 148px 0 40px;
+    background-color: #fff;
+	position: absolute;
+}
+.store_alignment_box {
+	width: 1600px;
+	height: 32px;
+	margin: 20px 0 0 0;
+}
+.alignment_text {
+	width: 26px;
+	height: 22px;
+	margin: 0 0 0 20px;
+	opacity: 0.4;
+	font-family: NotoSansKR;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 1.57;
+	color: #000;
+}
+.area_list_title {
+	float: left;
+	width: 30px;
+	height: 22px;
+	margin: 23px 0 0 20px;
+	opacity: 0.4;
+	font-family: NotoSansKR;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 1.57;
+	color: #000;
+}
+.store_alignment {
+	width: 120px;
+	height: 32px;
+	margin: 0 0 0 20px;
+	padding: 5px 10px;
+	border: solid 1px rgba(0, 0, 0, 0.1);
+	background-color: #fff;
+  
+}
+.excel_download_button {
+	float: right;
+	width: 125px;
+	height: 32px;
+	margin: 0 20px 0 0;
+	border: solid 1px #000;
+	cursor: pointer;
+	background-color: #fff;
+}
+.store_information_box {
+	width: 125px;
+	height: 32px;
+	margin: 0 10px 20px;
+	border: solid 1px #000;
+	float: right;
+	/* margin: 0 0 0 600px;
+	position: absolute; */
+	cursor: pointer;
+	background-color: #fff;
+}
+.popup_open {
+	width: 1920px;
+	height: 969px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.6);
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.25s ease-in-out;
+}
+.popup {
+	width: 550px;
+	height: 550px;
+	display: block;
+	margin: 185px 640px 200px 700px;
+	/* top: 50%; */
+	/* left: 50%; */
+	position: absolute;
+	background-color: #fff;
+}
+.open {
+	width: 100%;
+	opacity: 1;
+	visibility: visible;
+}
+.store_insert_box {
+	margin: 25px 0 0 20px;
+}
+.store_insert {
+	width: 97px;
+    height: 24px;
+    font-family: NotoSansKR;
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    color: #000;
+    margin: 20px 0 0 20px;
+    position: absolute;
+}
+.cancel {
+	width: 60px;
+    height: 60px;
+    float: right;
+	cursor: pointer;
+}
+.store_line {
+    width: 510px;
+    height: 1px;
+    margin: 60px 20px 0;
+    background-color: #e5e5e5;
+    position: absolute;
+}
+.pop_store_title_box {
+	height: 35px;
+	width: 510px;
+	margin: 25px 0 0 20px;
+	float: left;
+}
+.pop_store_title {
+	width: 50px;
+	height: 20px;
+	opacity: 0.4;
+	font-family: NotoSansKR;
+	font-size: 15px;
+	font-weight: bold;
+	margin: 7px 0 0;
+	color: #000;
+}
+.input_text {
+    width: 393px;
+    height: 31px;
+    /* position: absolute; */
+    margin: 0px 0 0 55px;
+    /* float: right;*/
+	padding: 0 0 0 7px;
+}
+.area_store_box {
+	height: 35px;
+	width: 510px;
+	margin: 10px 0 0 20px;
+	float: left;
+}
+.area_store {
+	width: 50px;
+	height: 20px;
+	opacity: 0.4;
+	font-family: NotoSansKR;
+	font-size: 15px;
+	font-weight: bold;
+	margin: 7px 0 0;
+	color: #000;
+}
+.area_select1 {
+	height: 35px;
+	width: 100px;
+	margin: 0px 0 0 70px;
+}
+.area_select2 {
+	width: 150px;
+	height: 35px;
+	/* margin: 0px 0 0 55px; */
+}
+.store_address_box {
+	height: 35px;
+	width: 510px;
+	margin: 10px 0 0 20px;
+	float: left;
+}
+.store_address {
+    width: 70px;
+    height: 20px;
+    opacity: 0.4;
+    font-family: NotoSansKR;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 7px 0 0;
+    color: #000;
+    float: left;
+}
+.store_input1 {
+	width: 393px;
+    height: 31px;
+    /* position: absolute; */
+	margin: 0px 0 0 36px;
+    padding: 0 0 0 7px;
+}
+.store_type_box1 {
+	height: 35px;
+	width: 510px;
+	margin: 10px 0 0 20px;
+	float: left;
+}
+.store_type1 {
+	width: 70px;
+	height: 20px;
+	opacity: 0.4;
+	font-family: NotoSansKR;
+	font-size: 15px;
+	font-weight: bold;
+	margin: 7px 0 0;
+	color: #000;
+	float: left;
+}
+.store_select {
+	width: 120px;
+	height: 35px;
+	margin: 0px 0 0 36px;
+}
+.equipment_code_box {
+	height: 35px;
+	width: 510px;
+	margin: 10px 0 0 20px;
+	float: left;
+}
+.equipment_code_P {
+	width: 87px;
+	height: 20px;
+	opacity: 0.4;
+	font-family: NotoSansKR;
+	font-size: 15px;
+	font-weight: bold;
+	margin: 7px 0 0;
+	color: #000;
+	float: left;
+}
+.equipment_P {
+	width: 137px;
+    height: 31px;
+    margin: 0 0 0 18px;
+	padding: 0 0 0 7px
+}
+.equipment_code_T {
+	display: inline-block;
+	width: 87px;
+	height: 20px;
+	opacity: 0.4;
+	font-family: NotoSansKR;
+	font-size: 15px;
+	font-weight: bold;
+	margin: 7px 0 0;
+	color: #000;
+}
+.equipment_T {
+	width: 137px;
+    height: 31px;
+    margin: 0 0 0 10px;
+	padding: 0 0 0 7px;
+}
+.installer_box {
+    height: 35px;
+    width: 510px;
+    margin: 10px 0 0 20px;
+    float: left;
+}
+.installer {
+    width: 81px;
+    height: 20px;
+    opacity: 0.4;
+    font-family: NotoSansKR;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 7px 0 0;
+    color: #000;
+    float: left;
+}
+.installer_text {
+    width: 73px;
+    height: 31px;
+    margin: 0 0 0 25px;
+	padding: 0 0 0 7px;
+}
+.tel {
+	display: inline-block;
+	width: 50px;
+	height: 20px;
+	opacity: 0.4;
+	font-family: NotoSansKR;
+	font-size: 15px;
+	font-weight: bold;
+	margin: 7px 0 0 40px;
+	color: #000;
+}
+.installer_tel {
+	width: 173px;
+    height: 31px;
+    margin: 0 0 0 34px;
+	padding: 0 0 0 7px;
+}
+.store_num_box {
+	height: 35px;
+	width: 510px;
+	margin: 10px 0 0 20px;
+	float: left;
+}
+.store_num {
+	width: 70px;
+	height: 20px;
+	opacity: 0.4;
+	font-family: NotoSansKR;
+	font-size: 15px;
+	font-weight: bold;
+	margin: 7px 0 0;
+	color: #000;
+	float: left;
+}
+.store_num_input {
+	width: 393px;
+    height: 31px;
+    margin: 0 0 0 36px;
+	padding: 0 0 0 7px;
+}
+.time_box {
+	width: 510px;
+	height: 35px;
+	margin: 10px 0 0 20px;
+	float: left;
+}
+.time {
+	width: 70px;
+	height: 20px;
+	opacity: 0.4;
+	font-family: NotoSansKR;
+	font-size: 15px;
+	font-weight: bold;
+	margin: 7px 0 0;
+	color: #000;
+	float: left;
+}
+.time_input {
+	width: 393px;
+    height: 60px;
+	resize: none;
+    margin: 0 0 0 36px;
+	padding: 7px 0 0 7px
+}
+.insert_box {
+    height: 35px;
+    width: 550px;
+	margin: 0 0 20px;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+.insert_but {
+	width: 125px;
+    height: 32px;
+    /* margin: 0 10px 20px; */
+    border: solid 1px rgba(121, 121, 121, 0.1);
+	background-color: #7f7f7f;
+	color: #fff;
+	cursor: pointer;
+}
+
+.table {
+	width: 1560px;
+	height: 35px;
+	margin: 20px 20px 0;
+	background-color: rgba(0, 0, 0, 0.03);
+	/* position: absolute; */
+	/* margin: 250px 0 0 0; */
+}
+.table_chekbox {
+	width: 44px;
+	height: 34px;
+	float: left;
+	border-bottom: rgba(0, 0, 0, 0.1) solid 1px;
+}
+.input_checkbox {
+    width: 12px;
+    height: 12px;
+    margin: 11px 16px;
+}
+.number_box {
+	width: 84px;
+	height: 34px;
+	float: left;
+	border-bottom: rgba(0, 0, 0, 0.1) solid 1px;
+	border-left: rgba(0, 0, 0, 0.1) solid 1px;
+}
+.number {
+    display: block;
+    width: auto;
+    height: auto;
+    margin: 6px 9px 6px 10px;
+    font-family: NotoSansKR;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.57;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000;
+}
+.all_box {
+	width: 129px;
+	height: 34px;
+	float: left;
+	border-bottom: rgba(0, 0, 0, 0.1) solid 1px;
+	border-left: rgba(0, 0, 0, 0.1) solid 1px;
+}
+.all_box .all_text {
+    display: block;
+    width: auto;
+    height: auto;
+    margin: 6px 9px 6px 10px;
+    font-family: NotoSansKR;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.57;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000;
+}
+.td_table {
+	width: 1580px;
+	height: 513px;
+	margin: 0 20px;
+	overflow-y: auto;
+}
+.store_pageing {
+	width: 1560px;
+	height: 32px;
+	margin: 0 20px 20px;
+	border: #000 solid 1px;
+	position: absolute;
+	bottom: 0;
+}
+.store_add {
+	width: 120px;
+	height: 32px;
+	padding: 5px 32px 5px 33px;
+	border: solid 1px rgba(0, 0, 0, 0.1);
+	float: right;
+}
+#sidebar {
+	width: 240px;
+	height: 969px;
+	margin: 0 40px 0 0;
+	background-color: #fff;
+	position: absolute;
+}
+.store {
+	background-color: #3219c5;
+}
+.store .sidebar_text {
+	color:#fff;
+}
+.hide{display:none;}

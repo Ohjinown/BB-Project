@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아이트래킹</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/eye.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/header.js"></script>
+</head>
+<body>
+    <!-- skip_navi -->
+    <div id="skip_navi">
+        <a href="header">상단 메뉴 바로가기</a>
+        <a href="nav">주메뉴 바로가기</a>
+        <a href="main">본문 바로가기</a>
+    </div>
+    <!-- //skip_navi -->
+    
+    <hr />
+
+    <!-- wrap -->
+    <div id="wrap">
+        <!-- header -->
+        <header id="header"></header>
+        <!-- //header -->
+
+        <hr />
+
+        <!-- main -->
+        <main>
+            <!-- 아이트래킹을 통한 부주의 카테고리 분석 -->
+            <div class="eye_track">
+                <h2>아이트래킹을 통한 부주의 카테고리 분석</h2>
+                <!-- 필터 선택 -->
+                <div class="e_filter">
+                    <!-- 지역선택 -->
+                    <label for="e_area">지역</label>
+                    <select class="e_area" name="지역선택" id="e_area">
+                        <option value="a_none">전체</option>
+                        <option value="farm">농촌</option>
+                        <option value="factory">공장가</option>
+                        <option value="new_city">신도심</option>
+                        <option value="old_city">구도심</option>
+                    </select>
+                    <!-- //지역선택 -->
+                    <!-- 필터열기 버튼-->
+                    <button class="f_filter" type="button" name="대시보드필터" value="필터">필터</button>
+                    <!-- //필터열기 버튼 -->
+                </div>
+                <!-- //필터 선택 -->
+                <!-- 전체 그래프 -->
+                <div class="graph1">
+                    <h3>전체</h3>
+                    <div class="crosswalk">
+                        <strong>횡단보도</strong>
+                        <p>
+                            <span>20%</span>
+                        </p>
+                        <em>200/800</em>
+                    </div>
+                    <div class="b_spot">
+                        <strong>사각지대</strong>
+                        <p>
+                            <span>80%</span>
+                        </p>
+                        <em>1200/1500</em>
+                    </div>
+                    <div class="around">
+                        <strong>주변 환경 요소</strong>
+                        <p>
+                            <span>50%</span>
+                        </p>
+                        <em>600/1200</em>
+                    </div>
+                    <div class="walker">
+                        <strong>보행자 교통안전</strong>
+                        <p>
+                            <span>75%</span>
+                        </p>
+                        <em>750/1000</em>
+                    </div>
+                </div>
+                <!-- //전체 그래프 -->
+                <!-- 필터 그래프 -->
+                <div class="graph2">
+                    <h3>OO초등학교 / 3학년</h3>
+                    <div class="crosswalk">
+                        <strong>횡단보도</strong>
+                        <p>
+                            <span>40%</span>
+                        </p>
+                        <em>40/100</em>
+                    </div>
+                    <div class="b_spot">
+                        <strong>사각지대</strong>
+                        <p>
+                            <span>20%</span>
+                        </p>
+                        <em>20/100</em>
+                    </div>
+                    <div class="around">
+                        <strong>주변 환경 요소</strong>
+                        <p>
+                            <span>60%</span>
+                        </p>
+                        <em>60/100</em>
+                    </div>
+                    <div class="walker">
+                        <strong>보행자 교통안전</strong>
+                        <p>
+                            <span>80%</span>
+                        </p>
+                        <em>80/100</em>
+                    </div>
+                </div>
+                <!-- //필터 그래프 -->
+            </div>
+            <!-- //아이트래킹을 통한 부주의 카테고리 분석 -->
+        </main>
+        <!-- //main -->
+    </div>
+    <!-- //wrap -->
+</body>
+</html>

@@ -1,0 +1,547 @@
+input:focus, select:focus {
+	outline: none;
+}
+.main {
+	width: 100%;
+	height: 100%;
+	background-color: #f2f2f2;
+	/* background-color: red; */
+	position: relative;
+	overflow: auto;
+}
+.main .main_box {
+	position: relative;
+	width: 1920px;
+	margin: 0 auto;
+}
+.main .title_box{
+	/* float: left; */
+	width: auto;
+	height: auto;
+	margin: 20px 0 0 20px;
+	/* padding: 0 20px; */
+	position: absolute;
+}
+.title_box .box1 {
+	width: auto;
+	height: 20px;
+}
+.title_box .box2 {
+	width: auto;
+	height: 28px;
+}
+.title_box .title_text {
+	float: left;
+	width: auto;
+	height: 20px;
+	margin: 0;
+	font-family: NotoSansCJKKR;
+	font-size: 16px;
+	font-weight: 500;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1;
+	letter-spacing: normal;
+	/* text-align: center; */
+	color: #222;
+	/* position: absolute; */
+  
+}
+.title_box .event_title {
+	float: left;
+	width: auto;
+	height: 28px;
+	font-family: NotoSansCJKKR;
+	font-size: 24px;
+	font-weight: bold;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1;
+	letter-spacing: normal;
+	color: #222;
+}
+.main .introduce_box {
+	/* float: left; */
+	width: auto;
+	height: auto;
+	margin: 110px  0 0 20px;
+	position: absolute;
+}
+.introduce_box .hello_box {
+	width: auto;
+	height: 30px;
+}
+.hello_box .hello {
+	float: left;
+	width: auto;
+	height: 30px;
+	font-family: NotoSansCJKKR;
+	font-size: 25px;
+	font-weight: 500;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1;
+	letter-spacing: normal;
+	color: #222;
+}
+.introduce_box .introduce_box1 {
+	width: auto;
+	height: 30px;
+}
+.introduce_box1 .introduce_text {
+	float: left;
+	width: auto;
+	height: 30px;
+	font-family: NotoSansCJKKR;
+	font-size: 25px;
+	font-weight: bold;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1;
+	letter-spacing: normal;
+	color: #222;
+}
+.introduce_box1 .introduce_text1 {
+	float: left;
+	width: auto;
+	height: 30px;
+	font-family: NotoSansCJKKR;
+	font-size: 25px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1;
+	letter-spacing: normal;
+	color: #222;
+	margin: 0 0 0 10px;
+}
+.main .coupon_box {
+	float: right;
+	width: 400px;
+	height: 150px;
+	margin: 20px 20px 0 0;
+}
+.coupon_box .logout {
+	float: right;
+	cursor: pointer;
+}
+.coupon_box .total_box {
+	float: left;
+	width: 400px;
+	height: 40px;
+	margin: 10px 0 0 0;
+}
+.coupon_box .total_text {
+	float: left;
+	width: 92px;
+	height: 20px;
+	font-family: NotoSansCJKKR;
+	font-size: 16px;
+	font-weight: 500;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1;
+	letter-spacing: normal;
+	text-align: right;
+	color: #222;
+	margin: 10px 0 0 0;
+}
+.coupon_box .text {
+	float: left;
+	width: 284px;
+	height: 30px;
+	border: solid 1px #000;
+	background-color: #595959;
+	margin: 0 0 0 15px;
+	text-align: right;
+	color: #fff;
+	padding: 3px 7px 0 0;
+}
+.coupon_box .code_dox {
+	float: left;
+	width: 193px;
+	height: 33px;
+	margin: 0 0 0 15px;
+	padding: 0 0 0 7px;
+	border: solid 1px #000;;
+	background-color:#fff; 
+}
+.code_dox .code_text {
+	display: inline-block;
+	padding-top: 6px;
+}
+.code_dox .code_input {
+	width: 104px;
+    border: none;
+    height: 26px;
+    font-size: 16px;
+    padding-top: 6px;
+    margin-top: -6px;
+}
+.coupon_box .total_but {
+	float: left;
+	width: 84px;
+	height: 35px;
+	margin: 0 0 0 5px;
+}
+.main .coupon_select {
+	float: right;
+	width: 98%;
+	height: 35px;
+	margin: 30px 20px 20px;
+	text-align: right;
+}
+.coupon_select .use_coupon {
+	width: 150px;
+	height: 35px;
+	font-weight: bold;
+	background-color: #f2f2f2;
+	border: none;
+	border-bottom: solid 1px #000;
+}
+.table_box {
+	width: 98%;
+	height: auto;
+	max-height: 615px;
+	margin: 30px 20px 0;
+	margin: 250px 20px;
+	position: absolute;
+}
+.table_box .num_box {
+	float: left;
+	width: 152px;
+	height: 38px;
+	border: 1px solid #000;
+	border-right: none;
+	background-color: #d9d9d9;
+}
+.table_box .only_num_box {
+	float: left;
+	width: 673px;
+	height: 38px;
+	border: 1px solid #000;
+	border-right: none;
+	background-color: #d9d9d9;
+}
+.table_box .published_date_box {
+	float: left;
+	width: 350px;
+	height: 38px;
+	border: 1px solid #000;
+	border-right: none;
+	background-color: #d9d9d9;
+}
+.table_box .record_box {
+	float: left;
+	width: 350px;
+	height: 38px;
+	border: 1px solid #000;
+	border-right: none;
+	background-color: #d9d9d9;
+}
+.table_box .enrollment_box {
+	float: left;
+	width: 350px;
+	height: 38px;
+	border: 1px solid #000;
+	background-color: #d9d9d9;
+}
+.num_box .num_text {
+	float: left;
+	width: 113px;
+	height: 22px;
+	margin: 8px 20px;
+	font-family: NotoSansKR;
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	letter-spacing: normal;
+	text-align: center;
+	color: #000;
+}
+.only_num_box .only_num {
+	float: left;
+	width: 633px;
+	height: 22px;
+	margin: 8px 20px;
+	font-family: NotoSansKR;
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	letter-spacing: normal;
+	text-align: center;
+	color: #000;
+}
+.published_date_box .published_date {
+	float: left;
+	width: 311px;
+	height: 22px;
+	margin: 8px 20px;
+	font-family: NotoSansKR;
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	letter-spacing: normal;
+	text-align: center;
+	color: #000;
+}
+.record_box .record {
+	float: left;
+	width: 311px;
+	height: 22px;
+	margin: 8px 20px;
+	font-family: NotoSansKR;
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	letter-spacing: normal;
+	text-align: center;
+	color: #000;
+}
+.enrollment_box .enrollment {
+	float: left;
+	width: 311px;
+	height: 22px;
+	margin: 8px 20px;
+	font-family: NotoSansKR;
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	letter-spacing: normal;
+	text-align: center;
+	color: #000;
+}
+.user_coupon {
+	width: auto;
+	height: auto;
+	float: left;
+}
+.user_coupon .user_no {
+    float: left;
+    width: 152px;
+    height: 38px;
+    border: 1px solid #000;
+    border-right: none;
+	border-top: none;
+}
+.user_coupon .user_code {
+    float: left;
+    width: 673px;
+    height: 38px;
+    border: 1px solid #000;
+    border-right: none;
+	border-top: none;
+}
+.user_coupon .user_date {
+	float: left;
+    width: 350px;
+    height: 38px;
+    border: 1px solid #000;
+    border-right: none;
+	border-top: none;
+}
+.user_coupon .user_use {
+    float: left;
+    width: 350px;
+    height: 38px;
+    border: 1px solid #000;
+    border-right: none;
+	border-top: none;
+}
+.user_coupon .user_button {
+    float: left;
+    width: 350px;
+    height: 38px;
+    border: 1px solid #000;
+	border-top: none;
+}
+.user_no .user_noText {
+	float: left;
+    width: 113px;
+    height: 22px;
+    margin: 8px 20px;
+    font-family: NotoSansKR;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000;
+}
+.user_code .user_codeText {
+	float: left;
+    width: 633px;
+    height: 22px;
+    margin: 8px 20px;
+    font-family: NotoSansKR;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000;
+}
+.user_date .user_dateText {
+	float: left;
+    width: 311px;
+    height: 22px;
+    margin: 8px 20px;
+    font-family: NotoSansKR;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000;
+}
+.user_use .user_useText {
+	float: left;
+    width: 311px;
+    height: 22px;
+    margin: 8px 20px;
+    font-family: NotoSansKR;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000;
+}
+.user_button .user_buttonBox {
+	float: left;
+    width: 90px;
+    height: 30px;
+    margin: 4px  131px;
+    font-family: NotoSansKR;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000;
+	cursor: pointer;
+}
+.user_buttonBox .user_buttonText {
+	width: 74px;
+	height: 20px;
+	flex-grow: 0;
+	font-family: NotoSansCJKKR;
+	font-size: 16px;
+	font-weight: 500;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1;
+	letter-spacing: normal;
+	text-align: left;
+}
+.main_popup {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.6);
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.25s ease-in-out;
+}
+.insert_popup {
+	width: 500px;
+	height: 180px;
+	display: block;
+	margin: 395px 700px;
+	position: absolute;
+	background-color: #fff;
+	border: #000 solid 1px;
+}
+.on {
+    top: -250px;
+    bottom: 0px;
+    width: 1920px;
+    height: 969px;
+    opacity: 1;
+    visibility: visible;
+    margin: 0 0 0 -20px;
+}
+.insert_popup .insert_box {
+	width: 500px;
+	height: 50px;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 500;
+	padding: 10px 0 0 0;
+}
+.insert_popup .unique_number {
+	width: 500px;
+	height: 50px;
+	text-align: center;
+}
+.unique_number .unique_number_text {
+	width: 115px;    
+	border: none;
+	font-weight: 500;
+}
+.insert_popup .btn_box {
+	width: 500px;
+	height: 50px;
+	text-align: center;
+}
+.btn_box .cancel_btn {
+	border: none;
+	border-radius: 5px;
+	width: 120px;
+	height: 30px;
+	color: #fff;
+	background-color: #7f7f7f;
+	margin: 0 10px 0 0;
+	cursor: pointer;
+}
+.btn_box .ok_btn {
+	border: none;
+	border-radius: 5px;
+	width: 120px;
+	height: 30px;
+	color: #fff;
+	background-color: #7f7f7f;
+	margin: 0 0 0 10px;
+	cursor: pointer;
+}
+.main_box .page_box {
+	position: absolute;
+	width: 98%;
+	height: auto;
+	text-align: center;
+	margin: 900px 20px 0;
+	padding: 0 0 48px;
+}
+body {
+	-webkit-tap-highlight-color:transparent;
+}
+/* 페이징 */
+.back , .next{
+	padding-right: 5px;
+}
+/* .next {
+	padding-right: 5px;
+} */
+a {
+	text-decoration: none;
+	color:#000;
+}
+
+.i {
+	color: red;
+	margin: 0 5px;
+}

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="./css/store_information.css?aa"/>
+	<link rel="stylesheet" type="text/css" href="./css/header.css"/>
+	<link rel="stylesheet" type="text/css" href="./css/sidebar.css"/>
+	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript"src="./js/popup.js"></script>
+	<title>매장 상세정보</title>
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+		google.charts.load("current", {packages:["corechart"]});
+		google.charts.setOnLoadCallback(drawChart);
+		function drawChart() {
+			var data = google.visualization.arrayToDataTable([
+			['Task', 'Hours per Day'],
+			['콘텐츠1',	11],
+			['콘텐츠2',	2],
+			['콘텐츠3',	2],
+			['콘텐츠4',	2],
+			['콘텐츠5',	7]
+			]);
+
+			var options = {
+			pieHole: 0.4,
+			chartArea: {
+					width:500,
+					height:380
+				},
+			pieSliceText: 'none',
+			legend: {position: 'bottom', textStyle: {fontSize: 12}, maxLines:3},
+			};
+
+			var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+			chart.draw(data, options);
+}	
+</script>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#headers").load("./header/header.html");
+		$("#sidebar").load("./sidebar/sidebar.html");
+	})
+</script>
+</head>
+<body>
+	<div class="all_moniter">
+		<div id="headers"></div>
+		<div id="sidebar"></div>
+		<form action="" method="GET">
+			<div class="information_box">
+				<!-- <img class="back_img" src="../skt_admin/img/btn_back.png" alt="뒤로가기"> -->
+				<span class="store_information">매장 정보</span>
+				<span class="insert_date">2021-09-01 등록</span>
+			</div>
+			<div class="store_title_box">
+				<div class="store_title">
+					<span class="store_title_text">뱅뱅사거리점</span>
+					<span class="store_title_text1">All New</span>
+					<button class="store_title_botton"><span class="store_text">수정</span></button>
+				</div>
+				<div class="store_line"></div>
+				<div class="information_title_box">
+					<span class="area_box">매장 주소</span>
+					<span class="store_area">서울 특별시 서초구 강남대로321, 1층</span>
+					<span class="store_number_box">매장 번호</span>
+					<span class="store_number">0507-1360-0599</span>
+					<!-- <span class="store_manager_box">매장 담당자</span>
+					<span class="store_manager">홍길동 매니저 010-1234-5678</span> -->
+					<span class="store_installer_box">설치 담당자</span>
+					<span class="store_installer">홍길동 010-1234-5678</span>
+					<span class="install_date">설치일</span>
+					<span class="install_date_text">2021-09-01</span>
+					<span class="store_time_box">운영 시간</span>
+					<span class="store_time">평일 10:00~20:00 / 토요일 10:00~19:30 / 공휴일 10:00~19:30</span>
+					<span class="code_P">장비 코드(P)</span>
+					<span class="code_P_text">D000002</span>
+					<span class="code_T">장비 코드(T)</span>
+					<span class="code_T_text">R000002</span>
+					<span class="store_system_box">운영 상태</span>
+					<span class="store_system">활성</span>
+				</div>
+			</div>
+
+			<div class="chart_box">
+				<span class="chart_title">체험 현황</span>
+				<div class="num_box">
+					<span class="chart_title1">총 체험 현황 :</span>
+					<span class="chart_num">30,581</span>
+				</div>
+				<div id="donutchart"></div>
+			</div>
+			<div class="store_install_box">
+				<span class="store_install">설치 현황</span>
+				<button class="store_insert_button"><span>등록</span></button>
+				<div class="install_table">
+					<div class="install_version"><span class="install_version_text">버전</span></div>
+					<div class="install_date1"><span class="install_date1_text">설치일</span></div>
+					<div class="install_manager"><span class="install_manager_text">설치 담장자</span></div>
+					<div class="memo"><span class="memo_title">메모 사항</span></div>
+					<div class="view_details"><span class="view_details_text">상세</span></div>
+				</div>
+				<div class="install_table1">
+					<div class="install_version_td"><span class="install_version_text1">v1.0.0</span></div>
+					<div class="install_date1_td"><span class="install_date1_text1">2021-09-12</span></div>
+					<div class="install_manager_td"><span class="install_manager_text1">홍길동</span></div>
+					<div class="memo_td"><span class="memo_title1">-</span></div>
+					<div class="view_details_td"><a class="view_detail"><span class="view_details_text1">보기</span></a></div>
+				</div>
+			</div>
+		<form method="GET">
+			<div class="popup_open">
+				<div class="popup">
+						<span class="store_correction">매장 정보 수정</span>
+						<img class="cancel" src="../skt_admin/img/btn_close@3x.png"/>
+					<div class="store_line1"></div>
+
+					<div class="popup_correction_box">
+						<span class="pop_store_title1">매장명</span>
+						<input class="input_text del" type="text" placeholder="입력" name="store_title1"/>
+					</div>
+
+					<div class="popup_correction_box">
+						<span class="pop_store_title1">지역</span>
+						<select class="store_area_select1" name="area" onchange="category(this)">
+							<option value="전체">전체</option>
+							<option value="서울">서울</option>
+							<option value="인천">인천</option>
+							<option value="경기">경기</option>
+							<option value="강원">강원</option>
+							<option value="충북">충북</option>
+							<option value="충남">충남</option>
+							<option value="세종">세종</option>
+							<option value="대전">대전</option>
+							<option value="경북">경북</option>
+							<option value="경남">경남</option>
+							<option value="대구">대구</option>
+							<option value="울산">울산</option>
+							<option value="부산">부산</option>
+							<option value="전북">전북</option>
+							<option value="전남">전남</option>
+							<option value="광주">광주</option>
+							<option value="제주">제주</option>
+						</select>
+						<select class="store_area_select2" name="rarea" id="good">
+							<option value="전국" >전국</option>
+						</select>
+					</div>
+
+					<div class="popup_correction_box">
+						<span class="pop_store_title1">매장 주소</span>
+						<input class="store_input1 del" type="text" placeholder="입력" name="store_add"/>
+					</div>
+
+					<div class="popup_correction_box">
+						<span class="pop_store_title1">매장 타입</span>
+						<select class="store_select_box" name="store_type">
+							<option>전체</option>
+							<option>ALL New</option>
+							<option>Variation</option>
+						</select>
+					</div>
+
+					<div class="popup_correction_box">
+						<span class="pop_store_title1">장비 코드(P)</span>
+						<input class="equipment_P del" type="text" placeholder="입력" name="code_p"/>
+						<span class="pop_store_title1">장비 코드(T)</span>
+						<input class="equipment_T del" type="text" placeholder="입력" name="code_t"/>
+					</div>
+					
+					<div class="popup_correction_box">
+						<span class="pop_store_title1">설치 담당자</span>
+						<input class="installer_text del" type="text" placeholder="입력" name="installer"/>
+						<span class="pop_store_tel">연락처</span>
+						<input class="installer_tel del" type="tel" placeholder="입력" name="tel"/>
+					</div>
+					<div class="popup_correction_box">
+						<span class="pop_store_title1">매장 번호</span>
+						<input class="store_num_input del" type="text" placeholder="입력" name="store_num"/>
+					</div>
+					<div class="popup_correction_box">
+						<span class="pop_store_title1">운영 시간</span>
+						<input class="time_input del" type="text" placeholder="입력" name="time"/>
+					</div>
+
+					<div class="popup_correction_box">
+						<button class="del_but"><span>삭제</span></button>
+						<button class="insert_but"><span>수정완료</span></button>
+					</div>
+				</div>
+			</div>
+		</form>
+		<form action="" method="GET">
+			<div class="popup_open1">
+				<div class="popup1">
+					<span class="store_insert1">설치 현황 등록 </span>
+					<img class="cancel1" src="../skt_admin/img/btn_close@3x.png"/>
+					<div class="store_line1"></div>
+
+					<div class="popup_install_box">
+						<span class="pop_store_title1">설치일</span>
+						<input class="popup_date del" type="text" value="등록 당일" name="date"/>
+					</div>
+					<div class="popup_install_box">
+						<span class="pop_store_title1">설치버전</span>
+						<select class="ver_select" name="ver">
+							<option value="선택">선택</option>
+							<option value="선택1">선택1</option>
+						</select>
+					</div>
+					
+					<div class="popup_install_box">
+						<span class="pop_store_title1">설치 담당자</span>
+						<input class="popup_installer del" type="text" placeholder="입력" name="installer"/>
+						<span class="popup_tel_box">연락처</span>
+						<input class="popup_tel del" type="tel" placeholder="입력" name="tel"/>
+					</div>
+
+					<div class="popup_install_box1">
+						<span class="popup_memo ">메모 사항</span>
+						<textarea class="popup_textarea del" placeholder="입력" name="memo"></textarea>
+					</div>
+
+					<div class="popup_install_box">
+						<span class="pop_store_title1">이미지(전)</span>
+							<input class="upload_file del imgage1" value="" placeholder=""readonly/>
+							<label for="file1"><span class="label_span">첨부</span></label> 
+							<input type="file" id="file1" name="img_prior"/>
+					</div>
+
+					<div class="popup_install_box">
+						<span class="pop_store_title1">이미지(후)</span>
+						<input class="upload_file del imgage2" value="" placeholder="" readonly/>
+						<label for="file2"><span class="label_span">첨부</span></label> 
+						<input type="file" id="file2" name="img_after"/>
+					</div>
+					
+					<div class="popup_install_box">
+						<span class="pop_store_title1">영상</span>
+						<input class="upload_file del imgage3" value="" placeholder="" readonly/>
+						<label for="file3"><span class="label_span">첨부</span></label> 
+						<input type="file" id="file3" name="vidio"/>
+					</div>
+
+					<div class="popup_install_box">
+						<button class="popup_insert_but1"><span class="popup_inster_text">등록</span></button>
+					</div>
+				</div>
+			</div>
+		</form>
+			<div class="popup_open2">
+				<div class="popup2">
+					<span class="store_insert1">설치 현황 상세</span>
+					<img class="cancel2" src="../skt_admin/img/btn_close@3x.png"/>
+					<div class="store_line1"></div>
+
+					<div class="popup_install_box">
+						<span class="pop_store_title1">설치일</span>
+						<input class="popup_date" type="text" value="설치일" name="date" readonly/>
+					</div>
+					<div class="popup_install_box">
+						<span class="pop_store_title1">설치버전</span>
+						<select class="ver_select2" name="ver">
+							<option value="1">v.1.0.0</option>
+							<option value="2" disabled>선택1</option>
+						</select>
+					</div>
+					
+					<div class="popup_install_box">
+						<span class="pop_store_title1">설치 담당자</span>
+						<input class="popup_installer" type="text" value="홍길동" name="name" readonly/>
+						<span class="popup_tel_box">연락처</span>
+						<input class="popup_tel" type="tel" value="010-1234-5678" name="tel" readonly/>
+					</div>
+
+					<div class="popup_install_box1">
+						<span class="popup_memo ">메모 사항</span>
+						<textarea class="popup_textarea" placeholder="" readonly name="memo">asd</textarea>
+					</div>
+
+					<div class="popup_install_box">
+						<span class="pop_store_title1">이미지(전)</span>
+							<input class="upload_file" value="" placeholder="" readonly>
+							<label class="label" for="file"><span class="label_span">첨부</span></label> 
+							<input type="file" id="file1" value="">
+					</div>
+
+					<div class="popup_install_box">
+						<span class="pop_store_title1">이미지(후)</span>
+						<input class="upload_file" value="" placeholder="" readonly>
+						<label class="label" for="file"><span class="label_span">첨부</span></label> 
+						<input type="file" id="file2" value="">
+					</div>
+					
+					<div class="popup_install_box">
+						<span class="pop_store_title1">영상</span>
+						<input class="upload_file" value="" placeholder="" readonly>
+						<label class="label" for="file"><span class="label_span">첨부</span></label> 
+						<input type="file" id="file3" value="">
+					</div>
+
+					<div class="popup_install_box">
+						<button class="store_popup_but"><span class="popup_inster_text1">수정</span></button>
+						<button class="popup_insert_but"><span class="popup_inster_text1">첨부파일 다운</span></button>
+					</div>
+				</div>
+			</div>
+		<form method="GET">
+			<div class="popup_open3">
+				<div class="popup3">
+					<span class="store_insert1">설치 현황 수정</span>
+					<img class="cancel3" src="../skt_admin/img/btn_close@3x.png"/>
+					<div class="store_line1"></div>
+
+					<div class="popup_install_box">
+						<span class="pop_store_title1">설치일</span>
+						<input class="popup_date cancel" type="text" value="설치일"/>
+					</div>
+					<div class="popup_install_box">
+						<span class="pop_store_title1">설치버전</span>
+						<select class="ver_select" name="ver">
+							<option value="선택">v1.0.0</option>
+							<option value="선택1">선택1</option>
+						</select>
+					</div>
+					
+					<div class="popup_install_box">
+						<span class="pop_store_title1">설치 담당자</span>
+						<input class="popup_installer cancel" type="text" placeholder="입력" name="installer"/>
+						<span class="popup_tel_box">연락처</span>
+						<input class="popup_tel cancel" type="tel" placeholder="입력" name="tel"/>
+					</div>
+
+					<div class="popup_install_box1">
+						<span class="popup_memo ">메모 사항</span>
+						<textarea class="popup_textarea cancel" placeholder="입력" name="memo"></textarea>
+					</div>
+
+					<div class="popup_install_box">
+						<span class="pop_store_title1">이미지(전)</span>
+							<input class="upload_file cancel imgage1" value="" placeholder=""readonly/>
+							<label for="file1"><span class="label_span">첨부</span></label> 
+							<input type="file" id="file1" name="img_prior"/>
+					</div>
+
+					<div class="popup_install_box">
+						<span class="pop_store_title1">이미지(후)</span>
+						<input class="upload_file cancel imgage2" value="" placeholder="" readonly/>
+						<label for="file2"><span class="label_span">첨부</span></label> 
+						<input type="file" id="file2" name="img_after"/>
+					</div>
+					
+					<div class="popup_install_box">
+						<span class="pop_store_title1">영상</span>
+						<input class="upload_file cancel imgage3" value="" placeholder="" readonly/>
+						<label for="file3"><span class="label_span">첨부</span></label> 
+						<input type="file" id="file3" name="vidio"/>
+					</div>
+
+					<div class="popup_install_box">
+						<button class="popup_insert_but3"><span class="popup_inster_text">수정완료</span></button>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+</body>
+</html>

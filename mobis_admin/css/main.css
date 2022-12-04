@@ -1,0 +1,107 @@
+@import url(reset.css);
+@font-face {
+    font-family: NotoSansCJKkr-Regular;
+    src: url(../font/NotoSansCJKkr-Regular.otf);
+}
+
+@font-face {
+    font-family: NotoSansCJKkr-Medium;
+    src: url(../font/NotoSansCJKkr-Medium.otf);
+}
+
+@font-face {
+    font-family: NotoSansCJKkr-Bold;
+    src: url(../font/NotoSansCJKkr-Bold.otf);
+}
+
+/* main.css */
+/* Admin Login */
+
+*{-webkit-text-size-adjust: none;}
+
+/* common */
+body{
+    font-family: NotoSansCJKkr-Bold, Arial, Helvetica, sans-serif;
+    background: #ECEFF5;
+    font-size: 20px;
+    color: #222;
+    line-height: 1;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* layout */
+div#wrap{
+    width: 100%;
+    padding: 80px 147px;
+    box-sizing: border-box;
+    overflow: hidden;
+    max-width: 1920px;
+}
+
+/* form */
+/* Admin Login */
+form{
+    width: 1626px;
+    height: 382px;
+    padding: 40px;
+    margin-top: 189px;
+    border: 1px solid #aaa;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background: #fff;
+}
+
+legend{
+    width: 1546px;
+    padding-bottom: 20px;
+    font-size: 28px;
+    border-bottom: 1px solid #aaa;
+    box-sizing: border-box;
+}
+
+ul{
+    margin-top: 40px;
+}
+
+ul>li{
+    width: 326px;
+    height: 40px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+li.pw{
+    margin-bottom: 0;
+}
+
+ul>li>label{
+    float: left;
+    margin-top: 10px;
+}
+
+ul>li>input{
+    float: right;
+    width: 275px;
+    height: 100%;
+    border: 1px solid #aaa;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+/* 로그인 버튼 */
+.login{
+    display: inline-block;
+    width: 245px;
+    height: 44px;
+    margin: 50px 0 0 651px;
+    border: none;
+    color: #fff;
+    font-family: NotoSansCJKkr-Medium;
+    font-size: 20px;
+    background: #4C54DD;
+    cursor: pointer;
+}
+

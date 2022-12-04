@@ -1,0 +1,159 @@
+.login_box {
+	width: 100%;
+	height: 100%;
+	background-color: #f2f2f2;
+	position: relative;
+	overflow: auto;
+}
+.login_box .container {
+    box-sizing: border-box;
+    width: 1920px;
+    margin: 0 auto;
+}
+.title_box .box1 {
+	width: auto;
+    height: 20px;
+}
+.login_box .title_box {
+    /* float: left; */
+    width: auto;
+    height: auto;
+    margin: 20px 0 0 20px;
+    position: absolute;
+}
+.title_box .title_text {
+	float: left;
+    width: auto;
+    height: 20px;
+    margin: 0;
+    font-family: NotoSansCJKKR;
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    /* text-align: center; */
+    color: #222;
+    /* position: absolute;*/
+}
+.title_box .box2 {
+	width: auto;
+    height: 28px;
+}
+.title_box .event_title {
+	float: left;
+    width: auto;
+    height: 28px;
+    font-family: NotoSansCJKKR;
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    color: #222;
+}
+.iogin_title {
+	width: 500px;
+	height: 145px;
+	/* border: 1px solid red; */
+	/* margin: 0 709px; */
+	position: absolute;
+	/* padding: 411px 0; */
+	padding: 411px 710px;
+}
+.iogin_title .id {
+	float: left;
+	width: 500px;
+	height: 45px;
+	margin: 50px 0 10px;
+}
+.iogin_title .id_text {
+	float: left;
+	width: 80px;
+	height: 20px;
+	margin: 7px 0;
+	font-family: NotoSansCJKKR;
+	font-size: 20px;
+	font-weight: bold;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1;
+	letter-spacing: normal;
+	text-align: left;
+	color: #222;
+}
+.iogin_title .id_input {
+	float: left;
+	width: 275px;
+	height: 33px;
+	border-radius: 5px;
+	border: solid 1px #aaa;
+	background-color: #fff;
+	padding: 0 0 0 7px;
+}
+.iogin_title .pw {
+	float: left;
+	width: 500px;
+	height: 45px;
+}
+.pw .pw_text {
+	float: left;
+	width: 80px;
+	height: 20px;
+	margin: 7px 0;
+	font-family: NotoSansCJKKR;
+	font-size: 20px;
+	font-weight: bold;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1;
+	letter-spacing: normal;
+	text-align: left;
+	color: #222;
+}
+.pw .pw_input {
+	float: left;
+	width: 275px;
+	height: 33px;
+	border-radius: 5px;
+	border: solid 1px #aaa;
+	background-color: #fff;
+	padding: 0 0 0 7px;
+}
+.iogin_title .btn_box {
+	float: left;
+    width: 500px;
+    height: 45px;
+	margin: 25px 0 0;
+}
+.btn_box .login_btn {
+	width: 245px;
+	height: 44px;
+	flex-grow: 0;
+	margin: 0 93px 0;
+	padding: 12px 92px;
+	background-color: #4c54dd;
+	border: none;
+}
+.login_text {
+	width: 61px;
+	height: 20px;
+	flex-grow: 0;
+	font-family: NotoSansCJKKR;
+	font-size: 20px;
+	font-weight: 500;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1;
+	letter-spacing: normal;
+	text-align: left;
+	color: #fff;
+}
+input:focus {
+	outline: none;
+}
+input {
+	-webkit-appearance: none;
+}

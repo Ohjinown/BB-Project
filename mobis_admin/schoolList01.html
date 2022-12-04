@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>학교 리스트</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/schoolList01.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/schoolList01.js"></script>
+</head>
+<body>
+    <!-- skip_navi -->
+    <div id="skip_navi">
+        <a href="header">상단 메뉴 바로가기</a>
+        <a href="nav">주메뉴 바로가기</a>
+        <a href="main">본문 바로가기</a>
+    </div>
+    <!-- //skip_navi -->
+
+    <hr />
+
+    <!-- wrap -->
+    <div id="wrap">
+        <!-- header -->
+        <header id="header"></header>
+        <!-- //header -->
+
+        <hr />
+
+        <!-- main -->
+        <main>
+            <div class="school_list">
+                <h2>참여 학교 리스트</h2>
+                <!-- 필터열기 버튼-->
+                <button class="f_filter" type="button" name="대시보드필터" value="필터">필터</button>
+                <!-- //필터열기 버튼 -->
+                <!-- 테이블 시작 -->
+                <div class="school_table">
+                    <!-- 테이블 기본 메뉴 -->
+                    <div class="t_menu">
+                        <ul class="t_head">
+                            <li class="head num">NO</li>
+                            <li class="head date">학교명</li>
+                            <li class="head code">정보공시학교코드</li>
+                            <li class="head person">체험 인원<span>숫자 차순 정렬</span></li>
+                            <li class="head s_num">등교 횟수<span>숫자 차순 정렬</span></li>
+                        </ul>
+                    </div>
+                    <!-- // 테이블 기본 메뉴 -->
+                    <!-- 테이블 리스트 -->
+                    <div class="t_list">
+                        <ul class="t_body">
+                            <li class="t_data num">1</li>
+                            <li class="t_data date">케이피알초등학교</li>
+                            <li class="t_data code">S000003511</li>
+                            <li class="t_data person">100</li>
+                            <li class="t_data s_num">100</li>
+                        </ul>
+                        <ul class="t_body">
+                            <li class="t_data num">2</li>
+                            <li class="t_data date">모비스초등학교</li>
+                            <li class="t_data code">S120000621</li>
+                            <li class="t_data person">5000</li>
+                            <li class="t_data s_num">5000</li>
+                        </ul>
+                        <ul class="t_body">
+                            <li class="t_data num">3</li>
+                            <li class="t_data date">어드민초등학교</li>
+                            <li class="t_data code">S090002764</li>
+                            <li class="t_data person">10</li>
+                            <li class="t_data s_num">10</li>
+                        </ul>
+                        <ul class="t_body">
+                            <li class="t_data num">4</li>
+                            <li class="t_data date">케이피알초등학교</li>
+                            <li class="t_data code">S160003114</li>
+                            <li class="t_data person">1</li>
+                            <li class="t_data s_num">10</li>
+                        </ul>
+                        <ul class="t_body">
+                            <li class="t_data num">5</li>
+                            <li class="t_data date">케이피알초등학교</li>
+                            <li class="t_data code">S170000311</li>
+                            <li class="t_data person">5</li>
+                            <li class="t_data s_num">5</li>
+                        </ul>
+                    </div>
+                    <!-- //테이블 리스트-->
+                </div>
+                <!-- //테이블 끝 -->
+            </div>
+        </main>
+        <!-- //main -->
+    </div>
+    <!-- //wrap -->
+</body>
+</html>

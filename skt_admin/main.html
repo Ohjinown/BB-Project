@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="./css/main.css?ada"/>
+	<link rel="stylesheet" type="text/css" href="./css/header.css"/>
+	<link rel="stylesheet" type="text/css" href="./css/sidebar.css?a"/>
+	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<!-- <script type="text/javascript" src="./js/side.js?a"></script> -->
+	<script type="text/javascript" src="./js/script.js"></script>
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<title>대시보드</title>
+	<script type="text/javascript">
+	google.charts.load('current', {packages: ['corechart', 'bar']});
+	google.charts.setOnLoadCallback(drawBasic);
+		
+	function drawBasic() {
+	
+		var data = new google.visualization.DataTable();
+		data.addColumn('string', '요일');
+		data.addColumn('number', '방문자수(명)');
+
+		data.addRows([
+		['10/1', 1],	['2', 2],	['3', 3],
+		['4', 4],	['5', 5],	['6', 6],
+		['7', 50],	['8', 21],	['9', 32],
+		['10', 43],	['11', 54],	['12', 65],	
+		['13', 50],	['14', 2],	['15', 3],
+		['16', 4],	['17', 5],	['18', 6],
+		['19', 50],	['20', 21],	['21', 32],
+		['22', 43],	['23', 54],	['24', 65]
+		]);
+	
+		var options = {
+			vAxis: {
+				textPosition: 'none'
+			},
+			legend: 'none'
+		};
+	// 	setInterval(function(){
+	//     animateRenewal(drawBasic);
+	//   }, 1000);
+		var chart = new google.visualization.ColumnChart(
+		document.getElementById('chart_div'));
+
+		chart.draw(data, options);
+	}
+	</script>
+	<script type="text/javascript">
+	//콘텐츠 별 체험 현황
+		google.charts.load("current", {packages:["corechart"]});
+		google.charts.setOnLoadCallback(drawChart);
+		function drawChart() {
+		  var data = google.visualization.arrayToDataTable([
+			['Task', 'Hours per Day'],
+			['알뜰한 우주 생활', 11],
+			['건강한 우주 생활', 2],
+			['즐거운 우주 생활', 2]
+		  ]);
+	  
+		  var options = {
+			pieHole: 0.4,
+			chartArea: {
+				width:500,
+				height:300
+			},
+			pieSliceText: 'none',
+		  };
+	  
+		  var chart = new google.visualization.PieChart(document.getElementById('donutchart1'));
+		  chart.draw(data, options);
+		}
+	</script>
+	<script type="text/javascript">
+	  //각각의 콘텐츠 별 현황
+		google.charts.load("current", {packages:["corechart"]});
+		google.charts.setOnLoadCallback(drawChart);
+		function drawChart() {
+		  var data = google.visualization.arrayToDataTable([
+			['Task', 'content'],
+			['콘텐츠1', 25],
+			['콘텐츠2', 11],
+			['콘텐츠3', 5],
+			['콘텐츠4', 2],
+			['콘텐츠5', 7]
+		  ]);
+	  
+		  var options = {
+			pieHole: 0.4,
+			chartArea: {
+				width:500,
+				height:300
+			},
+			pieSliceText: 'none',
+		  };
+		  google.charts.setOnLoadCallback(function(){
+			setInterval(columnChart1(),10000);
+		  }); 
+		  var chart = new google.visualization.PieChart(document.getElementById('donutchart2'));
+		  chart.draw(data, options);
+	}
+	</script>
+</head>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#headers").load("./header/header.html");
+		$("#sidebar").load("./sidebar/sidebar.html");
+		// $("#donutchart1").load("./table.html");
+		// $("#donutchart2").load("./table.html");
+		// $("#chart_div").load("./table.html");
+	})
+</script>
+<body>
+	<div class="all_moniter">
+		<div id="headers"></div>
+		<div class="dashboard_box">
+			<div class="dashboard_text_box">
+				<span class="dashboard_text">통합 대시보드</span>
+			</div>
+			<div class="accumulate_people_box">
+				<div class="accumulate_people_text">
+					<span class="accumulate_people">누적 체험자 수</span>
+					<span class="accumulate_total">1,135,000</span>
+					<div class="accumulate_line"></div>
+					<span class="accumulate_date">2021-09-13 기준</span>
+				</div>
+			</div>
+			
+			<div class="whole_shop_box">
+				<span class="whole_shop">전체 매장 수</span>
+				<span class="whole_total">520</span>
+				<div class="whole_line"></div>
+				<span class="whole_date">2021-09-13 기준</span>
+			</div>
+			<form method="GET">
+				<div class="whole_shop_experience_box">
+					<span class="experience">일일 체험 현황</span>
+					<input class="end_date" type="date" value="" name="date2"/>
+					<span class="md_date">~</span>
+					<input class="start_date" type="date" value="" name="date1"/>
+					<div id="chart_div"></div>
+				</div>
+			</form>
+			<div class="chart_box">
+				<div class="chart">
+					<span class="chart_text">콘텐츠 별 체험 현황</span>
+					<div class="chart_text1_box">
+						<span class="chart_text1">체험 현황 :</span>
+						<span class="chart_text1">12,000</span>
+					</div>
+					<div class="chart_date">
+						<span class="chart_date_text">기간</span>
+						<input class="con_date1" type="date"/>
+						<span class="text5">~</span>
+						<input class="con_date2" type="date"/>
+					</div>
+					<div id="donutchart1">
+					</div>
+				</div>
+				<div class="Line-30"></div>
+				<div class="chart_right">
+					<div class="table1"><span class="table1_text">알뜰한 우주 생활</span></div>
+					<div class="table2"><span class="table2_text">건강한 우주 생활</span></div>
+					<div class="table3"><span class="table3_text">즐거운 우주 생활</span></div>
+					<div class="category_box">
+						<span class="category_num">체험 현황 :</span>
+						<span class="category_num1">1234</span>
+					</div>
+					<div id="donutchart2"></div>
+				</div>
+			</div>
+		</div>
+		<div id="sidebar"></div>
+	</div>
+</body>
+</html>

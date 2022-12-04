@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>교육 영상 관리</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/eduVideo.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/eduVideo.js"></script>
+</head>
+<body>
+    <!-- skip_navi -->
+    <div id="skip_navi">
+        <a href="header">상단 메뉴 바로가기</a>
+        <a href="nav">주메뉴 바로가기</a>
+        <a href="main">본문 바로가기</a>
+    </div>
+    <!-- //skip_navi -->
+
+    <hr />
+
+    <!-- wrap -->
+    <div id="wrap">
+        <!-- header -->
+        <header id="header"></header>
+        <!-- //header -->
+
+        <hr />
+
+        <!-- main -->
+        <main>
+            <!-- 교육 영상 리스트 -->
+            <div class="edu_list">
+                <h2>교육 영상 리스트 </h2>
+                <!-- 필터 선택 -->
+                <div class="edu_filter">
+                    <!-- 카테고리 선택 -->
+                    <label for="ed_category">카테고리</label>
+                    <select name="카테고리선택" id="ed_category">
+                        <option value="none">전체</option>
+                        <option value="around">주변 환경 요소</option>
+                        <option value="walker">보행자 교통안전</option>
+                        <option value="crosswalk">횡단보도</option>
+                        <option value="b_spot">사각지대</option>
+                        <option value="a_character">지역 특징 반영</option>
+                    </select>
+                    <!-- 카테고리 선택 -->
+                    <!-- 필터열기 버튼-->
+                    <button class="f_filter" type="button" name="대시보드필터" value="필터">필터</button>
+                    <!-- //필터열기 버튼 -->
+                </div>
+                <!-- //필터 선택 -->
+                <!-- 테이블 시작 -->
+                <div class="edu_table">
+                    <!-- 테이블 기본 메뉴 -->
+                    <div class="t_menu">
+                        <ul class="t_head">
+                            <li class="head num">NO</li>
+                            <li class="head date">등록일</li>
+                            <li class="head category">카테고리</li>
+                            <li class="head file">파일명</li>
+                            <li class="head play">재생수</li>
+                        </ul>
+                    </div>
+                    <!-- //테이블 기본 메뉴 -->
+                    <!-- 테이블 리스트 -->
+                    <div class="t_list">
+                        <ul class="t_body">
+                            <li class="t_data num">1</li>
+                            <li class="t_data date">2021 - 06 - 08</li>
+                            <li class="t_data category">횡단보도</li>
+                            <li class="t_data file">빨간모자야.MP4</li>
+                            <li class="t_data play">100</li>
+                            <li class="t_data ftn"></li>
+                        </ul>
+                        <ul class="t_body">
+                            <li class="t_data num">2</li>
+                            <li class="t_data date">2021 - 06 - 08</li>
+                            <li class="t_data category">사각지대</li>
+                            <li class="t_data file">꼭지켜요.MP4</li>
+                            <li class="t_data play">200</li>
+                            <li class="t_data ftn"></li>
+                        </ul>
+                        <ul class="t_body">
+                            <li class="t_data num">3</li>
+                            <li class="t_data date">2021 - 06 - 08</li>
+                            <li class="t_data category">주변 환경 요소</li>
+                            <li class="t_data file">횡단보도 파트.MP4</li>
+                            <li class="t_data play">500</li>
+                            <li class="t_data ftn"></li>
+                        </ul>
+                        <ul class="t_body">
+                            <li class="t_data num">4</li>
+                            <li class="t_data date">2021 - 06 - 08</li>
+                            <li class="t_data category">보행자 교통 안전</li>
+                            <li class="t_data file">투명 우산 사업.MP4</li>
+                            <li class="t_data play">300</li>
+                            <li class="t_data ftn"></li>
+                        </ul>
+                        <ul class="t_body">
+                            <li class="t_data num">5</li>
+                            <li class="t_data date">2021 - 06 - 08</li>
+                            <li class="t_data category">보행자 교통 안전</li>
+                            <li class="t_data file">투명 우산 사업.MP4</li>
+                            <li class="t_data play">300</li>
+                            <li class="t_data ftn"></li>
+                        </ul>
+                    </div>
+                    <!-- //테이블 리스트 -->
+                </div>
+                <!-- //테이블 끝 -->
+            </div>
+            <!-- //교육 영상 리스트 -->
+        </main>
+        <!-- //main -->
+    </div>
+    <!-- //wrap -->
+</body>
+</html>

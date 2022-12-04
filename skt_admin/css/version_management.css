@@ -1,0 +1,366 @@
+.all_moniter {
+	width: 1920px;
+	height: 969px;
+	position: relative;
+	background-color: #f2f2f2;
+}
+#headers {
+    width: 1920px;
+    height: 80px;
+    /* float: right; */
+    position: absolute;
+    background-color: #000;
+}#sidebar {
+	width: 240px;
+	height: 969px;
+	margin: 0 40px 0 0;
+	background-color: #fff;
+	position: absolute;
+}
+.version_management_box {
+width: 1600px;
+height: 810px;
+margin: 120px 40px 0 280px;
+position: absolute;
+}
+.version_management_text {
+    float: left;
+	width: 97px;
+    height: 24px;
+    font-family: NotoSansKR;
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    color: #000;
+    /* position: absolute; */
+}
+.version_insert {
+    float: right;
+    width: 125px;
+    height: 32px;
+    border: solid 1px #000;
+    background-color: #fff;
+    cursor: pointer;
+}
+.version_management_box .text1 {
+    float: left;
+    width: 1600px;
+    height: 490px;
+    background-color: #fff;
+    margin: 20px 0 0 0;
+    /* position: absolute; */
+}
+.text1 .version_email_box1 {
+    float: left;
+    width: 1600px;
+    height: 50px;
+}
+.text1 .email_name {
+    float: left;
+    width: 150px;
+    height: 26px;
+    margin: 20px 20px 0;
+    padding: 0 0 0 7px;
+}
+.text1 .email_end {
+    float: left;
+    width: 150px;
+    height: 30px;
+    margin: 20px 0 0 20px;
+}
+.text1 .version_email_box2 {
+    float: left;
+    width: 1600px;
+    height: 50px;
+}
+.text1 .email_asd {
+    float: left;
+    width: 600px;
+    height: 30px;
+    margin: 15px 0 0 20px;
+    padding: 0 0 0 7px;
+}
+.text1 .version_text {
+    float: left;
+    width: 1600px;
+    height: 70px;
+}
+.text1 .text2 {
+    /* float: left; */
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+    /* font-weight: bold; */
+    text-align: center;
+    padding: 20px 0 0 0;
+    cursor: pointer;
+}
+.text1 .text3 {
+    /* float: left; */
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+    /* font-weight: bold; */
+    text-align: center;
+    padding: 20px 0 0 0;
+    cursor: pointer;
+}
+.text1 .versiom_line {
+    /* float: left; */
+    width: 900px;
+    height: 5px;
+    background-color: #e5e5e5;
+    margin: 15px 0 0 20px;
+}
+.version_textarea_box {
+    float: left;
+    width: 1600px;
+    height: 200px;
+}
+.version_textarea {
+    float: left;
+    width: 893px;
+    height: 171px;
+    margin: 20px 0 0 20px;
+    resize: none;
+    padding: 7px 0 0 7px;
+}
+.version_input_box1 {
+    float: left;
+    width: 917px;
+    height: 34px;
+    margin: 10px 20px 0;
+}
+.version_input1 {
+    float: left;
+    width: 600px;
+    height: 41px;
+    padding: 0 0 0 7px;
+}
+.version_input_box2 {
+    float: left;
+    width: 917px;
+    height: 41px;
+    margin: 10px 20px 0;
+}
+.version_input2 {
+    float: left;
+    width: 600px;
+    height: 30px;
+    padding: 0 0 0 7px;
+}
+.version_list_box {
+    float: left;
+    width: 1600px;
+    height: 230px;
+    background-color: #fff;
+    /* position: absolute; */
+    margin: 10px 0 40px 0;
+}
+.varsion_list_text {
+    float: left;
+    width: 1600px;
+    height: 25px;
+    margin: 10px 0 0;
+}
+.varsion_list {
+    float: left;
+    /* display: inline-block; */
+    width: 108px;
+    height: 24px;
+    font-family: NotoSansKR;
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    color: #000;
+}
+.version_list_box .version_list_th {
+    float: left;
+    width: 1600px;
+    height: 35px;
+}
+.version_list_box .install_ver {
+    float: left;
+    width: 454px;
+    height: 33px;
+    text-align: center;
+    border-top: 1px solid #7f7f7f;
+    border-bottom: 1px solid #7f7f7f;
+    border-right: 1px solid #7f7f7f;
+    background-color: #bfbfbf;
+}
+.version_list_box .install_ver_text {
+    display: inline-block;
+    width: 110px;
+    height: 28px;
+    /* margin: 0px 0; */
+    padding: 7px 0 0 0;
+    font-family: NotoSansKR;
+    font-size: 14px;
+    line-height: 1.57;
+    color: #000;
+}
+.version_list_box .install_update {
+    float: left;
+    width: 690px;
+    height: 33px;
+    text-align: center;
+    border-top: 1px solid #7f7f7f;
+    border-bottom: 1px solid #7f7f7f;
+    border-right: 1px solid #7f7f7f;
+    background-color: #bfbfbf;
+}
+.version_list_box .install_update_text {
+    display: inline-block;
+    width: 110px;
+    height: 28px;
+    /* margin: 0px 0; */
+    padding: 7px 0 0 0;
+    font-family: NotoSansKR;
+    font-size: 14px;
+    line-height: 1.57;
+    color: #000;
+}
+.version_list_box .install_admin {
+    float: left;
+    width: 437px;
+    height: 33px;
+    text-align: center;
+    border-top: 1px solid #7f7f7f;
+    border-bottom: 1px solid #7f7f7f;
+    background-color: #bfbfbf;
+}
+.version_list_box .install_admin_text {
+    display: inline-block;
+    width: 110px;
+    height: 28px;
+    padding: 7px 0 0 0;
+    font-family: NotoSansKR;
+    font-size: 14px;
+    line-height: 1.57;
+    color: #000;
+}
+.version_list_box .version_list_td {
+    float: left;
+    width: 1600px;
+    height: 195px;
+    overflow-y: auto;
+}
+.version_list_box .install_ver1 {
+    float: left;
+    width: 454px;
+    height: 34px;
+    text-align: center;
+    border-bottom: 1px solid #7f7f7f;
+    border-right: 1px solid #7f7f7f;
+    background-color: #fff;
+}
+.version_list_box .install_ver_text1 {
+    display: inline-block;
+    width: 110px;
+    height: 28px;
+    /* margin: 0px 0; */
+    padding: 7px 0 0 0;
+    font-family: NotoSansKR;
+    font-size: 14px;
+    line-height: 1.57;
+    color: #000;
+}
+.version_list_box .install_update1 {
+    float: left;
+    width: 690px;
+    height: 34px;
+    text-align: center;
+    border-bottom: 1px solid #7f7f7f;
+    border-right: 1px solid #7f7f7f;
+    background-color: #fff;
+
+}
+.version_list_box .install_update_text1 {
+    display: inline-block;
+    width: 150px;
+    height: 28px;
+    /* margin: 0px 0; */
+    padding: 7px 0 0 0;
+    font-family: NotoSansKR;
+    font-size: 14px;
+    line-height: 1.57;
+    color: #000;
+}
+.version_list_box .install_admin1 {
+    float: left;
+    width: 437px;
+    height: 34px;
+    text-align: center;
+    border-bottom: 1px solid #7f7f7f;
+    background-color: #fff;
+}
+.version_list_box .install_admin_text1 {
+    display: inline-block;
+    width: 110px;
+    height: 28px;
+    padding: 7px 0 0 0;
+    font-family: NotoSansKR;
+    font-size: 14px;
+    line-height: 1.57;
+    color: #000;
+}
+.upload_file {
+    display: inline-block;
+    height: 35px;
+    padding: 4px 0 0 7px;
+    vertical-align: middle;
+    border: 1px solid #a6a6a6;
+    width: 356px;
+}
+input[type="file"] {
+	position: absolute;
+    width: 0;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+}
+label {
+	display: inline-block;
+	width: 77px;
+    height: 35px;
+    text-align: center;
+    border: 1px solid #000;
+    margin: 0 0 0 20px;
+    color: #000;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.label_span {
+    float: left;
+    font-weight: bold;
+    font-size: 13px;
+    margin: 9px 25px 9px 26px;
+}
+.cancel4 {
+    width: 40px;
+    height: 35px;
+    float: right;
+    cursor: pointer;
+}
+.cancel5 {
+    width: 40px;
+    height: 35px;
+    float: right;
+    cursor: pointer;
+}
+.system  {
+	background-color: #3219c5;
+}
+.system .sidebar_text {
+	color:#fff;
+}

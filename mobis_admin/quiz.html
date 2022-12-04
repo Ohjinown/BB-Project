@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>퀴즈콘텐츠</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/quiz.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/header.js"></script>
+</head>
+<body>
+    <!-- skip_navi -->
+    <div id="skip_navi">
+        <a href="header">상단 메뉴 바로가기</a>
+        <a href="nav">주메뉴 바로가기</a>
+        <a href="main">본문 바로가기</a>
+    </div>
+    <!-- //skip_navi -->
+    
+    <hr />
+
+    <!-- wrap -->
+    <div id="wrap">
+        <!-- header -->
+        <header id="header"></header>
+        <!-- //header -->
+
+        <hr />
+
+        <!-- main -->
+        <main>
+            <div class="quiz_answer">
+                <h2>퀴즈 정답률 분석</h2>
+                <!-- 필터열기 버튼-->
+                <button class="f_filter" type="button" name="대시보드필터" value="필터">필터</button>
+                <!-- //필터열기 버튼 -->
+                <!-- 전체 퀴즈 정답률 -->
+                <div class="q_table1">
+                    <h3>전체</h3>
+                    <!-- 전체 퀴즈 정답률 테이블 시작 -->
+                    <div class="table_all">
+                        <!-- 테이블 카테고리/헤드 -->
+                        <div class="t_header">
+                            <p class="category">카테고리</p>
+                            <p class="c_area">지역</p>
+                            <ul class="a_menu">
+                                <li>신도심</li>
+                                <li>구도심</li>
+                                <li>농촌</li>
+                                <li>공장가</li>
+                                <li class="last">합계</li>
+                            </ul>
+                        </div>
+                        <!-- //테이블 카테고리/헤드 -->
+                        <!-- 전체 필터 테이블 내용 -->
+                        <div class="t_body">
+                            <ul>
+                                <li class="c_menu">Q1. 주변 환경 요소</li>
+                                <li>80/100<strong>(80%)</strong></li>
+                                <li>70/100<strong>(70%)</strong></li>
+                                <li>90/100<strong>(90%)</strong></li>
+                                <li>80/100<strong>(80%)</strong></li>
+                                <li class="last">320/400<strong>(80%)</strong></li>
+                            </ul>
+                            <ul class="menu_q2">
+                                <li class="c_menu">Q2. 보행자 교통안전<span>(보호장구 포함)</span></li>
+                                <li>80/100<strong>(80%)</strong></li>
+                                <li>70/100<strong>(70%)</strong></li>
+                                <li>90/100<strong>(90%)</strong></li>
+                                <li>80/100<strong>(80%)</strong></li>
+                                <li class="last">320/400<strong>(80%)</strong></li>
+                            </ul>
+                            <ul>
+                                <li class="c_menu">Q3. 횡단보도</li>
+                                <li>80/100<strong>(80%)</strong></li>
+                                <li>70/100<strong>(70%)</strong></li>
+                                <li>90/100<strong>(90%)</strong></li>
+                                <li>80/100<strong>(80%)</strong></li>
+                                <li class="last">320/400<strong>(80%)</strong></li>
+                            </ul>
+                            <ul>
+                                <li class="c_menu">Q4. 사각지대</li>
+                                <li>80/100<strong>(80%)</strong></li>
+                                <li>70/100<strong>(70%)</strong></li>
+                                <li>90/100<strong>(90%)</strong></li>
+                                <li>80/100<strong>(80%)</strong></li>
+                                <li class="last">320/400<strong>(80%)</strong></li>
+                            </ul>
+                            <ul>
+                                <li class="c_menu">Q5. 지역 특징 반영</li>
+                                <li>80/100<strong>(80%)</strong></li>
+                                <li>70/100<strong>(70%)</strong></li>
+                                <li>90/100<strong>(90%)</strong></li>
+                                <li>80/100<strong>(80%)</strong></li>
+                                <li class="last">320/400<strong>(80%)</strong></li>
+                            </ul>
+                            <ul class="menu_q6">
+                                <li class="c_menu">합계</li>
+                                <li>400/500<strong>(80%)</strong></li>
+                                <li>350/500<strong>(70%)</strong></li>
+                                <li>450/500<strong>(90%)</strong></li>
+                                <li>400/500<strong>(80%)</strong></li>
+                                <li class="last">1600/2000<strong>(80%)</strong></li>
+                            </ul>
+                        </div>
+                        <!-- //전체 필터 테이블 내용 -->
+                    </div>
+                    <!-- //전체 퀴즈 정답률 테이블 끝 -->
+                </div>
+                <!-- //전체 퀴즈 정답률 -->
+                <!-- 필터 퀴즈 정답률 -->
+                <div class="q_table2">
+                    <h3>필터</h3>
+                    <!-- 필터 퀴즈 정답률 테이블 시작 -->
+                    <div class="table_filter">
+                        <!-- 테이블 카테고리/헤드 -->
+                        <div class="t_header">
+                            <p class="category">카테고리</p>
+                            <p class="c_area">지역</p>
+                            <ul class="a_menu">
+                                <li>신도심</li>
+                                <li>구도심</li>
+                                <li>농촌</li>
+                                <li>공장가</li>
+                                <li class="last">합계</li>
+                            </ul>
+                        </div>
+                        <!-- //테이블 카테고리/헤드 -->
+                        <!-- 전체 필터 테이블 내용 -->
+                        <div class="t_body">
+                            <ul>
+                                <li class="c_menu">Q1. 주변 환경 요소</li>
+                                <li>80/100<strong>(80%)</strong></li>
+                                <li>70/100<strong>(70%)</strong></li>
+                                <li>90/100<strong>(90%)</strong></li>
+                                <li>80/100<strong>(80%)</strong></li>
+                                <li class="last">320/400<strong>(80%)</strong></li>
+                            </ul>
+                            <ul class="menu_q2">
+                                <li class="c_menu">Q2. 보행자 교통안전<span>(보호장구 포함)</span></li>
+                                <li>80/100<strong>(80%)</strong></li>
+                                <li>70/100<strong>(70%)</strong></li>
+                                <li>90/100<strong>(90%)</strong></li>
+                                <li>80/100<strong>(80%)</strong></li>
+                                <li class="last">320/400<strong>(80%)</strong></li>
+                            </ul>
+                            <ul>
+                                <li class="c_menu">Q3. 횡단보도</li>
+                                <li>80/100<strong>(80%)</strong></li>
+                                <li>70/100<strong>(70%)</strong></li>
+                                <li>90/100<strong>(90%)</strong></li>
+                                <li>80/100<strong>(80%)</strong></li>
+                                <li class="last">320/400<strong>(80%)</strong></li>
+                            </ul>
+                            <ul>
+                                <li class="c_menu">Q4. 사각지대</li>
+                                <li>80/100<strong>(80%)</strong></li>
+                                <li>70/100<strong>(70%)</strong></li>
+                                <li>90/100<strong>(90%)</strong></li>
+                                <li>80/100<strong>(80%)</strong></li>
+                                <li class="last">320/400<strong>(80%)</strong></li>
+                            </ul>
+                            <ul>
+                                <li class="c_menu">Q5. 지역 특징 반영</li>
+                                <li>80/100<strong>(80%)</strong></li>
+                                <li>70/100<strong>(70%)</strong></li>
+                                <li>90/100<strong>(90%)</strong></li>
+                                <li>80/100<strong>(80%)</strong></li>
+                                <li class="last">320/400<strong>(80%)</strong></li>
+                            </ul>
+                            <ul class="menu_q6">
+                                <li class="c_menu">합계</li>
+                                <li>400/500<strong>(80%)</strong></li>
+                                <li>350/500<strong>(70%)</strong></li>
+                                <li>450/500<strong>(90%)</strong></li>
+                                <li>400/500<strong>(80%)</strong></li>
+                                <li class="last">1600/2000<strong>(80%)</strong></li>
+                            </ul>
+                        </div>
+                        <!-- //전체 필터 테이블 내용 -->
+                    </div>
+                    <!-- //필터 퀴즈 정답률 테이블 끝 -->
+                </div>
+                <!-- //필터 퀴즈 정답률 -->
+            </div>
+        </main>
+        <!-- //main -->
+    </div>
+    <!-- wrap -->
+</body>
+</html>

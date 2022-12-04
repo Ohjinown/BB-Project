@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dashboard</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/header.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="js/chart1.js"></script>
+    <script src="js/chart2.js"></script>
+    <script src="js/chart3.js"></script>
+</head>
+<body>
+    <!-- skip_navi -->
+    <div id="skip_navi">
+        <a href="header">상단 메뉴 바로가기</a>
+        <a href="nav">주메뉴 바로가기</a>
+        <a href="main">본문 바로가기</a>
+    </div>
+    <!-- //skip_navi -->
+
+    <hr />
+
+    <!-- wrap -->
+    <div id="wrap">
+        <!-- header -->
+        <header id="header"></header>
+        <!-- //header -->
+
+        <hr />
+
+        <!-- main -->
+        <main>
+            <!-- 전체사용자 수-->
+            <div class="user">
+                <h2>전체 사용자</h2>
+                <p><span>오늘 참여자</span>50명</p>
+                <p class="cum"><span>누적 참여자</span>600명</p>
+            </div>
+            <!-- //전체사용자 수 -->
+            <!-- 그래프 영역 -->
+            <div class="user_graph">
+                <!-- 필터열기 버튼-->
+                <button class="f_filter" type="button" name="대시보드필터" value="필터">필터</button>
+                <!-- //필터열기 버튼 -->
+                <!-- 전체 그래프 -->
+                <div class="all_graph">
+                    <div class="graph1">
+                        <h4>한눈에 보기<span>날짜별</span></h4>
+                        <div id="chart1"></div>
+                    </div>
+                    <div class="graph2">
+                        <h4>사용자 비율<span>학년별</span></h4>
+                        <div id="chart2"></div>
+                    </div>
+                    <div class="graph3">
+                        <h4>등교 지역<span>체험 컨텐츠</span></h4>
+                        <div id="chart3"></div>
+                    </div>
+                </div>
+                <!-- //전체 그래프 -->
+                <!-- 엑셀 다운로드 버튼 -->
+                <button class="excel" type="button" name="다운로드" value="엑셀 다운로드" onclick="">엑셀 다운로드</button>
+                <!-- 엑셀 다운로드 버튼 -->
+            </div>
+            <!-- //그래프 영역 -->
+        </main>
+        <!-- //main -->
+    </div>
+    <!-- //wrap -->
+</body>
+</html>

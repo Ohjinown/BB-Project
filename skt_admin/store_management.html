@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="./css/store_management.css?a"/>
+	<link rel="stylesheet" type="text/css" href="./css/header.css"/>
+	<link rel="stylesheet" type="text/css" href="./css/sidebar.css"/>
+	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.4/pagination.min.js"></script>
+	<script type="text/javascript"src="./js/popup.js"></script>
+	<title>매장리스트</title>
+</head>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#headers").load("./header/header.html");
+		$("#sidebar").load("./sidebar/sidebar.html");
+	})
+</script>
+<body>
+	<div class="all_moniter">
+		<div id="headers"></div>
+		<div id="sidebar"></div>
+		<div class="store_management_box">
+			<span class="store_list">매장 리스트</span>
+			<form action="" method="GET">
+				<div class="select_list_box">
+					<div class="div_box1">
+						<span class="area_list_title">지역</span>
+						<select class="area_select main-city" onchange="category(this)" name="aera" data-value="2">
+							<option data-value="1" value="전체">전체</option>
+							<option value="서울">서울</option>
+							<option value="인천">인천</option>
+							<option value="경기">경기</option>
+							<option value="강원">강원</option>
+							<option value="충북">충북</option>
+							<option value="충남">충남</option>
+							<option value="세종">세종</option>
+							<option value="대전">대전</option>
+							<option value="경북">경북</option>
+							<option value="경남">경남</option>
+							<option value="대구">대구</option>
+							<option value="울산">울산</option>
+							<option value="부산">부산</option>
+							<option value="전북">전북</option>
+							<option value="전남">전남</option>
+							<option value="광주">광주</option>
+							<option value="제주">제주</option>
+						</select>
+						<select class="local_select sub-city" id="good" name="raera">
+							<option>전체</option>
+						</select>
+					
+						<span class="store_type_title">매장 타입</span>
+						<select class="store_type" name="store_type">
+							<option>전체</option>
+							<option>ALL New</option>
+							<option>Variation</option>
+						</select>
+			
+						<span class="store_status_title">운영 상태</span>
+						<select class="store_status" name="store_status">
+							<option>전체</option>
+							<option>활성</option>
+							<option>비활성</option>
+						</select>
+					
+						<span class="store_install_title">설치 버전</span>
+						<select class="store_install" name="store_install">
+							<option>전체</option>
+						</select>
+					</div>
+					<div class="div_box2">
+					<span class="store_update_tilte">설치일</span>
+					<input class="update_date1" type="date" name="date1">
+
+					<span class="center">~</span> 
+					<input class="update_date2" type="date" name="date2">
+						<span class="store_serch_title">검색</span>
+						<select name="" id="" class="store_serch" name="all_serch">
+							<option value="">전체</option>
+						</select>
+						<input type="search" class="store_input" value="" name="검색">
+					</div>
+					<div class="sotre_button">
+					<input class="store_button" type="submit" value="검색"/>
+				</div>
+				</form>
+				<div class="store_infor_box">
+					<div class="store_alignment_box">
+						<span class="alignment_text">정렬</span>
+						<select class="store_alignment" name="alignment">
+							<option value="1">최신순</option>
+							<option value="2">과거순</option>
+						</select>
+						<button class="excel_download_button" type="button"><span class="excel_download">엑셀 다운로드</span></button>
+						<button class="store_information_box popup_button" type="button"><span>매장 등록</span></button>
+					</div>
+				<form method="GET">
+					<div class="popup_open">
+						<div class="popup">
+							<span class="store_insert">매장 등록</span>
+							<img class="cancel" src="../skt_admin/img/btn_close@3x.png"/>
+							<div class="store_line"></div>
+
+							<div class="pop_store_title_box">
+								<span class="pop_store_title">매장명</span>
+								<input class="input_text del" type="text" placeholder="입력" value="" name="store_title"/>
+							</div>
+
+							<div class="area_store_box">
+								<span class="area_store">지역</span>
+								<select class="area_select1" name="location1">
+									<option class="value" value="1">선택</option>
+									<option class="value" value="2">선택1</option>
+								</select>
+								<select class="area_select2" name="location2">
+									<option class="value" value="1">선택</option>
+									<option class="value" value="2">선택1</option>
+								</select>
+							</div>
+
+							<div class="store_address_box">
+								<span class="store_address">매장 주소</span>
+								<input class="store_input1 del" type="text" value="" name="store_address" placeholder="입력"/>
+							</div>
+
+							<div class="store_type_box1">
+								<span class="store_type1">매장 타입</span>
+								<select class="store_select" name="location3">
+									<option class="value" value="선택">선택</option>
+									<option class="value" value="1">선택1</option>
+									<option class="value" value="2">선택2</option>
+								</select>
+							</div>
+
+							<div class="equipment_code_box">
+								<span class="equipment_code_P">장비 코드(P)</span>
+								<input class="equipment_P del" type="text" placeholder="입력" value="" name="code_P"/>
+								<span class="equipment_code_T">장비 코드(T)</span>
+								<input class="equipment_T del" type="text" placeholder="입력" value="" name="code_T"/>
+							</div>
+							
+							<div class="installer_box">
+								<span class="installer">설치 담당자</span>
+								<input class="installer_text del" type="text" placeholder="입력" value="" name="installer"/>
+								<span class="tel">연락처</span>
+								<input class="installer_tel del" type="tel" placeholder="입력" value="" name="tel"/>
+							</div>
+							<div class="store_num_box">
+								<span class="store_num">매장 번호</span>
+								<input class="store_num_input del" type="text" placeholder="입력" value="" name="store_num"/>
+							</div>
+							<div class="time_box">
+								<span class="time">운영 시간</span>
+								<textarea class="time_input del" type="text" placeholder="입력" value="" name="textarea"></textarea>
+							</div>
+
+							<div class="insert_box">
+								<button class="insert_but"><span>등록</span></button>
+							</div>
+						</div>	
+					</div>
+				</form>
+					<div class="table" id="table">
+						<div class="table_chekbox"><input class="input_checkbox" type="checkbox"/></div>
+						<div class="number_box"><span class="number">No.</span></div>
+						<div class="store_name_box all_box"><span class="store_name all_text">매장명</span></div>
+						<div class="store_type_box all_box"><span class="all_text">지역</span></div>
+						<div class="store_code_box all_box"><span class="all_text">매장 타입</span></div>
+						<div class="operational_status_box all_box"><span class="all_text">운영 상태</span></div>
+						<div class="total_experience_box all_box"><span class="all_text">총 체험 현황</span></div>
+						<div class="all_box"><span class="all_text">설치 버전</span></div>
+						<div class="all_box"><span class="all_text">장비 코드(PC)</span></div>
+						<div class="all_box"><span class="all_text">장비 코드(Tablet)</span></div>
+						<div class="all_box"><span class="all_text">설치일</span></div>
+						<div class="all_box"><span class="all_text">설치 담당자</span></div>
+						<div class="all_box"><span class="all_text">상세</span></div>
+					</div>
+					<div class="td_table">
+						<div class="table_chekbox"><input class="input_checkbox" type="checkbox"/></div>
+						<div class="number_box"><span class="number">1</span></div>
+						<div class="store_name_box all_box"><span class="store_name all_text">뱅뱅사거리점</span></div>
+						<div class="store_type_box all_box"><span class="all_text">PS&M</span></div>
+						<div class="store_code_box all_box"><span class="all_text">001</span></div>
+						<div class="operational_status_box all_box"><span class="all_text">활성</span></div>
+						<div class="total_experience_box all_box"><span class="all_text">30,581</span></div>
+						<div class="all_box"><span class="all_text">v1.0.0</span></div>
+						<div class="all_box"><span class="all_text">D00002</span></div>
+						<div class="all_box"><span class="all_text">R00002</span></div>
+						<div class="all_box"><span class="all_text">2021-09-12</span></div>
+						<div class="all_box"><span class="all_text">홍길동</span></div>
+						<div class="all_box"><a href="./store_information.html"><span class="all_text">보기</span></a></div>
+
+						<div class="table_chekbox"><input class="input_checkbox" type="checkbox"/></div>
+						<div class="number_box"><span class="number">1</span></div>
+						<div class="store_name_box all_box"><span class="store_name all_text">뱅뱅사거리점</span></div>
+						<div class="store_type_box all_box"><span class="all_text">PS&M</span></div>
+						<div class="store_code_box all_box"><span class="all_text">001</span></div>
+						<div class="operational_status_box all_box"><span class="all_text">활성</span></div>
+						<div class="total_experience_box all_box"><span class="all_text">30,581</span></div>
+						<div class="all_box"><span class="all_text">v1.0.0</span></div>
+						<div class="all_box"><span class="all_text">D00002</span></div>
+						<div class="all_box"><span class="all_text">R00002</span></div>
+						<div class="all_box"><span class="all_text">2021-09-12</span></div>
+						<div class="all_box"><span class="all_text">홍길동</span></div>
+						<div class="all_box"><a href="./store_information.html"><span class="all_text">보기</span></a></div>
+						<!-- <div class="table_chekbox"><input class="input_checkbox" type="checkbox"/></div>
+						<div class="number_box"><span class="number">1</span></div>
+						<div class="store_name_box all_box"><span class="store_name all_text">뱅뱅사거리점</span></div>
+						<div class="store_type_box all_box"><span class="all_text">PS&M</span></div>
+						<div class="store_code_box all_box"><span class="all_text">001</span></div>
+						<div class="operational_status_box all_box"><span class="all_text">활성</span></div>
+						<div class="total_experience_box all_box"><span class="all_text">30,581</span></div>
+						<div class="all_box"><span class="all_text">v1.0.0</span></div>
+						<div class="all_box"><span class="all_text">D00002</span></div>
+						<div class="all_box"><span class="all_text">R00002</span></div>
+						<div class="all_box"><span class="all_text">2021-09-12</span></div>
+						<div class="all_box"><span class="all_text">홍길동</span></div>
+						<div class="all_box"><span class="all_text">홀길동</span></div>
+						<div class="table_chekbox"><input class="input_checkbox" type="checkbox"/></div>
+						<div class="number_box"><span class="number">1</span></div>
+						<div class="store_name_box all_box"><span class="store_name all_text">뱅뱅사거리점</span></div>
+						<div class="store_type_box all_box"><span class="all_text">PS&M</span></div>
+						<div class="store_code_box all_box"><span class="all_text">001</span></div>
+						<div class="operational_status_box all_box"><span class="all_text">활성</span></div>
+						<div class="total_experience_box all_box"><span class="all_text">30,581</span></div>
+						<div class="all_box"><span class="all_text">v1.0.0</span></div>
+						<div class="all_box"><span class="all_text">D00002</span></div>
+						<div class="all_box"><span class="all_text">R00002</span></div>
+						<div class="all_box"><span class="all_text">2021-09-12</span></div>
+						<div class="all_box"><span class="all_text">홍길동</span></div>
+						<div class="all_box"><span class="all_text">홀길동</span></div>
+						<div class="table_chekbox"><input class="input_checkbox" type="checkbox"/></div>
+						<div class="number_box"><span class="number">1</span></div>
+						<div class="store_name_box all_box"><span class="store_name all_text">뱅뱅사거리점</span></div>
+						<div class="store_type_box all_box"><span class="all_text">PS&M</span></div>
+						<div class="store_code_box all_box"><span class="all_text">001</span></div>
+						<div class="operational_status_box all_box"><span class="all_text">활성</span></div>
+						<div class="total_experience_box all_box"><span class="all_text">30,581</span></div>
+						<div class="all_box"><span class="all_text">v1.0.0</span></div>
+						<div class="all_box"><span class="all_text">D00002</span></div>
+						<div class="all_box"><span class="all_text">R00002</span></div>
+						<div class="all_box"><span class="all_text">2021-09-12</span></div>
+						<div class="all_box"><span class="all_text">홍길동</span></div>
+						<div class="all_box"><span class="all_text">홀길동</span></div>
+						<div class="table_chekbox"><input class="input_checkbox" type="checkbox"/></div>
+						<div class="number_box"><span class="number">1</span></div>
+						<div class="store_name_box all_box"><span class="store_name all_text">뱅뱅사거리점</span></div>
+						<div class="store_type_box all_box"><span class="all_text">PS&M</span></div>
+						<div class="store_code_box all_box"><span class="all_text">001</span></div>
+						<div class="operational_status_box all_box"><span class="all_text">활성</span></div>
+						<div class="total_experience_box all_box"><span class="all_text">30,581</span></div>
+						<div class="all_box"><span class="all_text">v1.0.0</span></div>
+						<div class="all_box"><span class="all_text">D00002</span></div>
+						<div class="all_box"><span class="all_text">R00002</span></div>
+						<div class="all_box"><span class="all_text">2021-09-12</span></div>
+						<div class="all_box"><span class="all_text">홍길동</span></div>
+						<div class="all_box"><span class="all_text">홀길동</span></div>
+						<div class="table_chekbox"><input class="input_checkbox" type="checkbox"/></div>
+						<div class="number_box"><span class="number">1</span></div>
+						<div class="store_name_box all_box"><span class="store_name all_text">뱅뱅사거리점</span></div>
+						<div class="store_type_box all_box"><span class="all_text">PS&M</span></div>
+						<div class="store_code_box all_box"><span class="all_text">001</span></div>
+						<div class="operational_status_box all_box"><span class="all_text">활성</span></div>
+						<div class="total_experience_box all_box"><span class="all_text">30,581</span></div>
+						<div class="all_box"><span class="all_text">v1.0.0</span></div>
+						<div class="all_box"><span class="all_text">D00002</span></div>
+						<div class="all_box"><span class="all_text">R00002</span></div>
+						<div class="all_box"><span class="all_text">2021-09-12</span></div>
+						<div class="all_box"><span class="all_text">홍길동</span></div>
+						<div class="all_box"><span class="all_text">홀길동</span></div>
+						<div class="table_chekbox"><input class="input_checkbox" type="checkbox"/></div>
+						<div class="number_box"><span class="number">1</span></div>
+						<div class="store_name_box all_box"><span class="store_name all_text">뱅뱅사거리점</span></div>
+						<div class="store_type_box all_box"><span class="all_text">PS&M</span></div>
+						<div class="store_code_box all_box"><span class="all_text">001</span></div>
+						<div class="operational_status_box all_box"><span class="all_text">활성</span></div>
+						<div class="total_experience_box all_box"><span class="all_text">30,581</span></div>
+						<div class="all_box"><span class="all_text">v1.0.0</span></div>
+						<div class="all_box"><span class="all_text">D00002</span></div>
+						<div class="all_box"><span class="all_text">R00002</span></div>
+						<div class="all_box"><span class="all_text">2021-09-12</span></div>
+						<div class="all_box"><span class="all_text">홍길동</span></div>
+						<div class="all_box"><span class="all_text">홀길동</span></div>
+						<div class="table_chekbox"><input class="input_checkbox" type="checkbox"/></div>
+						<div class="number_box"><span class="number">1</span></div>
+						<div class="store_name_box all_box"><span class="store_name all_text">뱅뱅사거리점</span></div>
+						<div class="store_type_box all_box"><span class="all_text">PS&M</span></div>
+						<div class="store_code_box all_box"><span class="all_text">001</span></div>
+						<div class="operational_status_box all_box"><span class="all_text">활성</span></div>
+						<div class="total_experience_box all_box"><span class="all_text">30,581</span></div>
+						<div class="all_box"><span class="all_text">v1.0.0</span></div>
+						<div class="all_box"><span class="all_text">D00002</span></div>
+						<div class="all_box"><span class="all_text">R00002</span></div>
+						<div class="all_box"><span class="all_text">2021-09-12</span></div>
+						<div class="all_box"><span class="all_text">홍길동</span></div>
+						<div class="all_box"><span class="all_text">홀길동</span></div> -->
+					</div>
+					<!-- <div class="store_pageing" id="store_pageing">
+						<input class="store_add" type="button" value="매장 추가"/>
+					</div> -->
+				</div>
+		</div>
+	</div>
+</body>
+</html>

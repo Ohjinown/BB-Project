@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" equipment="IE=edge">
+	<meta name="viewport" equipment="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="./css/equipment_management.css?a"/>
+	<link rel="stylesheet" type="text/css" href="./css/header.css"/>
+	<link rel="stylesheet" type="text/css" href="./css/sidebar.css"/>
+	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript"src="./js/popup.js?aa"></script>
+	<title>장비 관리</title>
+
+	<script type="text/javascript">
+	$(document).ready (function() {
+		$("#headers").load("./header/header.html")
+		$("#sidebar").load("./sidebar/sidebar.html")
+	})
+	</script>
+</head>
+<body>
+	<div class="all_moniter">
+		<div id="headers"></div>
+		<div id="sidebar"></div>
+		<div class="equipment_box">
+			<span class="equipment_list_text">장비 리스트</span>
+			<div class="equipment_box_list">
+				<form action="" method="GET">
+					<span class="equipment_benefits">장비 종류</span>
+					<select class="equipment_select1" name="equipment">
+						<option value="1">전체</option>
+						<option value="2">PC</option>
+						<option value="3">Tablet</option>
+					</select>
+					<span class="equipment_category">상태</span>
+					<select class="equipment_select2" name="state" id="">
+						<option value="1">전체</option>
+						<option value="2">활성</option>
+						<option value="3">비활성</option>
+					</select>
+					<span class="equipment_serch">검색</span>
+					<input class="equipment_input" type="search" name="serch">
+					<button class="equipment_button"><span>검색</span></button>
+				</form>
+			</div>
+			<div class="equipment_infor_box">
+				<div class="equipment_infor">
+					<span class="equipment_alignment_text">정렬</span>
+					<select class="equipment_alignment">
+						<option>최신순</option>
+						<option>과거순</option>
+					</select>
+					<button class="excel_down"><span>엑셀 다운로드</span></button>
+					<button class="button_insert"><span>장비 등록</span></button>
+				</div>
+
+				<div class="equipment_table">
+					<div class="equipment_number"><span class="number_text">No.</span></div>
+					<div class="equipment_title"><span class="number_text">장비 종류</span></div>
+					<div class="serial_num"><span class="number_text">시리얼 넘버</span></div>
+					<div class="equipment_code"><span class="number_text">장비코드</span></div>
+					<div class="store_title"><span class="number_text">매장명</span></div>
+					<div class="store_area"><span class="number_text">지역</span></div>
+					<div class="equipment_state"><span class="number_text">상태</span></div>
+					<div class="equipment_date"><span class="number_text">등록일</span></div>
+					<div class="view_details"><span class="number_text">상세</span></div>
+				</div>
+				<div class="equipment_table_td">
+					<div class="equipment_number"><span class="number">16</span></div>
+					<div class="equipment_title"><span class="number">PC</span></div>
+					<div class="serial_num"><span class="number">0000000000000</span></div>
+					<div class="equipment_code"><span class="number">D00002</span></div>
+					<div class="store_title"><span class="number">새서울 가로수점</span></div>
+					<div class="store_area"><span class="number">인천>미추홀구</span></div>
+					<div class="equipment_state"><span class="number">활성</span></div>
+					<div class="equipment_date"><span class="number">2021-09-12  09:00:00</span></div>
+					<div class="view_details"><span class="see">수정</span></div>
+
+				</div>
+			</div>
+		</div>
+		<div class="equipment_popup">
+			<div class="eq_popup">
+				<form method="GET">
+					<span class="equipment_insert">장비 등록</span>
+					<img class="equipment_cancel" src="../skt_admin/img/btn_close@3x.png"/>
+				<div class="equipment_line"></div>
+				<div class="text_title_box">
+					<span class="text_title">장비 종류</span>
+					<select class="equipment_select con_del" type="text" name="equipment">
+						<option>전체</option>
+						<option>PC</option>
+						<option>Tablet</option>
+					</select>
+				</div>
+
+				<div class="text_title_box">
+					<span class="text_title">시리얼 넘버</span>
+					<input class="serial_input con_del" type="text" name="serial_number"/>
+				</div>
+
+				<div class="text_title_box">
+					<span class="text_title con_del">장비 코드</span>
+					<input class="code_input" type="text" name="equipment_code"/>
+				</div>
+
+				<div class="text_title_box">
+					<span class="text_title">매장명</span>
+					<input class="store_input con_del" type="text" name="store_title">
+				</div>
+
+				<div class="text_title_box">
+					<span class="text_title">지역</span>
+					<select class="area_select" name="area">
+						<option>전체</option>
+					</select>
+					<select class="area_select1" name="rarea">
+						<option>전주</option>
+					</select>
+				</div>
+				<div class="equipment_insert_box">
+					<button class="insert_but"><span>등록</span></button>
+				</div>
+				</form>
+			</div>
+		</div>
+
+		<div class="equipment_popup1">
+			<div class="eq_popup1">
+				<form method="GET">
+					<span class="equipment_insert">장비 상세</span>
+					<img class="equipment_cancel1" src="../skt_admin/img/btn_close@3x.png"/>
+					<div class="equipment_line"></div>
+					<div class="text_title_box">
+						<span class="text_title">장비 종류</span>
+						<select class="equipment_select con_del" type="text" name="equipment">
+							<option>전체</option>
+							<option>PC</option>
+							<option>Tablet</option>
+						</select>
+					</div>
+
+					<div class="text_title_box">
+						<span class="text_title">시리얼 넘버</span>
+						<input class="serial_input con_del" type="text" name="serial_number"/>
+					</div>
+
+					<div class="text_title_box">
+						<span class="text_title con_del">장비 코드</span>
+						<input class="code_input" type="text" name="equipment_code"/>
+					</div>
+
+					<div class="text_title_box">
+						<span class="text_title">매장명</span>
+						<input class="store_input con_del" type="text" name="store_title"/>
+					</div>
+
+					<div class="text_title_box">
+						<span class="text_title">지역</span>
+						<select class="area_select" name="area">
+							<option>전체</option>
+							<option>서울</option>
+						</select>
+						<select class="area_select1" name="rarea">
+							<option>전주</option>
+							<option>대전</option>
+						</select>
+					</div>
+					<div class="equipment_insert_box">
+						<button class="equipment_del"><span>삭제</span></button>
+						<button class="insert_but1"><span>수정 완료</span></button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

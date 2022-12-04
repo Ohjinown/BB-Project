@@ -1,0 +1,45 @@
+    <!-- main chart -->
+
+<!-- <script type="text/javascript">
+  google.charts.load("current", {packages:["corechart"]});
+  google.charts.setOnLoadCallback(drawChart);
+  function drawChart() {
+    var data = google.visualization.arrayToDataTable([
+      ['Task', 'Hours per Day'],
+      ['알뜰한 우주 생활', 11],
+      ['건강한 우주 생활', 2],
+      ['즐거운 우주 생활', 2]
+    ]);
+
+    var options = {
+      pieHole: 0.4,
+    };
+
+    var chart = new google.visualization.PieChart(document.getElementById('donutchart1'));
+    chart.draw(data, options);
+  }
+</script> -->
+//각각의 콘텐츠 별 현황
+<script type="text/javascript">
+  google.charts.load("current", {packages:["corechart"]});
+  google.charts.setOnLoadCallback(drawChart);
+  function drawChart() {
+    var data = google.visualization.arrayToDataTable([
+      ['Task', 'content'],
+      ['콘텐츠1', 25],
+      ['콘텐츠2', 11],
+      ['콘텐츠3', 5],
+      ['콘텐츠4', 2],
+      ['콘텐츠5', 7]
+    ]);
+
+    var options = {
+      pieHole: 0.4,
+    };
+    google.charts.setOnLoadCallback(function(){
+      setInterval(columnChart1(),10000);
+    }); 
+    var chart = new google.visualization.PieChart(document.getElementById('donutchart2'));
+    chart.draw(data, options);
+  }
+</script>

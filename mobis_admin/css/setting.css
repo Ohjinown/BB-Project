@@ -1,0 +1,444 @@
+@import url(reset.css);
+@font-face {
+    font-family: NotoSansCJKkr-Regular;
+    src: url(../font/NotoSansCJKkr-Regular.otf);
+}
+
+@font-face {
+    font-family: NotoSansCJKkr-Medium;
+    src: url(../font/NotoSansCJKkr-Medium.otf);
+}
+
+@font-face {
+    font-family: NotoSansCJKkr-Bold;
+    src: url(../font/NotoSansCJKkr-Bold.otf);
+}
+
+
+/* setting.css */
+/* 설정 */
+
+*{-webkit-text-size-adjust: none;}
+
+/* common */
+body{
+    font-family: NotoSansCJKkr-Bold, Arial, Helvetica, sans-serif;
+    background: #ECEFF5;
+    font-size: 20px;
+    color: #222;
+    line-height: 1;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* layout */
+div#wrap{
+    width: 100%;
+    overflow: hidden;
+    max-width: 1920px;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    overflow: hidden;
+}
+
+main{
+    padding: 0 147px 80px;
+    box-sizing: border-box;
+}
+
+/* gnb list 클릭 */
+ul.gnb>li.setting>a{
+    color: #fff;
+}
+
+/* main */
+/* 관리자 설정 */
+div.set_list{
+    position: relative;
+    width: 1626px;
+    height: 880px;
+    margin-top: 40px;
+    background: #fff;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    box-sizing: border-box;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.set_list>h2{
+    margin: 40px 0 0 40px;
+    font-size: 28px;
+}
+
+.new_manager{
+    display: inline-block;
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    width: 180px;
+    height: 44px;
+    padding: 0 0 2px 20px;
+    box-sizing: border-box;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    font-family: NotoSansCJKkr-Medium;
+    background: #4c54dd;
+    cursor: pointer;
+}
+
+.new_manager.on{
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.new_manager::after{
+    content: "";
+    display: block;
+    clear: both;
+    position: absolute;
+    left: 28px;
+    top: 12px;
+    width: 20px;
+    height: 20px;
+    background: url(../img/icn_plus.png) no-repeat 0 0;
+}
+
+
+/* 관리자 등록 */
+div.m_register{
+    display: none;
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 382px;
+    margin-top: 40px;
+    padding: 40px 0 0 40px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+.m_register.on{
+    display: block;
+}
+
+form.box_register>fieldset>legend{
+    width: 1530px;
+    padding-bottom: 20px;
+    font-size: 28px;
+    border-bottom: 1px solid #aaa;
+    box-sizing: border-box;
+}
+
+/* 관리자 등록 카테고리 항목 */
+ul.m_list{
+    width: 780px;
+    margin: 40px auto;
+    box-sizing: border-box;
+}
+
+ul.m_list::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+ul.m_list>li{
+    float: left;
+    width: 352px;
+    height: 45px;
+    margin-right: 60px;
+    margin-bottom: 20px;
+}
+
+ul.m_list>li.right{
+    margin-right: 0;
+}
+
+ul.m_list>li.bottom{
+    margin-bottom: 0;
+}
+
+ul.m_list>li::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+ul.m_list>li>label{
+    float: left;
+    padding-top: 12px;
+    box-sizing: border-box;
+}
+
+ul.m_list>li>input{
+    float: right;
+    width: 282px;
+    height: 100%;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.classi_wrap{
+    float: right;
+    width: 282px;
+    height: 100%;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.classi_wrap>select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance:none;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    padding: 0 12px;
+    box-sizing: border-box;
+    color: #606060;
+    font-size: 16px;
+    font-family: NotoSansCJKkr-Medium;
+    background: url(../img/icn_drop.png) no-repeat 254px 50%;
+    cursor: pointer;
+}
+
+/* IE 화살표 숨기기 */
+.classi_wrap>select::-ms-expand{
+    display: none;
+}
+
+/* 등록 버튼 */
+ul>li.r_wrap{
+    width: 245px;
+    margin: 0;
+    margin: 50px 0 0 267px;
+    box-sizing: border-box;
+}
+
+li>button.register{
+    width: 100%;
+    height: 44px;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    font-family: NotoSansCJKkr-Medium;
+    background: #4c54dd;
+    cursor: pointer;
+}
+
+/* 테이블 레이아웃 */
+div.set_table{
+    display: table;
+    table-layout: fixed;
+    width: 1546px;
+    margin: 54px auto;
+}
+
+div.t_menu, div.t_list{
+    display: table-row;
+}
+
+div.t_list::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* 테이블 리스트 공통사항 */
+div.t_list>ul{
+    float: left;
+}
+
+ul.t_head{
+    border-top: 2px solid #aaa;
+    border-bottom: 2px solid #aaa;
+    box-sizing: border-box;
+}
+
+ul.t_head>li, ul.t_body>li{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+ul.t_head>li{
+    height: 60px;
+}
+
+ul.t_body>li{
+    height: 70px;
+    font-family: NotoSansCJKkr-Regular;
+    font-size: 18px;
+    border-bottom: 1px solid #aaa;
+    box-sizing: border-box;
+}
+
+li.num{
+    width: 93px;
+}
+
+li.classify{
+    width: 200px;
+}
+
+li.set_id{
+    width: 229px;
+}
+
+li.set_name{
+    width: 150px;
+}
+
+li.date{
+    width: 282px;
+
+}
+li.connect{
+    width: 282px;
+}
+
+li.ftn{
+    width: 310px;
+}
+
+/* 기능 버튼 */
+li.ftn>button{
+    float: left;
+    width: 150px;
+    height: 40px;
+    margin-right: 10px;
+    color: #fff;
+    font-size: 16px;
+    font-family: NotoSansCJKkr-Medium;
+    border: none;
+    cursor: pointer;
+}
+
+.btn_edit{
+    background: #4c54dd;
+}
+
+ul.t_body.on>li>.btn_edit{
+    background: rgba(0, 0, 0, 0.7);
+}
+
+li.ftn>.btn_del{
+    margin-right: 0;
+    background: #fe5768;
+}
+
+/* 관리자 설정 수정 */
+.edit_wrap{
+    display: block;
+    clear: both;
+}
+
+form.box_edit{
+    width: 100%;
+    height: 300px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+form.box_edit.on{
+    display: block;
+}
+
+ul.edit_list{ 
+    width: 766px;
+    margin: 50px auto;
+}
+
+ul.edit_list::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+ul.edit_list>li{
+    float: left;
+    width: 352px;
+    height: 45px;
+    margin-right: 60px;
+    margin-bottom: 20px;
+}
+
+ul.edit_list>li.right{
+    margin-right: 0;
+}
+
+ul.edit_list>li.bottom{
+    margin-bottom: 0;
+}
+
+ul.edit_list>li>label{
+    float: left;
+    padding-top: 12px;
+    margin-right: 30px;
+    box-sizing: border-box;
+}
+
+ul.edit_list>li>input{
+    float: right;
+    width: 282px;
+    height: 100%;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.classi_wrap{
+    float: right;
+    width: 282px;
+    height: 100%;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.classi_wrap>select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance:none;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    padding: 0 12px;
+    box-sizing: border-box;
+    color: #606060;
+    font-size: 16px;
+    font-family: NotoSansCJKkr-Medium;
+    background: url(../img/icn_drop.png) no-repeat 254px 50%;
+    cursor: pointer;
+}
+
+ul>li.complete_wrap{
+    width: 150px;
+    height: 40px;
+    margin: 50px 0 0 314px;
+    box-sizing: border-box;
+}
+
+.complete{
+    width: 150px;
+    height: 40px;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-family: NotoSansCJKkr-Medium;
+    background: #4c54dd;
+    cursor: pointer;
+}

@@ -1,0 +1,207 @@
+@import url(reset.css);
+@font-face {
+    font-family: NotoSansCJKkr-Regular;
+    src: url(../font/NotoSansCJKkr-Regular.otf);
+}
+
+@font-face {
+    font-family: NotoSansCJKkr-Medium;
+    src: url(../font/NotoSansCJKkr-Medium.otf);
+}
+
+@font-face {
+    font-family: NotoSansCJKkr-Bold;
+    src: url(../font/NotoSansCJKkr-Bold.otf);
+}
+
+
+/* dashboard.css */
+/* 대시보드 */
+
+*{-webkit-text-size-adjust: none;}
+
+/* common */
+body{
+    font-family: NotoSansCJKkr-Bold, Arial, Helvetica, sans-serif;
+    background: #ECEFF5;
+    font-size: 20px;
+    color: #222;
+    line-height: 1;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* layout */
+div#wrap{
+    width: 100%;
+    overflow: hidden;
+    max-width: 1920px;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    overflow: hidden;
+}
+
+main{
+    padding: 0 147px 120px;
+    box-sizing: border-box;
+}
+
+/* gnb list 클릭 */
+ul.gnb>li.dashboard>a{
+    color: #fff;
+}
+
+/* main */
+/* 전체사용자 수 */
+div.user{
+    margin-top: 60px;
+}
+
+.user>h2{
+    font-size: 28px;
+}
+
+.user>p{
+    margin: 40px 100px 0 0;
+    display: inline-block;
+    font-size: 38px;
+    font-family: NotoSansCJKkr-Medium;
+}
+
+p.cum{
+    margin-right: 0;
+}
+
+.user>p>span{
+    display: block;
+    float: left;
+    margin: 11px 20px 0 0;
+    font-size: 16px;
+    font-family: NotoSansCJKkr-Regular;
+    color: #606060;
+}
+
+/* 전체 그래프 */
+div.user_graph{
+    position: relative;
+}
+
+/* 필터열기 버튼 */
+.f_filter{
+    float: right;
+    width: 80px;
+    height: 40px;
+    margin-bottom: 40px;
+    font-family: NotoSansCJKkr-Medium;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    background: rgba(0,0,0,0.7);
+}
+
+
+/* 그래프 공통사항 */
+.all_graph{
+    clear: both;
+    width: 100%;
+}
+
+.all_graph::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.all_graph>div{
+    float: left;
+    margin-right: 20px;
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    box-sizing: border-box;
+}
+
+.all_graph>div>h4{
+    margin: 40px 40px 0 40px;
+    font-size: 24px;
+}
+
+.all_graph>div>h4>span{
+    display: block;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    color: #aaa;
+    font-size: 16px;
+    font-family: NotoSansCJKkr-Medium;
+    border-bottom: 1px solid #aaa;
+}
+
+/* graph1/한눈에 보기 */
+div.graph1{
+    width: 768px;
+    height: 625px;
+}
+
+div#chart1{
+    width: 650px;
+    margin: 0 auto;
+    padding-top: 85px;
+    box-sizing: border-box;
+}
+
+.graph1>h4>span{
+    width: 688px;
+}
+
+/* graph2/사용자 비율 */
+div.graph2{
+    width: 414px;
+    height: 625px;
+}
+
+div#chart2{
+    width: 410px;
+    margin: 0 auto;
+}
+
+.graph2>h4>span{
+    width: 334px;
+}
+
+
+/* graph3/등교 지역 */
+div.graph3{
+    width: 384px;
+    height: 625px;
+    margin-right: 0;
+}
+
+div#chart3{
+    width: 310px;
+    margin: 0 auto;
+    padding-top: 55px;
+    box-sizing: border-box;
+}
+
+.excel{
+    position: absolute;
+    right: 0;
+    top: 765px;
+    width: 120px;
+    height: 40px;
+    font-family: NotoSansCJKkr-Medium;
+    color: #fff;
+    background: #4c54dd;
+    border: none;
+    cursor: pointer;
+}
+
+
+

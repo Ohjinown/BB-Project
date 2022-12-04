@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+    <title>yonseidairy</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/event.js"></script>
+	<script type="text/javascript" src="https://www.youtube.com/player_api"></script>
+</head>
+<body>
+    <div class="main_body">
+        <!--  메인영역이6개가 있고 foorter가 있어서 총영역 7개 -->
+        <div class="body_area_1">
+            <div class="area_1">
+                <div class="area_1_title_img">
+                    <img class="area_1_img" src="img/img_hero_title.png" alt="플래너츠 출신기념 이벤트">
+                </div>
+                <div class="area_1_vidio">
+                    <div style="width: 100%; height: 100%;">
+					<div class="area_1_vidio_transparency"></div>
+					<div id="player"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="body_area_2">
+            <div class="area_2">
+                <div class="area_2_quiz_event">
+                    <span class="quiz_event">퀴즈 이벤트</span>
+                </div>
+
+                <div class="area_2_text_area1">
+                    <div class="area_2_text_box">
+                        <p class="area_2_text">영상을 보고 정답을 입력해 선물함을 열어보세요</p>
+                        <p class="area_2_text">선물을 가져갈 행운의 주인공은?</p>
+                    </div>
+                </div>
+
+                <div class="area2_img">
+                    <img src="img/img_quiz.png">
+                </div>
+
+                <div class="area_2_text1_area2">
+                    <div class="area_2_text1_box">
+                        <p class="area_2_text1">일상에 간편하게 즐길 수 있는</p>
+                        <span class="area_2_text1_1"> 연세유업 식물성 음료 브랜드<span class="area_2_text1_2">의 이름은?</span></span>
+                    </div>
+                </div>
+
+                <div class="area_2_body_box">
+                    <div class="area_2_div">
+                        <input id="value1" class="area_2_box" type="text" maxlength="1">
+                    </div>
+                    <div class="area_2_div">
+                        <input id="value2" class="area_2_box" type="text" maxlength="1">
+                    </div>
+                    <div class="area_2_div">
+                        <input id="value3" class="area_2_box" type="text" maxlength="1">
+                    </div>
+                    <div class="area_2_div">
+                        <input id="value4" class="area_2_box" type="text" maxlength="1">
+                    </div>
+                </div>
+
+                <div class="area_2_button_box">
+                    <button class="area_2_button">
+                        <span>정답 확인</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="event-box_1">
+            <div class="event-area">
+                <div class="event-text-box">
+                    <span>퀴즈 이벤트 경품</span>
+                </div>
+                <div class="event-img-box">
+                    <div class="event-img">
+                        <img src="img/img_gift_1.png" alt="퀴즈 이벤트 경품1등">
+                        <div class="event-text">
+                            <p>1등 롯데호텔 뷔페 이용권</p>
+                            <p>(1명)</p>
+                        </div>
+                    </div>
+                    <div class="event-img">
+                        <img src="img/img_gift_2.png" alt="퀴즈 이벤트 경품2등">
+                        <div class="event-text">
+                            <p>2등 문화상품권 3만원</p>
+                            <p>(10명)</p>
+                        </div>
+                    </div>
+                    <div class="event-img">
+                        <img src="img/img_gift_3.png" alt="퀴즈 이벤트 경품3등">
+                        <div class="event-text">
+                            <p>3등 플래너츠 제품 1박스</p>
+                            <p>(25명)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-notice">
+					<p class="notice-text">*참여기간: ~2022년 6월 30일</p>
+                    <p class="notice-text">*당첨자 발표: 7월 초, 연세유업 공식 인스타그램을 통해 공지 및 개별연락 예정</p>
+                    <p class="notice-text">*이벤트 관련 문의: yonseidairy@kpr.co.kr</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="body_area_3">
+            <div class="area_3">
+                <div class="area_3_capture_event">
+                    <span class="capture_event">랜덤 취향 캡쳐 이벤트</span>
+                </div>
+
+                <div class="area_text_1">
+                    <span class="area_text_1_1">나에게 맞는</span><img class="area_3_img" src="img/img_logo_small.png"><span class="area_text_1_1">는 무엇일까요?</span>
+                </div>
+
+                <div class="area_text_2">
+                    <span class="area_text_2_1">취향 테스트를 통해 성향에 맞는 음료를 추천해 드려요!</span>
+                </div>
+
+                <div class="area_text_3">
+                    <div class="area_text_3_box">
+                        <span class="area_text_3_1">추천 받은 제품을 캡처해 자신의</span>
+                        <span class="area_text_3_1">인스타그램에</span>
+                        <span class="area_text_3_2">필수해시태그<span class="area_text_3_2_2">와 함께</span></span>
+                        <span class="area_text_3_1">인증해주세요!</span>
+                        <span class="area_text_3_3">추천을 통해 선물을 보내드립니다!</span>
+                    </div>
+                </div>
+
+                <div class="area_text_4">
+                    <span class="area_text_4_1">#<span class="area_text_4_2">가볍지만맛있는</span></span>
+                    <span class="area_text_4_1">#<span class="area_text_4_2">힙한식물성음료</span></span>
+                    <span class="area_text_4_1">#<span class="area_text_4_2">데일리아이템</span></span>
+                    <span class="area_text_4_1">#<span class="area_text_4_2">플래너츠는못참지</span></span>
+                    <span class="area_text_4_1">#<span class="area_text_4_2">플래너츠</span></span>
+                    <span class="area_text_4_1">#<span class="area_text_4_2">식물성음료</span></span>
+                </div>
+                <div class="area_text_5">
+                    <div class="area_text_5_1">
+                        <div class="slide_box">
+                            <div class="all_bar">
+                                <div class="top_bar"></div>
+                            </div>
+                            <div class="slide">
+                                <div class="slide_img_box">
+                                    <!-- <div class="top_bar2"></div>
+                                    <div class="top_bar3"></div>
+                                    <div class="top_bar4"></div>
+                                    <div class="top_bar5"></div>
+                                    <div class="top_bar6"></div> -->
+                                    <div class="slide_title">
+                                        <p>다가올 여름을 위해</p>
+                                        <p>운동에 진심이야!</p>
+                                    </div>
+                                    <div class="slide_img">
+                                        <div class="area_1_png"></div>
+                                    </div>
+                                    <div class="slide_btn">
+                                        <div class="yes_box" ontouchstart="" data-yes="0"><span class="yes">맞아요</span></div>
+                                        <div class="no_box" ontouchstart="" data-no="1"><span class="no">아니요</span></div>
+                                    </div>
+                                </div>
+
+                                <div class="slide_img_box">
+                                    <div class="slide_prev">
+                                        <img src="img/btn_prev.png">
+                                    </div>
+                                    <div class="slide_title2">
+                                        <p>새로운 맛에</p>
+                                        <p>도전하는 것이 좋아!</p>
+                                    </div>
+                                    <div class="slide_img">
+                                        <div class="area_2_png"></div>
+                                    </div>
+                                    <div class="slide_btn">
+                                        <div class="yes_box" ontouchstart="" data-yes="0"><span class="yes">맞아요</span></div>
+                                        <div class="no_box" ontouchstart="" data-no="1"><span class="no">아니요</span></div>
+                                    </div>
+                                </div>
+
+                                <div class="slide_img_box">
+                                    <div class="slide_prev">
+                                        <img src="img/btn_prev.png">
+                                    </div>
+                                    <div class="slide_title3">
+                                        <p>지금 나에게 필요한건</p>
+                                        <p>칼슘과 단백질!</p>
+                                    </div>
+                                    <div class="slide_img">
+                                        <div class="area_3_png"></div>
+                                    </div>
+                                    <div class="slide_btn">
+                                        <div class="yes_box" ontouchstart="" data-yes="0"><span class="yes">맞아요</span></div>
+                                        <div class="no_box" ontouchstart="" data-no="1"><span class="no">아니요</span></div>
+                                    </div>
+                                </div>
+
+                                <div class="slide_img_box">
+                                    <div class="slide_prev">
+                                        <img src="img/btn_prev.png">
+                                    </div>
+                                    <div class="slide_title4">
+                                        <p>맛은 포기할 수 없어!</p>
+                                        <p>조금이라도 더 달콤하게</p>
+                                    </div>
+                                    <div class="slide_img">
+                                        <div class="area_4_png"></div>
+                                    </div>
+                                    <div class="slide_btn">
+                                        <div class="yes_box" ontouchstart="" data-yes="0"><span class="yes">맞아요</span></div>
+                                        <div class="no_box" ontouchstart="" data-no="1" ><span class="no">아니요</span></div>
+                                    </div>
+                                </div>
+
+                                <div class="slide_img_box">
+                                    <div class="slide_prev">
+                                        <img src="img/btn_prev.png">
+                                    </div>
+                                    <div class="slide_title5">
+                                        <p>성향 분석이 완료되었습니다.</p>
+                                        <p>추천 결과를 확인해주세요!</p>
+                                    </div>
+                                    <div class="slide_img">
+                                        <div class="area_5_png"></div>
+                                    </div>
+                                    <div class="slide_btn">
+                                        <div class="result"><span class="yes">결과 확인</span></div>
+                                    </div>
+                                </div>
+
+                                <div class="slide_img_box">
+                                    <div class="reset_btn">
+                                        <img src="./img/btn_return.png">
+                                    </div>
+                                    <div class="slide_img6">
+                                        <div class="img6">
+                                            <img class="area_6_png" src=""></img>
+                                        </div>
+                                        <div class="slide_join">
+                                            <div class="join"><span class="event_join">이벤트 참여 방법</span></div>
+                                            <div class="step_1_box">
+                                                <div class="step_1"></div>
+                                                <div class="step_1_1"><span class="step_1_text">결과 화면 캡처</span></div>
+                                            </div>
+                                            <div class="step_2_box">
+                                                <div class="step_2"></div>
+                                                <div class="step_2_1">
+                                                    <span class="step_2_text">필수 해시태그 복사</span>
+                                                    <dvi class="step_2_2">
+                                                        <span class="step_2_color">#</span><span class="step_2_2_text">가볍지만맛있는</span>
+                                                        <span class="step_2_color">#</span><span class="step_2_2_text">힙한식물성음료</span>
+                                                        <span class="step_2_color">#</span><span class="step_2_2_text">데일리아이템</span>
+                                                        <div>
+                                                            <span class="step_2_color">#</span><span class="step_2_2_text">플래너츠는못참지</span>
+                                                            <span class="step_2_color">#</span><span class="step_2_2_text">식물성음료</span>
+                                                        </div>
+                                                        <div style="padding-top: 4px;">
+                                                            <div class="step_2_copy">
+                                                                <span class="step2_copy">복사</span>
+                                                            </div>
+                                                        </div>
+                                                    </dvi>
+                                                </div>
+                                            </div>
+                                            <div class="step_3_box">
+                                                <div class="step_3"></div>
+                                                <div class="step_3_1">
+                                                    <span class="step_3_text">내 인스타 피드에 업로드</span>
+                                                    <div>
+                                                        <div class="step_3_text1">
+                                                            <a target="_block" href="https://www.instagram.com">
+                                                                <span class="step_3_text2">인스타그램 바로가기</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="event-box_1">
+            <div class="event-area">
+                <div class="event-text-box1">
+                    <span>인스타그램 인증 이벤트 경품</span>
+                </div>
+                <div class="event-img-box">
+                    <div class="event-img">
+                        <img src="img/img_gift_4.png" alt="">
+                        <div class="event-text">
+                            <p>1등 애플워치SE</p>
+                            <p>(1명)</p>
+                        </div>
+                    </div>
+                    <div class="event-img">
+                        <img src="img/img_gift_5.png" alt="">
+                        <div class="event-text">
+                            <p>2등 백화점 상품권 3만원</p>
+                            <p>(5명)</p>
+                        </div>
+                    </div>
+                    <div class="event-img">
+                        <img src="img/img_gift_6.png" alt="">
+                        <div class="event-text">
+                            <p>3등 플래너츠 제품 1박스</p>
+                            <p>(25명)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-notice">
+					<p class="notice-text">*참여기간: ~2022년 6월 30일</p>
+                    <p class="notice-text">*당첨자 발표: 7월 초, 연세유업 공식 인스타그램을 통해 공지 및 개별연락 예정</p>
+                    <p class="notice-text">*이벤트 관련 문의: yonseidairy@kpr.co.kr</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="body_area_4">
+            <div class="area_4">
+                <div class="area_4_box">
+                    <div class="area_4_img">
+                        <img class="area_4_1_img" src="img/img_text@3x.png">
+                    </div>
+                    <div class="area_4_vidio">
+                        <div id="player-vidio">
+                            
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+
+        <div class="body_area_5">
+            <div class="area_5">
+                <div class="area_5_detail">
+                    <span class="detail">제품 상세</span>
+                </div>
+                <div class="area_5_explanation">
+                    <span class="area_5_explanation">플래너츠 제품을 클릭하고 상세한 정보를 만나보세요.</span>
+                </div>
+
+                <div class="area_5_product">
+                    <span class="product">
+                        <div class="area_5_click" data-value="1">
+                            <div class="color1"></div>
+                            <img class="area_5_img1" src="img/btn_product_1.png">
+                        </div>
+                    </span>
+                    <span class="product">
+                        <div class="area_5_click" data-value="2">
+                            <div class="color2"></div>
+                            <img class="area_5_img2" src="img/btn_product_2.png">
+                        </div>
+                    </span>
+                    <span class="product">
+                        <div class="area_5_click" data-value="3">
+                            <div class="color3"></div>
+                            <img class="area_5_img3" src="img/btn_product_3.png">
+                        </div>
+                    </span>
+                    <span class="product">
+                        <div class="area_5_click" data-value="4">
+                            <div class="color4"></div>
+                            <img class="area_5_img4" src="img/btn_product_4.png">
+                        </div>
+                    </span>
+                </div>
+
+                <div class="product_explanation">
+                    <div class="product_explanation_img">
+                        <img class="area_img" src="img/btn_product_1_select.png" alt="">
+                    </div>
+                    <div class="li_text">
+                        <div class="li_text_box">
+                            <p class="title">가벼운 칼로리의 맛있는 음료</p>
+                            <span>75kcal</span>
+                            <p class="sub">뼈와 치아 형성에 필요한 칼슘 일일권장량의 29%</p>
+                        </div>
+                        <div style="text-align: left; padding-top: 24px; padding-left: 16px; display: inline-block;">
+                            <div class="background title_text1">
+                                <p>7가지 견과의 영양을 한번에</p>
+                            </div>
+                            <div class="background1 ground">
+                                <ul>
+                                    <li>
+                                        <span class="text1 sub1">아몬드, 땅콩, 호두, 마카다미아, 잣, 캐슈넛, 피스타치오</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div style="padding-top: 16px;">
+                                <div class="background title_text2">
+                                    <p>속이 편한 식물성 음료</p>
+                                </div>
+                                <div class="background1">
+                                    <ul>
+                                        <li>
+                                            <span class="text1 sub2">유당불내증도 OK</span>
+                                        </li>
+                                        <li>
+                                            <span class="text1 sub3">글루텐프리, 락토오즈프리</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div style="padding-top: 16px;">
+                                <div class="background title_text3">
+                                    <p>식물성 원재료를 사용한 비건음료</p>
+                                </div>
+                                <div class="background1">
+                                    <ul>
+                                        <li>
+                                            <span class="text1 sub4">한국비건인증원의 비건인증 완료</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div style="padding-top: 16px;">
+                                <div class="background title_text4">
+                                    <p>종이빨대 부착</p>
+                                </div>
+                                <div class="background1">
+                                    <ul>
+                                        <li>
+                                            <span class="text1 sub5">환경까지 고려한 착한 음료</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="body_area_6">
+            <div class="area_6">
+                <div class="area_6_experience">
+                    <span class="experience">체험팩 신청</span>
+                </div>
+                <div class="experience_text">
+                    <span class="experience_text_1">플래너츠 2종을 체험해보고 싶다면? 택배비만 내고 무료 체험하세요!</span>
+                </div>
+
+                <div class="product_img">
+                    <div class="product_img1">
+                        <div class="experience_product">
+                            <div class="product_box1">
+                                <span class="product_title">7넛츠</span>
+                            </div>
+                        </div>
+                        <div class="nuts_7">
+                            <img src="img/img_pack_1.png">
+                        </div>
+                    </div>
+
+                    <div class="bar">
+                        <div class="line"></div>
+                    </div>
+
+                    <div class="product_img2">
+                        <div class="experience_product1">
+                            <div class="product_box1">
+                                <span class="product_title">완두</span>
+                            </div>
+                        </div>
+                        <div class="pea">
+                            <img src="img/img_pack_2.png">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="area_6_read_more">
+                    <button class="read_more" onclick="location.href='https:www.yonseidairy.com/shop/plan.php?ev_id=1653011168';">
+                        <span class="read_more_text">체험팩 자세히보기</span>
+                    </button>
+                </div>
+
+                <div class="explanation_text_box">
+                    <span class="explanation_text">*체험팩은 선착순 한정수량으로, 예고없이 마감될 수 있습니다.</span>
+                </div>
+                <div class="link_box">
+                    <ul>
+                        <li class="link_box_img yonsei">
+                            <a href="https://www.yonseidairy.com/shop/">
+                                <img src="img/btn_yonsei.png">
+                                <p>연세shop</p>
+                            </a>
+                        </li>
+                        <li class="link_box_img instagram">
+                            <a href="https://www.instagram.com/yonsei_dairy/">
+                                <img src="img/btn_instagram.png">
+                                <p>인스타그램</p>
+                            </a>
+                        </li>
+                        <li class="link_box_img facebook">
+                            <a href="https://www.facebook.com/yonseilife">
+                                <img src="img/btn_facebook.png">
+                                <p>페이스북</p>
+                            </a>
+                        </li>
+                        <li class="link_box_img blog">
+                            <a href="https://blog.naver.com/yonsei_life">
+                                <img src="img/btn_blog.png">
+                                <p>블로그</p>
+                            </a>
+                        </li>
+                        <li class="link_box_img youtube">
+                            <a href="https://www.youtube.com/channel/UCJk0ayrNSfEMWFp5fNSY5Ug">
+                                <img src="img/btn_youtube.png">
+                                <p>유튜브</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+		<div class="body_area_7">
+            <div class="area_7">
+                <p class="area-7-title">[이벤트 유의사항]</p>
+                <ul>
+                    <li>
+                        <span>이벤트 중복 참여는 가능하나 휴대폰 번호를 기준으로 중복 당첨되지 않습니다.</span>
+                    </li>
+                    <li>
+                        <span>본 이벤트는 상화에 따라 예고 없이 변경 도는 중단될 수 있으며, 당첨 발표일과 배송 일정은 당사 사정에 의해 지연될 수 있습니다.</span>
+                    </li>
+                    <li>
+                        <span>해택(경품) 증정 일자, 증정 방법 등은 당첨자 분들꼐 개별 연락드릴 예정드릴 예정이며, 당첨 발표 기간 내 문자, 통화 등 연락이 닿지 않을 시 자동으로 당첨이 취소됩니다.</span>
+                    </li>
+                    <li>
+                        <span>개인정보 입력 시, 잘못된 연락처로 인한 미 전송 및 오 전송은 당사에서 책임지지 않습니다.</span>
+                    </li>
+                    <li>
+                        <span>인스타그램 이벤트의 경우 참여 조건을 모두 충족하고 담청자 발표일까지 계정 및 게시물이 전체공개로 설정된 콘텐츠에 한해 정상 음모로 간주됩니다.</span>
+                    </li>
+                    <li>
+                        <span>부적절한 방법을 통해 이벤트 참여 시 당첨이 제한될 수 있습니다. (가짜 명의 생성, 반복 참여 프로그램 이용등)</span>
+                    </li>
+                    <!--  -->
+                    <li>
+                        <span>본 이벤트는 만 14세 미만은 참여 불가하며. 추첨 대상에서 제외됩니다.</span>
+                    </li>
+                    <li>
+                        <span>실제 이벤트 혜택(경품)은 상기 이미지와 다를 수 있습니다.</span>
+                    </li>
+                    <li>
+                        <span>이벤트 혜택으로 지급되는 신세계 상품권의 기프티콘 교환 유효기간은 30일이면, 이마트 키오스크 또는 신세계백화점 상품권삽에서 교환하신 신세계 지류상품권의 교환 유효기간은 발행일로부터 5년입니다.</span>
+                    </li>
+                    <li>
+                        <span>이벤트 혜택으로 지급되는 온라인 문화상품권 교환 유효기간은 발행일로부터 90일입니다.</span>
+                    </li>
+                    <li>
+                        <span>경품에 대한 제세공과금(22%)은 모두 연세유업이 부담합니다.</span>
+                    </li>
+                    <li>
+                        <span>이벤트를 통해 수집된 개인정보는 경품 배송을 위한 목적으로만 활용되며 행사 종료 후 파기됩니다.</span>
+                    </li>
+                </ul>
+                <div class="communication-box">
+                    <p>이벤트 관련 문의는 운영사무국으로 연락주시기 바랍니다.</p>
+                    <p>문의사항: yonseidairy@kpr.co.kr</p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer_box">
+                <div class="footer_img">
+                    <span class="footer_span1">
+                        <a href="https://home.yonseidairy.com/">
+                            <img src="img/img_logo_footer_1.png">
+                        </a>
+                    </span>
+                    <span class="footer_span2">
+                        <a href="https://www.tetrapak.com/en-kr">
+                            <img src="img/img_logo_footer_2.png">
+                        </a>
+                    </span>
+                </div>
+                <div class="footer_text">
+                    <p>상호명: 연세대학교 연세우유 | 대표자: 김득수 | 사업자등록번호: 312-82-07708</p>
+                    <p>서울사무소: 서울시 서대문구 연세로 50 연세대학교 연세우유 | 아산공장 중앙연구소:충남 아산시 음봉면 음봉로 829</p>
+                    <p>전화: <a href="tel:080-361-2000"> 080-361-2000</a> | 통신판매번호: 제 2005-00016 호</p>
+                </div>
+                <div class="copyright">
+                    <p>Copyright © 2013 By YONSEI SHOP All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+	
+		<script type="text/javascript">
+			var play, player_t, videoCode = 0;
+			var youtubeId = ['hlP7wtihxjg', 'zcr6HzYgcOw'];
+            function onYouTubeIframeAPIReady(){
+				play = new YT.Player('player-vidio',{
+
+					width:'100%',
+					height:'100%',
+
+					playerVars:{
+						'autoplay':1,
+						'loop':1,
+						'showinfo':0,
+						'autohide':1,
+						'mute':1,
+						'controls':0
+					},
+
+					events:{ 
+					  'onReady':onPlayerReady ,
+					  'onStateChange': onPlayerStateChange,
+					}
+				});
+
+				player_t = new YT.Player('player',{
+
+					width:'100%',
+					height:'100%',
+					videoId:'WMn_OLnIIC8',
+
+					playerVars:{
+						'autoplay':1,
+						'loop':1,
+						'showinfo':0,
+						'autohide':1,
+						'mute':1,
+						'controls':0
+						},
+
+					events:{ 
+					'onReady':onPlayerReady1 ,
+					'onStateChange': onPlayerStateChange1 
+					}
+				});
+            }
+            function onPlayerReady1(e) {
+                e.target.mute();
+                e.target.playVideo();
+            };
+            function onPlayerStateChange1(e) {
+				console.log(e);
+                if (e.data === 0) {
+                    e.target.mute();
+                    e.target.playVideo();
+                } else {
+                    e.target.mute();
+                    e.target.playVideo();
+                }
+            };
+
+            function onPlayerReady(e){
+                e.target.loadVideoById(youtubeId[videoCode]);
+                videoCode = videoCode + 1;
+            };
+            function onPlayerStateChange(e) {
+				console.log(e);
+                if (e.data == YT.PlayerState.ENDED) {
+                    console.log(videoCode);
+                    if (videoCode == 0) {
+                        play.loadVideoById(youtubeId[videoCode]);
+                        videoCode = videoCode + 1;
+                        e.target.mute();
+                        e.target.playVideo();
+                    } else {
+                        play.loadVideoById(youtubeId[videoCode]);
+                        videoCode = videoCode - 1;
+                        e.target.mute();
+                        e.target.playVideo();
+                    }
+                } else {
+                    e.target.mute();
+                    e.target.playVideo();
+                };
+            };
+          </script>
+		
+
+        <div id="popup" class="hide_yes popup_yes">
+            <div class="content">
+                <div class="content_box">
+                    <div class="close_box">
+                        <img class="close_yes" src="img/btn_close.png" alt="취소버튼">
+                    </div>
+                    <div class="popup_box_img">
+                        <img src="img/img_good.png">
+                    </div>
+                    <div class="popup_text">
+                        <p>정답입니다!</p>
+                    </div>
+                    <div class="popup_sub">
+                        <span>추첨을 통해 푸짐한 경품을 드립니다<p class="popup_color">연락 기능한 정보<span>를 입력해주세요</span></p></span>
+                    </div>
+                    <div class="popup_btn_box">
+                        <button class="popup_btn" onclick="location.href='https:docs.google.com/forms/d/1-oGSswh6iIveIHXqAwKh02avIFlaQyND8TbWjlMWnAg/viewform?edit_requested=true';">
+                            <span>정보 입력 바로가기</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="popup" class="hide_no popup_no">
+            <div class="content">
+                <div class="content_box">
+                    <div class="close_box">
+                        <img class="close_no" src="img/btn_close.png" alt="취소버튼">
+                    </div>
+                    <div class="popup_box_img">
+                        <img src="img/img_sad.png">
+                    </div>
+                    <div class="popup_text">
+                        <p>아쉽네요</p>
+                    </div>
+
+                    <div class="answer_box">
+                        <span>정답은 ‘플래너츠’입니다!</span>
+                    </div>
+                    <div class="popup_sub">
+                        <span>플래너츠를 마실 수 있는 기회 한번 더!<span class="popup_color">체험팩 신청</span><span>에 도전하세요</span></span>
+                    </div>
+                    <div class="popup_btn_box">
+                        <button class="popup_btn" onclick="location.href='https:www.yonseidairy.com/shop/plan.php?ev_id=1653011168';">
+                            <span>체험팩 신청 바로가기</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,1236 @@
+.all_moniter {
+	width: 1920px;
+	height: 969px;
+	position: relative;
+	background-color: #f2f2f2;
+}
+#headers {
+	width: 1920px;
+	height: 80px;
+	/* float: right; */
+	position: absolute;
+	background-color: #000;
+}
+#sidebar {
+	width: 240px;
+	height: 969px;
+	margin: 0 40px 0 0;
+	background-color: #fff;
+	position: absolute;
+}
+.information_box {
+	width: 1600px;
+	height: 24px;
+	position: absolute;
+	margin: 120px 40px 0 281px;
+}
+.back_img {
+	width: 24px;
+	height: 24px;
+	object-fit: contain;
+	position: absolute;
+}
+.store_information {
+	width: 130px;
+	height: 24px;
+	/* margin: 0 0 0 34px; */
+	font-family: NotoSansKR;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 1.2;
+	color: #000;
+	position: absolute;
+}
+.insert_date {
+	float: right;
+	width: 107px;
+	height: 22px;
+	/* margin: 11px 9px 0 10px; */
+	font-family: NotoSansKR;
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.57;
+	letter-spacing: normal;
+	color: #000;
+}
+.store_title_box {
+	width: 1600px;
+	height: 130px;
+	margin: 164px 0 0 281px;
+	background-color: #fff;
+	position: absolute;
+}
+.store_title {
+	width: 1580px;
+	height: 32px;
+	margin: 20px 0 0 20px;
+}
+.store_title_text {
+	width: 100px;
+	height: 24px;
+	font-family: NotoSansKR;
+	font-size: 16px;
+	font-weight: bold;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.5;
+	letter-spacing: normal;
+	text-align: left;
+	color: #000;
+	position: absolute;
+}
+.store_title_text1 {
+	width: 44px;
+	height: 24px;
+	margin: 0 0 0 119px;
+	font-family: NotoSansKR;
+	font-size: 16px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.5;
+	letter-spacing: normal;
+	text-align: left;
+	color: #000;
+}
+.store_title_botton {
+	width: 120px;
+	height: 32px;	
+	border: solid 1px #000;
+	margin: 0px 20px 0 1264px;
+	position: absolute;
+	background-color: #fff;
+	cursor: pointer;
+}
+.store_text {
+	width: 26px;
+	height: 22px;
+	font-family: NotoSansKR;
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.57;
+	letter-spacing: normal;
+	text-align: center;
+	color: #000;
+}
+.popup_open {
+	width: 1920px;
+	height: 969px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.6);
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.25s ease-in-out;
+}
+.popup {
+	width: 600px;
+    height: 650px;
+    display: block;
+    margin: 185px 640px 200px 700px;
+    /* top: 50%; */
+    /* left: 50%; */
+    position: absolute;
+    background-color: #fff;
+}
+
+.open {
+	width: 100%;
+	opacity: 1;
+	visibility: visible;
+}
+.store_line {
+	width: 1560px;
+	height: 1px;
+	margin: 9px 0 0 20px;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+.information_title_box {
+	width: 1560px;
+	height: 22;
+	margin: 3.5px 0 0 20px;
+}
+
+.information_title_box .area_box {
+	float: left;
+	width: 115px;
+	height: 22px;
+	/* margin: 19.5px 10px 0 0; */
+	opacity: 0.4;
+	font-family: NotoSansKR;
+	font-size: 14px;
+	font-weight: bold;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.57;
+	letter-spacing: normal;
+	color: #000;
+}
+.information_title_box .store_area {
+	float: left;
+	width: 450px;
+	height: 22px;
+	/* margin: 0 0 0 10px; */
+	font-family: NotoSansKR;
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.57;
+	letter-spacing: normal;
+	text-align: left;
+	color: #000;
+}
+.information_title_box .store_number_box {
+	float: left;
+	width: 115px;
+	height: 22px;
+	/* margin: 0 0 0 10px; */
+	opacity: 0.4;
+	font-family: NotoSansKR;
+	font-size: 14px;
+	font-weight: bold;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.57;
+	letter-spacing: normal;
+	text-align: left;
+	color: #000;
+}
+.information_title_box .store_number {
+	float: left;
+	width: 195px;
+	height: 22px;
+	/* margin: 19.5px 20px 0 10px; */
+	font-family: NotoSansKR;
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.57;
+	letter-spacing: normal;
+	text-align: left;
+	color: #000;
+}
+.information_title_box .store_installer_box {
+	float: left;
+	width: 115px;
+	height: 22px;
+	/* margin: 0 0 0 10px; */
+	opacity: 0.4;
+	font-family: NotoSansKR;
+	font-size: 14px;
+	font-weight: bold;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.57;
+	letter-spacing: normal;
+	text-align: left;
+	color: #000;
+}
+.information_title_box .store_installer {
+	float: left;
+	width: 195px;
+	height: 22px;
+	font-family: NotoSansKR;
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.57;
+	letter-spacing: normal;
+	text-align: left;
+	color: #000;
+  }
+.information_title_box .install_date {
+	float: left;
+	width: 115px;
+	height: 22px;
+	/* margin: 0 0 0 10px; */
+	opacity: 0.4;
+	font-family: NotoSansKR;
+	font-size: 14px;
+	font-weight: bold;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.57;
+	letter-spacing: normal;
+	text-align: left;
+	color: #000;
+ }
+ .information_title_box .install_date_text {
+	float: left;
+	width: 230px;
+	height: 22px;
+	font-family: NotoSansKR;
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.57;
+	letter-spacing: normal;
+	text-align: left;
+	color: #000;
+ }
+.information_title_box .store_time_box {
+	float: left;
+	width: 115px;
+	height: 22px;
+	margin : 6px 0 0;
+	opacity: 0.4;
+	font-family: NotoSansKR;
+	font-size: 14px;
+	font-weight: bold;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.57;
+	letter-spacing: normal;
+	text-align: left;
+	color: #000;
+}
+.information_title_box .store_time {
+	float: left;
+	width: 450px;
+	height: 22px;
+	margin: 6px 0 0;
+	font-family: NotoSansKR;
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.57;
+	letter-spacing: normal;
+	text-align: left;
+	color: #000;
+}
+.information_title_box .code_P {
+	float: left;
+	width: 115px;
+	height: 22px;
+	margin : 6px 0 0;
+	opacity: 0.4;
+	font-family: NotoSansKR;
+	font-size: 14px;
+	font-weight: bold;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.57;
+	letter-spacing: normal;
+	text-align: left;
+	color: #000;
+}
+.information_title_box .code_P_text {
+	float: left;
+	width: 195px;
+	height: 22px;
+	margin: 6px 0 0;
+	font-family: NotoSansKR;
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.57;
+	letter-spacing: normal;
+	text-align: left;
+	color: #000;
+}
+.information_title_box .code_T {
+	float: left;
+	width: 115px;
+	height: 22px;
+	margin : 6px 0 0;
+	opacity: 0.4;
+	font-family: NotoSansKR;
+	font-size: 14px;
+	font-weight: bold;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.57;
+	letter-spacing: normal;
+	text-align: left;
+	color: #000;
+}
+.information_title_box .code_T_text {
+	float: left;
+	width: 195px;
+	height: 22px;
+	margin: 6px 0 0;
+	font-family: NotoSansKR;
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.57;
+	letter-spacing: normal;
+	text-align: left;
+	color: #000;
+}
+.information_title_box .store_system_box {
+	float: left;
+	width: 115px;
+	height: 22px;
+	margin : 6px 0 0;
+	opacity: 0.4;
+	font-family: NotoSansKR;
+	font-size: 14px;
+	font-weight: bold;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.57;
+	letter-spacing: normal;
+	text-align: left;
+	color: #000;
+}
+.information_title_box .store_system {
+	float: left;
+	width: 230px;
+	height: 22px;
+	margin: 6px 0 0;
+	font-family: NotoSansKR;
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.57;
+	letter-spacing: normal;
+	text-align: left;
+	color: #3219c5;
+}
+.chart_box {
+	width: 720px;
+	height: 615px;
+	margin: 314px 0 0 281px;
+	background-color: #fff;
+	position: absolute;
+}
+.chart_title {
+	width: 67px;
+	height: 22px;
+	margin: 20px 0 0 20px;
+	opacity: 0.4;
+	font-family: NotoSansKR;
+	font-size: 14px;
+	font-weight: bold;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.57;
+	letter-spacing: normal;
+	text-align: left;
+	color: #000;
+	position: absolute;
+}
+.num_box {
+	float: left;
+	width: 720px;
+	height: 20px;
+	margin: 50px 0 0 20px;
+	position: absolute;
+}
+.chart_title1 {
+	float: left;
+    width: 105px;
+    height: 24px;
+    font-family: NotoSansKR;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #000;
+}
+.chart_num {
+	float: left;
+    width: 85px;
+    height: 24px;
+    font-family: NotoSansKR;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #000;
+}
+#donutchart {
+	width: 720px;
+	height: 525px;
+	flex-grow: 0;
+	margin: 79px 0 0;
+	background-color: #fff;
+}
+.store_install_box {
+	width: 840px;
+	height: 615px;
+	margin: 314px 40px 0 1040px;
+	background-color: #fff;
+	position: absolute;
+}
+.store_install {
+	width: 65px;
+	height: 22px;
+	margin: 20px 0 0 20px;
+	opacity: 0.4;
+	font-family: NotoSansKR;
+	font-size: 14px;
+	font-weight: bold;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.57;
+	letter-spacing: normal;
+	text-align: left;
+	color: #000;
+	position: absolute;
+}
+.store_insert_button {
+	float: right;
+	width: 120px;
+	height: 32px;
+	border: solid 1px #000;
+	margin: 20px 20px 0;
+	/* position: absolute; */
+	background-color: #fff;
+	cursor: pointer;
+}
+.install_table {
+	width: 800px;
+	height: 35px;
+	margin: 62px 20px 0;
+	background-color: rgba(0, 0, 0, 0.03);
+}
+.install_table .install_version {
+	width: 110px;
+	height: 35px;
+	float: left;
+	border-right: rgba(0, 0, 0, 0.05) solid 1px;
+}
+.install_table .install_date1 {
+	width: 154px;
+	height: 35px;
+	float: left;
+	border-right: rgba(0, 0, 0, 0.05) solid 1px;
+}
+.install_table .install_manager {
+	width: 134px;
+	height: 35px;
+	float: left;
+	border-right: rgba(0, 0, 0, 0.05) solid 1px;
+}
+.install_table .memo {
+	width: 271px;
+	height: 35px;
+	float: left;
+	border-right: rgba(0, 0, 0, 0.05) solid 1px;
+}
+.install_table .view_details {
+	width: 127px;
+	height: 35px;
+	float: left;
+}
+
+.install_version .install_version_text {
+	width: 111px;
+	height: 25px;
+    margin: 5px 0 5px;
+	font-family: NotoSansKR;
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.57;
+	letter-spacing: normal;
+	text-align: center;
+	color: #000;
+	float: left;
+}
+.install_date1 .install_date1_text {
+	width: 155px;
+	height: 25px;
+    margin: 5px 0 5px;
+	font-family: NotoSansKR;
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.57;
+	letter-spacing: normal;
+	text-align: center;
+	color: #000;
+	float: left;
+}
+.install_manager .install_manager_text {
+	width: 135px;
+	height: 25px;
+    margin: 5px 0 5px;
+	font-family: NotoSansKR;
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.57;
+	letter-spacing: normal;
+	text-align: center;
+	color: #000;
+	float: left;
+}
+.memo .memo_title {
+	width: 272px;
+	height: 25px;
+    margin: 5px 0 5px;
+	font-family: NotoSansKR;
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.57;
+	letter-spacing: normal;
+	text-align: center;
+	color: #000;
+	float: left;
+}
+.view_details .view_details_text {
+	width: 127px;
+	height: 25px;
+    margin: 5px 0 5px;
+	font-family: NotoSansKR;
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.57;
+	letter-spacing: normal;
+	text-align: center;
+	color: #000;
+	float: left;
+}
+.install_table1 {
+	width: 820px;
+	height: 517px;
+	margin: 0 20px 0;
+	overflow-y: auto;
+}
+.install_table1 .install_version_td {
+	width: 110px;
+	height: 35px;
+	float: left;
+	border-right: rgba(0, 0, 0, 0.05) solid 1px;
+	border-bottom: rgba(0, 0, 0, 0.05) solid 1px;
+}
+.install_table1 .install_date1_td {
+	width: 154px;
+	height: 35px;
+	float: left;
+	border-right: rgba(0, 0, 0, 0.05) solid 1px;
+	border-bottom: rgba(0, 0, 0, 0.05) solid 1px;
+}
+.install_table1 .install_manager_td {
+	width: 134px;
+	height: 35px;
+	float: left;
+	border-right: rgba(0, 0, 0, 0.05) solid 1px;
+	border-bottom: rgba(0, 0, 0, 0.05) solid 1px;
+}
+.install_table1 .memo_td {
+	width: 271px;
+	height: 35px;
+	float: left;
+	border-right: rgba(0, 0, 0, 0.05) solid 1px;
+	border-bottom: rgba(0, 0, 0, 0.05) solid 1px;
+}
+.install_table1 .view_details_td {
+	width: 126px;
+	height: 35px;
+	float: left;
+	border-bottom: rgba(0, 0, 0, 0.05) solid 1px;
+}
+
+.install_version_td .install_version_text1 {
+	width: 111px;
+	height: 25px; 
+	margin: 5px 0 5px;
+	font-family: NotoSansKR;
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.57;
+	letter-spacing: normal;
+	text-align: center;
+	color: #000;
+	float: left;
+}
+.install_date1_td .install_date1_text1 {
+	width: 155px;
+	height: 25px; 
+	margin: 5px 0 5px;
+	font-family: NotoSansKR;
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.57;
+	letter-spacing: normal;
+	text-align: center;
+	color: #000;
+	float: left;
+}
+.install_manager_td .install_manager_text1 {
+	width: 135px;
+	height: 25px; 
+	margin: 5px 0 5px;
+	font-family: NotoSansKR;
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.57;
+	letter-spacing: normal;
+	text-align: center;
+	color: #000;
+	float: left;
+}
+.memo_td .memo_title1 {
+	width: 272px;
+	height: 25px; 
+	margin: 5px 0 5px;
+	font-family: NotoSansKR;
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.57;
+	letter-spacing: normal;
+	text-align: center;
+	color: #000;
+	float: left;
+}
+.view_details_td .view_details_text1 {
+	width: 127px;
+	height: 25px; 
+	margin: 5px 0 5px;
+	font-family: NotoSansKR;
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.57;
+	letter-spacing: normal;
+	text-align: center;
+	color: #000;
+	float: left;
+	cursor: pointer;
+}
+
+.all_text {
+	width: 110px;
+	height: 22px;
+	margin: 11px 10px 10px 9px;
+	font-family: NotoSansKR;
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.57;
+	letter-spacing: normal;
+	text-align: center;
+	color: #000;
+	position: absolute;
+}
+/* .all {
+	width: 150px;
+	height: 22px;
+	margin: 11px 10px 0;
+	font-family: NotoSansKR;
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.57;
+	letter-spacing: normal;
+	text-align: center;
+	color: #000;
+	position: absolute;
+} */
+.store_correction {
+	float: left;
+    width: 135px;
+    height: 24px;
+    font-family: NotoSansKR;
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    color: #000;
+    margin: 20px 0 0 20px;
+}
+.cancel {
+	width: 60px;
+	height: 60px;
+	float: right;
+	cursor: pointer;
+}
+.popup_correction_box {
+	float: left;
+    width: 600px;
+    height: 50px;
+    margin: 10px 0 0 0;
+}
+.popup_correction_box .pop_store_title1 {
+	float: left;
+    width: 100px;
+    height: 20px;
+    opacity: 0.4;
+    font-family: NotoSansKR;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 10px 0 0 20px;
+    color: #000;
+}
+.popup_correction_box .input_text {
+	float: left;
+    width: 451px;
+    height: 29px;
+    margin: 6px 20px 0 0;
+    border: 1px solid #a6a6a6;
+    padding: 4px 0 0 7px;
+}
+.popup_correction_box .store_area_select1 {
+	float: left;
+    width: 120px;
+    height: 35px;
+    border: 1px solid #a6a6a6;
+    padding: 4px 0 0 7px;
+}
+.popup_correction_box .store_area_select2 {
+    float: left;
+    width: 160px;
+    height: 35px;
+    border: 1px solid #a6a6a6;
+    padding: 4px 0 0 7px;
+    margin: 0 0 0 10px;
+}
+.popup_correction_box .store_input1 {
+	float: left;
+    width: 451px;
+    height: 29px;
+    margin: 6px 20px 0 0;
+    border: 1px solid #a6a6a6;
+    padding: 4px 0 0 7px;
+}
+.popup_correction_box .store_select_box {
+	float: left;
+    width: 160px;
+    height: 35px;
+    border: 1px solid #a6a6a6;
+    padding: 4px 0 0 7px;
+}
+.popup_correction_box .equipment_P {
+	float: left;
+    width: 161px;
+    height: 29px;
+    border: 1px solid #a6a6a6;
+    padding: 4px 0 0 7px;
+}
+.popup_correction_box .equipment_T {
+    float: left;
+    width: 161px;
+    height: 29px;
+    border: 1px solid #a6a6a6;
+    padding: 4px 0 0 7px;
+    margin: 0 20px 0 0;
+}
+.popup_correction_box .installer_text {
+	float: left;
+    width: 120px;
+    height: 29px;
+    border: 1px solid #a6a6a6;
+    padding: 4px 0 0 7px;
+}
+.popup_correction_box .pop_store_tel {
+	float: left;
+    width: 65px;
+    height: 20px;
+    opacity: 0.4;
+    font-family: NotoSansKR;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 10px 0 0 20px;
+    color: #000;
+}
+.popup_correction_box .installer_tel {
+    float: left;
+    width: 237px;
+    height: 29px;
+    border: 1px solid #a6a6a6;
+    padding: 4px 0 0 7px;
+    margin: 0 20px 0 0;
+}
+.popup_correction_box .store_num_input {
+	float: left;
+    width: 451px;
+    height: 29px;
+    margin: 6px 20px 0 0;
+    border: 1px solid #a6a6a6;
+    padding: 4px 0 0 7px;
+}
+.popup_correction_box .time_input {
+	float: left;
+    width: 451px;
+    height: 29px;
+    margin: 6px 20px 0 0;
+    border: 1px solid #a6a6a6;
+    padding: 4px 0 0 7px;
+}
+.popup_correction_box .del_but {
+	float: left;
+	width: 125px;
+    height: 32px;
+    border: solid 1px rgba(121, 121, 121, 0.1);
+    background-color: #7f7f7f;
+    color: #fff;
+    margin: 20px 0 0 150px;
+    /* position: absolute; */
+    bottom: 0;
+	cursor: pointer;
+}
+.popup_correction_box .insert_but {
+	float: right;
+    width: 125px;
+    height: 32px;
+    border: solid 1px rgba(121, 121, 121, 0.1);
+    background-color: #7f7f7f;
+    color: #fff;
+    margin: 20px 150px 0 0;
+    /* position: absolute; */
+    bottom: 0;
+	cursor: pointer;
+}
+/***/
+.area_select2 {
+	height: 35px;
+	width: 100px;
+	margin: 0px 0 0 70px;
+}
+.area_select2 {
+	width: 150px;
+	height: 35px;
+	/* margin: 0px 0 0 55px; */
+}
+.popup_open1 {
+	width: 1920px;
+	height: 969px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.6);
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.25s ease-in-out;
+}
+.popup1 {
+	width: 600px;
+    height: 650px;
+	display: block;
+	margin: 185px 640px 200px 700px;
+	/* top: 50%; */
+	/* left: 50%; */
+	position: absolute;
+	background-color: #fff;
+}
+.cancel1 {
+	width: 60px;
+	height: 60px;
+	float: right;
+	cursor: pointer;
+}
+.open1 {
+	width: 100%;
+	opacity: 1;
+	visibility: visible;
+}
+.store_insert1 {
+	float: left;
+	width: 135px;
+	height: 24px;
+	font-family: NotoSansKR;
+	font-size: 20px;
+	font-weight: bold;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.2;
+	letter-spacing: normal;
+	color: #000;
+	margin: 20px 0 0 20px;
+}
+.store_line1 {
+	float: left;
+	width: 560px;
+	height: 1px;
+	margin: 0px 20px 0;
+	background-color: #e5e5e5;
+}
+.popup_install_box {
+	float: left;
+	width: 600px;
+	height: 50px;
+	margin: 10px 0 0 0;
+}
+.popup_install_box .pop_store_title1 {
+	float: left;
+	width: 100px;
+	height: 20px;
+	opacity: 0.4;
+	font-family: NotoSansKR;
+	font-size: 15px;
+	font-weight: bold;
+	margin: 10px 0 0 20px;
+	color: #000;
+}
+.popup_install_box .popup_date {
+    float: left;
+    width: 451px;
+    height: 29px;
+    margin: 6px 20px 0 0;
+    border: 1px solid #a6a6a6;
+    padding: 4px 0 0 7px;
+	background-color: #f2f2f2;
+}
+.popup_install_box .ver_select {
+	float: left;
+	width: 120px;
+	height: 35px;
+	border: 1px solid #a6a6a6;
+	padding: 4px 0 0 7px;
+}
+.popup_install_box .ver_select2 {
+	float: left;
+	width: 120px;
+	height: 35px;
+	border: 1px solid #a6a6a6;
+	padding: 4px 0 0 7px;
+}
+.popup_install_box .popup_installer {
+	float: left;
+	width: 120px;
+	height: 29px;
+	border: 1px solid #a6a6a6;
+    padding: 4px 0 0 7px;
+}
+.popup_install_box .popup_tel_box {
+	float: left;
+	width: 80px;
+	height: 20px;
+	opacity: 0.4;
+	font-family: NotoSansKR;
+	font-size: 15px;
+	font-weight: bold;
+	margin: 10px 0 0 20px;
+	color: #000;
+}
+.popup_install_box .popup_tel {
+	float: left;
+    width: 222px;
+    height: 29px;
+    margin: 0 20px 0 0;
+	border: 1px solid #a6a6a6;
+	padding: 4px 0 0 7px;
+}
+.popup_install_box1 {
+	float: left;
+    width: 600px;
+    height: 100px;
+	margin: 10px 0 0 0;
+}
+.popup_install_box1 .popup_memo {
+	float: left;
+	width: 100px;
+	height: 20px;
+	opacity: 0.4;
+	font-family: NotoSansKR;
+	font-size: 15px;
+	font-weight: bold;
+	margin: 10px 0 0 20px;
+	color: #000;
+}
+.popup_install_box1 .popup_textarea {
+	width: 451px;
+    height: 73px;
+    margin: 6px 20px 0 0;
+    border: 1px solid #a6a6a6;
+    resize: none;
+    padding: 7px 0 0 7px;
+}
+.popup_install_box .upload_file {
+    float: left;
+    height: 29px;
+    padding: 4px 0 0 7px;
+    vertical-align: middle;
+    border: 1px solid #a6a6a6;
+    width: 347px;
+}
+.popup_install_box input[type="file"] {
+	position: absolute;
+    width: 0;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+}
+.popup_install_box label {
+	display: inline-block;
+	width: 77px;
+    height: 35px;
+    text-align: center;
+    border: 1px solid #000;
+    margin: 0 20px 0 25px;
+    color: #000;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.popup_install_box .label_span {
+    float: left;
+	font-weight: bold;
+    font-size: 13px;
+    margin: 9px 25px 9px 26px;
+}
+.popup_install_box .popup_insert_but1 {
+	width: 125px;
+    height: 32px;
+    border: solid 1px rgba(121, 121, 121, 0.1);
+    background-color: #7f7f7f;
+    color: #fff;
+    margin: 0 238px 50px 238px;
+    position: absolute;
+    bottom: 0;
+	cursor: pointer;
+}
+.popup_install_box .popup_insert_but3 {
+	width: 125px;
+    height: 32px;
+    border: solid 1px rgba(121, 121, 121, 0.1);
+    background-color: #7f7f7f;
+    color: #fff;
+    margin: 0 238px 50px 238px;
+    position: absolute;
+    bottom: 0;
+	cursor: pointer;
+}
+
+.popup_open2 {
+	width: 1920px;
+	height: 969px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.6);
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.25s ease-in-out;
+}
+.popup2 {
+	width: 600px;
+    height: 650px;
+	display: block;
+	margin: 185px 640px 200px 700px;
+	/* top: 50%; */
+	/* left: 50%; */
+	position: absolute;
+	background-color: #fff;
+}
+.cancel2 {
+	width: 60px;
+	height: 60px;
+	float: right;
+	cursor: pointer;
+}
+.open2 {
+	width: 100%;
+	opacity: 1;
+	visibility: visible;
+}
+
+.popup_install_box .label {
+	display: inline-block;
+	width: 77px;
+    height: 35px;
+    text-align: center;
+    border: 1px solid #d9d9d9;
+    margin: 0 20px 0 10px;
+    color: #d9d9d9;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.popup_install_box .label_span {
+    float: left;
+	font-weight: bold;
+    font-size: 13px;
+    margin: 9px 25px 9px 26px;
+}
+
+.popup_install_box .store_popup_but {
+	float: left;
+	width: 125px;
+    height: 32px;
+    border: solid 1px #7f7f7f;
+    background-color: #fff;
+    color: #7f7f7f;
+	margin: 10px 0 0 145px;
+	cursor: pointer;
+}
+
+.popup_install_box .popup_insert_but {
+	float: right;
+	width: 125px;
+    height: 32px;
+    border: solid 1px #7f7f7f;
+    background-color: #fff;
+    color: #7f7f7f;
+	margin: 10px 145px 0 0;
+	cursor: pointer;
+}
+.popup_open3 {
+	width: 1920px;
+	height: 969px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.6);
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.25s ease-in-out;
+}
+.popup3 {
+	width: 600px;
+    height: 650px;
+	display: block;
+	margin: 185px 640px 200px 700px;
+	position: absolute;
+	background-color: #fff;
+}
+.cancel3 {
+	width: 60px;
+	height: 60px;
+	float: right;
+	cursor: pointer;
+}
+.open3 {
+	width: 100%;
+	opacity: 1;
+	visibility: visible;
+}
+.store {
+	background-color: #3219c5;
+}
+.store .sidebar_text {
+	color:#fff;
+}
+.hide{display:none;}

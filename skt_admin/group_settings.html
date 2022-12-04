@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/group_settings.css?aaa"/>
+    <link rel="stylesheet" type="text/css" href="./css/header.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/sidebar.css"/>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="./js/popup.js?aaa"></script>
+    <title>접근관리</title>
+</head>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("#headers").load("./header/header.html");
+        $("#sidebar").load("./sidebar/sidebars.html");
+    })
+</script>
+<body>
+    <div class="all_moniter">
+        <div id="headers"></div>
+        <div id="sidebar"></div>
+        <div class="group_setting_title">
+            <span class="setting_title">접근 그룹 설정</span>
+            <button class="group_insert"><span>그룹 등록</span></button>
+        </div>
+        <div class="group_setting_box">
+            <div class="group_setting">
+                <div class="group_num"><span class="all_text">No.</span></div>
+                <div class="group_name"><span class="all_text">그룹명</span></div>
+                <div class="group_people"><span class="all_text">사용자 수</span></div>
+                <div class="group_menu"><span class="all_text">접근 허용 메뉴</span></div>
+                <div class="group_state"><span class="all_text">상태</span></div>
+                <div class="group_date"><span class="all_text">생성일</span></div>
+                <div class="group_cut"><span class="all_text">상세</span></div>
+            </div>
+
+            <div class="group_setting1">
+                <div class="group_num1"><span class="all_text">1</span></div>
+                <div class="group_name1"><span class="all_text">SKT</span></div>
+                <div class="group_people1"><span class="all_text">3</span></div>
+                <div class="group_menu1"><span class="all_text">대시보드>통합 대시보드<br/>
+                    매장관리>매장 리스트</br>
+                    매장관리>매장 리스트>상세보기</br>
+                    콘텐츠관리>콘텐츠 리스트</br>
+                    장비관리>장비 리스트</br>
+                    </span></div>
+                <div class="group_state1"><span class="all_text">활성</span></div>
+                <div class="group_date1"><span class="all_text">2021-09-12  09:00:00</span></div>
+                <div class="group_cut1">
+                    <span class="text">수정</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="group_popup">
+			<div class="gro_popup">
+				<form method="GET">
+					<span class="group_insert1">장비 등록</span>
+					<img class="group_cancel" src="../skt_admin/img/btn_close@3x.png"/>
+				<div class="group_line"></div>
+				
+                <div class="group_title_box">
+                    <span class="group_text">그룹명</span>
+                    <input class="group_input" type="text" name="group_title"/>
+                </div>
+                <div class="group_title_box0">
+                    <span class="all_title">대시보드>통합 대시보드</span>
+                    <select class="group_select" name="dash">
+                        <option>선택</option>
+                    </select>
+                </div>
+                <div class="group_title_box1">
+                    <span class="all_title">매장관리>매장리스트</span>
+                    <select class="group_select" name="list">
+                        <option>선택</option>
+                    </select>
+                </div>
+                <div class="group_title_box2">
+                    <span class="all_title1">엑셀 다운로드</span>
+                    <select class="group_select" name="excel_down1">
+                        <option>선택</option>
+                    </select>
+                </div>
+                <div class="group_title_box1">
+                    <span class="all_title">*매장 설치 현황 등록</span>
+                    <select class="group_select" name="install">
+                        <option>선택</option>
+                    </select>
+                </div>
+                <div class="group_title_box2">
+                    <span class="all_title1">상세/수정/다운</span>
+                    <select class="group_select" name="download">
+                        <option>선택</option>
+                    </select>
+                </div>
+                <div class="group_title_box1">
+                    <span class="all_title">콘텐츠관리>콘텐츠 리스트</span>
+                    <select class="group_select" name="con_list">
+                        <option>선택</option>
+                    </select>
+                </div>
+                <div class="group_title_box2">
+                    <span class="all_title1">엑셀 다운로드</span>
+                    <select class="group_select" name="excel_down2">
+                        <option>선택</option>
+                    </select>
+                </div>
+                <div class="group_title_box1">
+                    <span class="all_title">장비관리>장비 리스트</span>
+                    <select class="group_select" name="eq_list">
+                        <option>선택</option>
+                    </select>
+                </div>
+                <div class="group_title_box2">
+                    <span class="all_title1">엑셀 다운로드</span>
+                    <select class="group_select" name="excel_down3">
+                        <option>선택</option>
+                    </select>
+                </div>
+
+				<div class="equipment_insert_box">
+					<button class="insert_but"><span>등록</span></button>
+				</div>
+				</form>
+			</div>
+		</div>
+
+        <div class="group_popup1">
+			<div class="gro_popup1">
+				<form method="GET">
+					<span class="group_insert1">장비 등록</span>
+					<img class="group_cancel1" src="../skt_admin/img/btn_close@3x.png"/>
+				<div class="group_line"></div>
+				
+                <div class="group_title_box">
+                    <span class="group_text">그룹명</span>
+                    <input class="group_input" type="text" name="group_title"/>
+                </div>
+                <div class="group_title_box0">
+                    <span class="all_title">대시보드>통합 대시보드</span>
+                    <select class="group_select" name="dash">
+                        <option>허용</option>
+                        <option>제한</option>
+                    </select>
+                </div>
+                <div class="group_title_box1">
+                    <span class="all_title">매장관리>매장리스트</span>
+                    <select class="group_select" name="list">
+                        <option>허용</option>
+                        <option>제한</option>
+                    </select>
+                </div>
+                <div class="group_title_box2">
+                    <span class="all_title1">엑셀 다운로드</span>
+                    <select class="group_select" name="excel_down1">
+                        <option>허용</option>
+                        <option>제한</option>
+                    </select>
+                </div>
+                <div class="group_title_box1">
+                    <span class="all_title">*매장 설치 현황 등록</span>
+                    <select class="group_select" name="install">
+                        <option>허용</option>
+                        <option>제한</option>
+                    </select>
+                </div>
+                <div class="group_title_box2">
+                    <span class="all_title1">상세/수정/다운</span>
+                    <select class="group_select" name="download">
+                        <option>허용</option>
+                        <option>제한</option>
+                    </select>
+                </div>
+                <div class="group_title_box1">
+                    <span class="all_title">콘텐츠관리>콘텐츠 리스트</span>
+                    <select class="group_select" name="con_list">
+                        <option>허용</option>
+                        <option>제한</option>
+                    </select>
+                </div>
+                <div class="group_title_box2">
+                    <span class="all_title1">엑셀 다운로드</span>
+                    <select class="group_select" name="excel_down2">
+                        <option>허용</option>
+                        <option>제한</option>
+                    </select>
+                </div>
+                <div class="group_title_box1">
+                    <span class="all_title">장비관리>장비 리스트</span>
+                    <select class="group_select" name="eq_list">
+                        <option>허용</option>
+                        <option>제한</option>
+                    </select>
+                </div>
+                <div class="group_title_box2">
+                    <span class="all_title1">엑셀 다운로드</span>
+                    <select class="group_select" name="excel_down3">
+                        <option>허용</option>
+                        <option>제한</option>
+                    </select>
+                </div>
+
+				<div class="equipment_insert_box">
+                    <button class="group_del"><span>삭제</span></button>
+					<button class="insert_but1"><span>등록</span></button>
+				</div>
+				</form>
+			</div>
+		</div>
+
+    </div>
+</body>
+</html>

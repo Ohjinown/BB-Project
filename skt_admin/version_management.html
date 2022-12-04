@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="./css/version_management.css?a"/>
+	<link rel="stylesheet" type="text/css" href="./css/header.css"/>
+	<link rel="stylesheet" type="text/css" href="./css/sidebar.css"/>
+	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="./js/popup.js"></script>
+	<title>버전관리</title>
+</head>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#headers").load("./header/header.html");
+		$("#sidebar").load("./sidebar/sidebar.html");
+	})
+</script>
+<body>
+	<div class="all_moniter">
+		<div id="headers"></div>
+		<div id="sidebar"></div>
+		<div class="version_management_box">
+			<form action="" method="GET" name="file">
+				<span class="version_management_text">버전 등록</span>
+				<button class="version_insert"><span>등록</span></button>
+				<div class="text1">
+					<div class="version_email_box1">
+						<input class="email_name" type="text" name="email1">
+						<span style="float: left; margin: 20px 0 0;">@</span>
+						<select class="email_end" name="email2">
+							<option value=""></option>
+						</select>
+					</div>
+
+					<div class="version_email_box2">
+						<input class="email_asd" type="text" name="firtt_release						">
+					</div>
+					<div class="version_text">
+						<span class="text2">Write</span>
+						<span class="text3">Preview</span>
+						<div class="versiom_line"></div>
+					</div>
+					<div class="version_textarea_box">
+						<textarea class="version_textarea" name="memo"></textarea>
+					</div>
+					<div class="version_input_box1">
+						<input class="upload_file del imgage1" value="" placeholder=""readonly/>
+						<label for="file1"><span class="label_span">첨부</span></label> 
+						<input type="file" id="file1" name="img1"/>
+						<img class="cancel4" src="../skt_admin/img/btn_close@3x.png">
+					</div>
+					<div class="version_input_box2">
+						<input class="upload_file del imgage2" value="" placeholder="" readonly/>
+						<label for="file2"><span class="label_span">첨부</span></label> 
+						<input type="file" id="file2" name="img2"/>
+						<img class="cancel5" src="../skt_admin/img/btn_close@3x.png">
+					</div>
+				</div>
+			</form>
+			<div class="varsion_list_text">
+				<span class="varsion_list">버전 리스트</span>
+			</div>
+			<div class="version_list_box">
+				<div class="version_list_th">
+					<div class="install_ver">
+						<span class="install_ver_text">설치버전</span>
+					</div>
+					<div class="install_update">
+						<span class="install_update_text">업데이트</span>
+					</div>
+					<div class="install_admin">
+						<span class="install_admin_text">관리자</span>
+					</div>
+				</div>
+				<div class="version_list_td">
+					<div class="install_ver1">
+						<span class="install_ver_text1">v1.0.0</span>
+					</div>
+					<div class="install_update1">
+						<span class="install_update_text1">2021-09-12  09:00:00</span>
+					</div>
+					<div class="install_admin1">
+						<span class="install_admin_text1">홍길동</span>
+					</div>
+
+					<div class="install_ver1">
+						<span class="install_ver_text1">v1.0.0</span>
+					</div>
+					<div class="install_update1">
+						<span class="install_update_text1">2021-09-12  09:00:00</span>
+					</div>
+					<div class="install_admin1">
+						<span class="install_admin_text1">홍길동</span>
+					</div>
+
+					<div class="install_ver1">
+						<span class="install_ver_text1">v1.0.0</span>
+					</div>
+					<div class="install_update1">
+						<span class="install_update_text1">2021-09-12  09:00:00</span>
+					</div>
+					<div class="install_admin1">
+						<span class="install_admin_text1">홍길동</span>
+					</div>
+
+					<div class="install_ver1">
+						<span class="install_ver_text1">v1.0.0</span>
+					</div>
+					<div class="install_update1">
+						<span class="install_update_text1">2021-09-12  09:00:00</span>
+					</div>
+					<div class="install_admin1">
+						<span class="install_admin_text1">홍길동</span>
+					</div>
+
+					</div>
+				</div>
+		</div>
+	</div>
+</body>
+</html>

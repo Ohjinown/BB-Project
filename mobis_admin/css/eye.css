@@ -1,0 +1,231 @@
+@import url(reset.css);
+@font-face {
+    font-family: NotoSansCJKkr-Regular;
+    src: url(../font/NotoSansCJKkr-Regular.otf);
+}
+
+@font-face {
+    font-family: NotoSansCJKkr-Medium;
+    src: url(../font/NotoSansCJKkr-Medium.otf);
+}
+
+@font-face {
+    font-family: NotoSansCJKkr-Bold;
+    src: url(../font/NotoSansCJKkr-Bold.otf);
+}
+
+/* eye.css */
+/* 아이트래킹 */
+
+*{-webkit-text-size-adjust: none;}
+
+/* common */
+body{
+    font-family: NotoSansCJKkr-Bold, Arial, Helvetica, sans-serif;
+    background: #ECEFF5;
+    font-size: 20px;
+    color: #222;
+    line-height: 1;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* layout */
+div#wrap{
+    width: 100%;
+    overflow: hidden;
+    max-width: 1920px;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    overflow: hidden;
+}
+
+main{
+    padding: 0 147px 80px;
+    box-sizing: border-box;
+}
+
+/* gnb list 클릭 */
+ul.gnb>li.eye>a{
+    color: #fff;
+}
+
+/* main */
+/* 아이트래킹을 통한 부주의 카테고리 분석 */
+div.eye_track{
+    width: 1626px;
+    margin-top: 40px;
+    padding: 40px 40px 100px;
+    box-sizing: border-box;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.eye_track::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.eye_track>h2{
+    display: inline-block;
+    font-size: 28px;
+}
+
+/* 필터 선택 */
+div.e_filter{
+    float: right;
+}
+
+.e_filter>*{
+    margin-right: 10px;
+}
+
+.e_filter>select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance:none;
+    width: 120px;
+    height: 40px;
+    margin-right: 30px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 0 12px;
+    color: #606060;
+    font-size: 16px;
+    font-family: NotoSansCJKkr-Medium;
+    background: url(../img/icn_drop.png) no-repeat 92px 50%;
+    cursor: pointer;
+}
+
+/* IE 화살표 숨기기 */
+.e_filter>select::-ms-expand{
+    display: none;
+}
+
+/* 필터 버튼 */
+.f_filter{
+    width: 80px;
+    height: 40px;
+    margin-right: 0;
+    font-family: NotoSansCJKkr-Medium;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    border: none;
+    /* cursor: pointer; */
+    background: rgba(0,0,0,0.7);
+}
+
+/* 전체 그래프 공통사항 */
+.graph1, .graph2{
+    float: left;
+    width: 100%;
+}
+
+.graph1>h3, .graph2>h3{
+    padding-bottom: 15px;
+    color: #606060;
+    font-size: 24px;
+    font-family: NotoSansCJKkr-Medium;
+    border-bottom: 1px solid #606060;
+    box-sizing: border-box;
+}
+
+.graph1>div, .graph2>div{
+    width: 100%;
+    margin-top: 38px;
+}
+
+.graph1>div::after, .graph2>div::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.graph1>div>*, .graph2>div>*{
+    float: left;
+}
+
+.graph1>div>strong, .graph2>div>strong{
+    width: 159px;
+    margin-top: 10px;
+    color: #606060;
+    font-family: NotoSansCJKkr-Medium;
+}
+
+.graph1>div>p, .graph2>div>p{
+    position: relative;
+    width: 1270px;
+    height: 42px;
+    background: rgba(76, 84, 221, 0.5);
+    border-radius: 50px;
+}
+
+.graph1>div>p>span, .graph2>div>p>span{
+    position: absolute;
+    width: 313px;
+    height: 100%;
+    padding: 12px 20px 12px 0;
+    box-sizing: border-box;
+    border-radius: 50px;
+    text-align: right;
+    color: #fff;
+    font-size: 18px;
+    font-family: NotoSansCJKkr-Regular;
+    background: #4c54dd;
+}
+
+.graph1>div>em, .graph2>div>em{
+    width: 113px;
+    margin-top: 12px;
+    color: #606060;
+    font-size: 18px;
+    font-family: NotoSansCJKkr-Regular;
+    text-align: right;
+}
+
+/* graph1 */
+.graph1{
+    margin: 68px 0 100px;
+}
+
+div.crosswalk{
+    margin-top: 48px;
+}
+
+.graph1>.b_spot>p>span{
+    width: 920px;
+}
+
+.graph1>.around>p>span{
+    width: 640px;
+}
+
+.graph1>.walker>p>span{
+    width: 840px;
+}
+
+/* graph2 */
+.graph2>.crosswalk>p>span{
+    width: 487px;
+}
+
+.graph2>.b_spot>p>span{
+    width: 313px;
+}
+
+.graph2>.around>p>span{
+    width: 768px;
+}
+
+.graph2>.walker>p>span{
+    width: 972px;
+}
