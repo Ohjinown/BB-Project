@@ -1,18 +1,3 @@
-// 퀴즈 경품 alert
-$(document).on("click", ".area_2_button", function() {
-    var value1 = $("#value1").val();
-    var value2 = $("#value2").val();
-    var value3 = $("#value3").val();
-    var value4 = $("#value4").val();
-    if (value1 == "" || value2 == ""  || value3 == ""  || value4 == "" ) {
-        alert("한국어로 빈칸 없이 정답을 입력해주세요.");
-    } else if (value1 == "플" && value2 == "래"  && value3 == "너"  && value4 == "츠"){
-        $(".hide_yes").removeClass("hide_yes");
-    } else if (value1 != "플" || value2 != "래"  || value3 != "너"  || value4 != "츠") {
-        $(".hide_no").removeClass("hide_no");
-    }
-});
-
 //popup
 $(document).on("click", ".close_no", function () {
 	$(".popup_no").addClass("hide_no");
